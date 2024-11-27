@@ -187,12 +187,40 @@ a{text-decoration:none}
         font-weight: bold;
     } 
 
+    @media (max-width:800px){
+        .main_view{
+            width: 150%;
+            max-width: 150%;
+            margin-left: -28%;
+            margin-right: -28%;
+        }
+
+        .content_wrapper{
+            margin-top: -30px;
+            top: 0;
+        }
+    }
+
+    @media (max-width:600px){
+        .main_view{
+            width: 150%;
+            max-width: 150%;
+            margin-left: -28%;
+            margin-right: -28%;
+        }
+
+        .content_wrapper{
+            margin-top: -30px;
+            top: 0;
+        }
+    }
+
     @media (max-width:430px){
         .main_view{
-            width: 160%;
-            max-width: 160%;
-            margin-left: -30%;
-            margin-right: -30%;
+            width: 150%;
+            max-width: 150%;
+            margin-left: -28%;
+            margin-right: -28%;
         }
 
         .content_wrapper{
@@ -265,7 +293,7 @@ a{text-decoration:none}
 
     .objective-container {
         position: relative;
-        padding: 2rem;
+        padding: 1rem;
         margin-top: 2vw;
     }
 
@@ -312,7 +340,7 @@ a{text-decoration:none}
 
     .prize-container {
         position: relative;
-        padding: 2rem;
+        padding: 3rem;
         margin-top: 2vw;
     }
 
@@ -368,6 +396,74 @@ a{text-decoration:none}
         margin-top: -25px;
     }
 
+    @media (max-width:500px){
+        .objective-header{
+            border: 4px solid black;
+        }
+
+        .rules-header{
+            border: 4px solid black;
+        }
+
+        .qualifications-header{
+            border: 4px solid black;
+        }
+
+        .prize-header{
+            border: 4px solid black;
+        }
+
+        .qualifications-container{
+            border: 4px solid black;
+        }
+
+        .qualifications-container-2{
+            border: 4px solid black;
+        }
+
+        .rules-container{
+            border: 4px solid black;
+        }
+
+        .rules-container-2{
+            border: 4px solid black;
+        }
+    }
+
+    @media (max-width:400px){
+        .objective-header{
+            border: 4px solid black;
+        }
+
+        .rules-header{
+            border: 4px solid black;
+        }
+
+        .qualifications-header{
+            border: 4px solid black;
+        }
+
+        .prize-header{
+            border: 4px solid black;
+        }
+
+        .qualifications-container{
+            border: 4px solid black;
+        }
+
+        .qualifications-container-2{
+            border: 4px solid black;
+        }
+
+        .rules-container{
+            border: 4px solid black;
+        }
+
+        .rules-container-2{
+            border: 4px solid black;
+        }
+    }
+
 /* ------------------------------------------------------------------- 
  * ## About index header
  * ------------------------------------------------------------------- */
@@ -379,6 +475,7 @@ a{text-decoration:none}
         font-weight: 600;
         font-size: 18px;
         justify-content: center;
+        margin-top: -70px;
     }
 
     .index a{
@@ -392,7 +489,7 @@ a{text-decoration:none}
 
     .objective-index{
         background-color: #eeb13f;
-        border: 5px solid black;
+        border: 3px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -403,7 +500,7 @@ a{text-decoration:none}
 
     .qualifications-index{
         background-color: #eeb13f;
-        border: 5px solid black;
+        border: 3px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -414,7 +511,7 @@ a{text-decoration:none}
 
     .rules-index{
         background-color: #eeb13f;
-        border: 5px solid black;
+        border: 3px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -425,7 +522,7 @@ a{text-decoration:none}
 
     .prize-index{
         background-color: #eeb13f;
-        border: 5px solid black;
+        border: 3px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -434,34 +531,114 @@ a{text-decoration:none}
         font-weight: bold;
     }
 
-    @media (max-width:430px){
+    @media (max-width:1000px){
+        .index{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+            row-gap: .1px;
+            justify-content: center;
+        }
+
+        .index span {
+            border-right: 2px solid #000000
+        }
+    }
+
+
+    @media (max-width:800px){
+        .index{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 3px;
+            row-gap: .1px;
+            justify-content: center;
+        }
+
+        .index span {
+            border-right: 2px solid #000000
+        }
+    }
+
+    @media (max-width:600px){
         .objective-index{
-            width: 80px;
-            height: 30px;
-            padding: 0rem 0.5rem;
-            font-size: .7rem;
+            border: 3px solid black;
+            width: 90px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
 
         }
 
         .qualifications-index{
-            width: 80px;
-            height: 30px;
-            padding: 0rem 0.5rem;
-            font-size: .7rem;
+            border: 3px solid black;
+            width: 90px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
         }
 
         .rules-index{
-            width: 80px;
-            height: 30px;
-            padding: 0rem 0.5rem;
-            font-size: .7rem;
+            border: 3px solid black;
+            width: 90px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
         }
 
         .prize-index{
-            width: 80px;
-            height: 30px;
-            padding: 0rem 0.5rem;
-            font-size: .7rem;
+            border: 3px solid black;
+            width: 90px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
+        }
+
+        .index{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 2.2px;
+            row-gap: .1px;
+            justify-content: center;
+        }
+
+        .index span {
+            border-right: 0px solid #000000
+        }
+    }
+
+    @media (max-width:450px){
+        .objective-index{
+            border: 3px solid black;
+            width: 86px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
+
+        }
+
+        .qualifications-index{
+            border: 3px solid black;
+            width: 86px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
+        }
+
+        .rules-index{
+            border: 3px solid black;
+            width: 86px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
+        }
+
+        .prize-index{
+            border: 3px solid black;
+            width: 86px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
         }
 
         .index{
@@ -477,6 +654,50 @@ a{text-decoration:none}
         }
 
         
+        }
+
+        @media (max-width:417px){
+            .objective-index{
+                width: 75px;
+                height: 40px;
+                padding: 0.3rem 0rem;
+                font-size: .9rem;
+    
+            }
+    
+            .qualifications-index{
+                width: 75px;
+                height: 40px;
+                padding: 0.3rem 0rem;
+                font-size: .9rem;
+            }
+    
+            .rules-index{
+                width: 75px;
+                height: 40px;
+                padding: 0.3rem 0rem;
+                font-size: .9rem;
+            }
+    
+            .prize-index{
+                width: 75px;
+                height: 40px;
+                padding: 0.3rem 0rem;
+                font-size: .9rem;
+            }
+    
+            .index{
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 1px;
+                row-gap: .1px;
+                justify-content: center;
+            }
+    
+            .index span {
+                border-right: 0px solid #000000
+            }
+    
         }
 
 /* ------------------------------------------------------------------- 
@@ -796,7 +1017,7 @@ a{text-decoration:none}
         font-weight: bold;
         color: #fff;
         text-align: center;
-        margin-top: -7px;
+        margin-top: -9px;
     }
         .schedule-ribbon{
             --s: 1.8em; /* the ribbon size */
@@ -825,6 +1046,26 @@ a{text-decoration:none}
         padding-bottom: 8px;
         background: linear-gradient(45deg, #000000 0%, #000000 50%, #000000 100%);
         border-radius: 3px;
+    }
+
+    @media (max-width:500px){
+        .objective-border-bottom{
+            padding-bottom: 4px;
+        }
+        
+        .prize-border-bottom{
+            padding-bottom: 4px;
+        }
+    }
+
+    @media (max-width:400px){
+        .objective-border-bottom{
+            padding-bottom: 4px;
+        }
+        
+        .prize-border-bottom{
+            padding-bottom: 4px;
+        }
     }
 
     .prize-info-1{
