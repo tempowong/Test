@@ -31,29 +31,6 @@ a{text-decoration:none}
     border-bottom: 2px solid #118b6e; /* 悬停时底部边框 */
 }
 
-/* -------------------------------------------------------------------
- * ## header logo 
- * ------------------------------------------------------------------- */
-
-.header .logo-container {
-    align-self:center;
-}
-
-.logo-container{
-    display: block;
-    margin: 3px 0 0 0;
-    padding: 0;
-    outline: 0;
-    border: none;
-}
-
-.logo-container img{
-    width: 600px;
-    height: 70px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
 .banner {
     background-image: url(../asset/bg.png);
     background-size: cover;
