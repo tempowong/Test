@@ -47,6 +47,24 @@ a{text-decoration:none}
     height: auto;
 }
 
+@media (max-width:800px){
+    .banner{
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width:600px){
+    .banner{
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width:400px){
+    .banner{
+        background-attachment: fixed;
+    }
+}
+
 .register-button {
     background: #FFD700;
     border: 2px solid black;
