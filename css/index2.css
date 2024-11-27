@@ -49,19 +49,19 @@ a{text-decoration:none}
 
 @media (max-width:800px){
     .banner{
-        background-attachment: fixed;
+        background-attachment: initial;
     }
 }
 
 @media (max-width:600px){
     .banner{
-        background-attachment: fixed;
+        background-attachment: initial;
     }
 }
 
 @media (max-width:400px){
     .banner{
-        background-attachment: fixed;
+        background-attachment: initial;
     }
 }
 
