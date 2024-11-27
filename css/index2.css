@@ -4,8 +4,7 @@ html.fontsize-m	{font-size:22px;}
 html.fontsize-l	{font-size:24px;}
 
 body {
-    width: 100%;
-    height: 100%;
+    min-height: 100vh;
     font-family: "Microsoft JhengHei", sans-serif;
 }
 a{text-decoration:none}
@@ -32,37 +31,21 @@ a{text-decoration:none}
     border-bottom: 2px solid #118b6e; /* 悬停时底部边框 */
 }
 
+.banner {
+    background-image: url(../asset/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
 .banner-content img {
     max-width: 100%;
     height: auto;
-}
-
-.bg-section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.bg-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.bg {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    transform: translateZ(0);
-    will-change: transform;
 }
 
 /* ===================================================================
