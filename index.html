@@ -22,47 +22,34 @@
         <nav class="navbar navbar-expand-md p-0">
             <div class="logo-container">
                 <img src="./asset/logo_800.png" alt="平等機會委員會" class="img-fluid">
-            </div>      
-            
-            <div class="header-right">
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <div class="ms-auto d-flex flex-column">
-                        <div class ="access-menu">
-                            <ul class="nav-menu" id="fanjian">
-                                <li>
-                                    <a href="index.html" class="me-3"><img src="./asset/home.png" alt=""></a>
-                                </li>  
-                                <li class="font-size-options">
-                                    <span class="me-3">|</span>
-                                    <a href="javascript:void(0);" onclick="setFontsize('s')" title="Default Font Size" class="fontsize-s me-3">A</a>
-                                    <a href="javascript:void(0);" onclick="setFontsize('m')" title="Larger Font Size" class="fontsize-m me-3">A</a>
-                                    <a href="javascript:void(0);" onclick="setFontsize('l')" title="Largest Font Size" class="fontsize-l me-3">A</a>
-                                </li>
-                                <li class="language-options">
-                                    <span class="me-3">|</span>
-                                    <a href="#" class="me-3" class="on">繁</a>
-                                    <a href="#" class="me-3">简</a>
-                                    <a href="#" class="me-3">Eng</a>
-                                </li>                                                   
-                            </ul>
-                        </div>   
-                        <nav id="mainmenu">
-                            <ul>
-                                <li><a href="details.html" class="me-3">關於比賽</a></li>
-                                <li><a href="enroll.html" class="me-3">報名詳情</a></li>
-                                <li><a href="course-map.html" class="me-3">賽程表</a></li>
-                                <li><a href="highlight.html" class="me-3">比賽花絮</a></li>
-                                <li><a href="news.html" class="me-3">宣傳推廣</a></li>
-                            </ul>
-                        </nav>                  
-                    </div>
-                </div>
             </div>
 
-            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="ms-auto d-flex flex-column">
+                    <nav class="nav-menu" id="fanjian">
+                        <a href="index.html" class="me-3"><img src="./asset/home.png" alt=""></a>
+                        <span class="me-3">|</span>
+                        <a href="javascript:void(0);" onclick="setFontsize('s')" title="Default Font Size" class="fontsize-s me-3">A</a>
+                        <a href="javascript:void(0);" onclick="setFontsize('m')" title="Larger Font Size" class="fontsize-m me-3">A</a>
+                        <a href="javascript:void(0);" onclick="setFontsize('l')" title="Largest Font Size" class="fontsize-l me-3">A</a>
+                        <span class="me-3">|</span>
+                        <a href="#" class="me-3">繁</a>
+                        <a href="#" class="me-3">简</a>
+                        <a href="#" class="me-3">Eng</a>
+                    </nav>
+                    <nav class="nav-menu zbnav">
+                        <a href="details.html" class="me-3">關於比賽</a>
+                        <a href="enroll.html" class="me-3">報名詳情</a>
+                        <a href="course-map.html" class="me-3">賽程表</a>
+                        <a href="highlight.html" class="me-3">比賽花絮</a>
+                        <a href="news.html" class="me-3">宣傳推廣</a>
+                    </nav>
+                </div>
+            </div>
         </nav>
     </div>
 </header>
