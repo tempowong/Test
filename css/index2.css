@@ -47,21 +47,14 @@ a{text-decoration:none}
     height: auto;
 }
 
-@media (max-width:800px){
-    .banner{
-        background-attachment: initial;
-    }
-}
+/* ===================================================================
+ * # IOS devices not recognices fixed background
+ *
+ * ------------------------------------------------------------------- */
 
-@media (max-width:600px){
+@media only screen and (max-width:1024px){
     .banner{
-        background-attachment: initial;
-    }
-}
-
-@media (max-width:400px){
-    .banner{
-        background-attachment: initial;
+        background-attachment: scroll !important;
     }
 }
 
