@@ -1,0 +1,109 @@
+h2 {
+    margin-top: 0;  /* Remove top margin for headings */
+}
+
+.award {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.champion {
+    background-color: #f0b54f;
+}
+
+.runner-up {
+    background-color: #ec6b3f;
+}
+
+.third-place {
+    background-color: #56a8e1;
+}
+
+.best-debater-final {
+    background-color: #4db8e1;
+}
+
+.best-debater-semi {
+    background-color: #af8bc6;
+}
+
+.award h2 {
+    align-items: center;
+    margin: 8px 0;
+    font-size: 20px; /* Set consistent font size for headings */
+    font-weight: bold;
+}
+
+.award p {
+    align-items: center;
+    margin: 8px 0;
+    font-size: 20px; /* Set consistent font size for prize descriptions */
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .prize-info-1{
+        flex-direction: column;
+        width: 80%;
+        margin-right:50px;
+        align-items: center;
+    }
+
+    .prize-info-2{
+        flex-direction: column;
+        width: 80%;
+        margin-left:50px;
+        align-items: center;
+    }
+
+    .prize-info-3{
+        flex-direction: column;
+        width: 80%;
+        margin-left:50px;
+        align-items: center;
+    }
+
+@media (max-width: 600px){
+    .prize-info-1{
+        align-items: center;
+    }
+    
+    .prize-info-2{
+        align-items: center;
+    }
+
+    .award h2 {
+        font-size: 0.8rem;
+    }
+
+    .award p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 374px){
+    .prize-info-1{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .prize-info-2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .award h2 {
+        font-size: 0.8rem;
+    }
+
+    .award p {
+        font-size: 0.8rem;
+    }
+    }
+
+}
+
