@@ -57,29 +57,89 @@
   <!-- container -->
   
         <div id="container">
-            <section>
-              <div class="wrapper">
-                <div class="main_view" data-aos="fade-up"><img src="./asset/banner_title1.png" alt="2024-2024 平等機會 中學辯論比賽" />
-                </div>        
-                </h2>
-              </div>
-            </section>
+          
+
             <main>
               <div class="content_wrapper">
-        
-                <div class="container" data-aos="fade-down">
-                  <div class="unit">比賽花絮</div>
-                  <div class="border-bottom"></div>
-                </div>
-              <section id="qualifications" data-aos="fade-up"> 
-                <div class="clips">
-                  <div class="sub_main">即將推出</a></div>
-            </div>
-              
-          
-              
+                <section id="gallery" data-aos="fade-up"> 
+
+                  <div class="gallery-container">
+                    <div class="container" data-aos="fade-down">
+                      <div class="gallery-header">比賽花絮</div>
+                    </div>
+
+                    <button class="gallery-previous" onclick="myFunction()">previous</button>
+                    <button class="gallery-next" onclick="myFunction()">next</button>
+
+                    <script>
+                      function myFunction() {
+                        var x = document.getElementById("album-hide");
+                        var y = document.getElementById("album-hide-1");
+                        if (x.style.display === "block" && y.style.display === "none") {
+                          x.style.display = "none";
+                          y.style.display = "block";
+                        } else {
+                          x.style.display = "block";
+                          y.style.display = "none";
+                        }
+                      } 
+                    </script>
+
+                    <div id="album-hide">
+                      <div class="album">
+                        <div class="responsive-container-block bg">
+                          <div class="responsive-container-block img-cont">
+                            <img class="img" src="https://t3.ftcdn.net/jpg/02/35/59/14/240_F_235591464_YBmhaAqheQMZNzruQzOxDHj1W0XoypdN.jpg">
+                            <img class="img" src="https://t4.ftcdn.net/jpg/03/29/39/29/240_F_329392938_zs8LWT0drFjXzIhZTlrsfuXihIYEDTT3.jpg">
+                            <img class="img img-last" src="https://t3.ftcdn.net/jpg/04/89/58/52/240_F_489585279_2P375dijG9QOA3oD39hvtosKmaANlQBO.jpg">
+                          </div>
+                          <div class="responsive-container-block img-cont">
+                            <img class="img img-big" src="https://t3.ftcdn.net/jpg/10/31/42/04/240_F_1031420403_9t2oAJBsof5Q14c2qtwfItOa3ovlIaUm.jpg">
+                            <img class="img img-big img-last" src="https://t3.ftcdn.net/jpg/09/95/37/44/240_F_995374453_CCy91U2TJy3X1JE3SB3BqN9p5TbDSarJ.jpg">
+                          </div>
+                          <div class="responsive-container-block img-cont">
+                            <img class="img" src="https://t3.ftcdn.net/jpg/03/15/31/42/240_F_315314252_LrYejVobVGK9knvoxlCZLgB9eevsL3lX.jpg">
+                            <img class="img" src="https://t4.ftcdn.net/jpg/08/21/41/71/240_F_821417118_neWbXwboKeYMcD3X9GW92Z9pJgu1UgQO.jpg">
+                            <img class="img" src="https://t4.ftcdn.net/jpg/03/41/65/71/240_F_341657141_gjDGxrGjZeqcCdChqu6Y1fi9JQTwH53n.jpg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                    <div id="album-hide-1">
+                      <div class="album-1">
+                        <div class="responsive-container-block-1 bg">
+                          <div class="responsive-container-block-1 img-cont">
+                            <img class="img" src="https://t4.ftcdn.net/jpg/05/87/55/95/240_F_587559578_6pi5S0oUL5sAF5fagceNwolJlA4yt2VE.jpg">
+                            <img class="img" src="https://t3.ftcdn.net/jpg/03/15/31/42/240_F_315314252_LrYejVobVGK9knvoxlCZLgB9eevsL3lX.jpg">
+                            <img class="img img-last" src="https://t3.ftcdn.net/jpg/04/89/58/52/240_F_489585279_2P375dijG9QOA3oD39hvtosKmaANlQBO.jpg">
+                          </div>
+                          <div class="responsive-container-block-1 img-cont">
+                            <img class="img img-big" src="https://t3.ftcdn.net/jpg/08/38/18/96/240_F_838189661_ztowhPbd4ym9hkOfcmdz9IuiZ2NyUvzd.jpg">
+                            <img class="img img-big img-last" src="https://t3.ftcdn.net/jpg/09/95/37/44/240_F_995374453_CCy91U2TJy3X1JE3SB3BqN9p5TbDSarJ.jpg">
+                          </div>
+                          <div class="responsive-container-block-1 img-cont">
+                            <img class="img" src="https://t4.ftcdn.net/jpg/02/97/84/11/240_F_297841165_YmonlKdy3Cj36NDF8Kco5Pw6A1b3ydVN.jpg">
+                            <img class="img" src="https://t4.ftcdn.net/jpg/08/21/41/71/240_F_821417118_neWbXwboKeYMcD3X9GW92Z9pJgu1UgQO.jpg">
+                            <img class="img" src="https://t4.ftcdn.net/jpg/03/41/65/71/240_F_341657141_gjDGxrGjZeqcCdChqu6Y1fi9JQTwH53n.jpg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                    <div class="download-container" data-aos="fade-up">
+                      <a href="./asset/doc/繁體版＿平等機會盃章程.pdf" class="download-container" download>按此下載比賽相片</a>
+                    </div><br><br>
+
+                   </div>
+                </section>
+              </div>
             </main>
-          </div>
+        </div>
+
+
           <footer>
             <div class="footer-content">
                 <div class="copyright ">2024 © 平等機會委員會，版權所有 不得轉載</div>
