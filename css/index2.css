@@ -357,6 +357,15 @@ a{text-decoration:none}
         margin-top: 2vw;
     }
 
+    .gallery-container {
+        position: relative;
+        border: 7px solid black;
+        background-color: #eedfb0;
+        justify-content: center;
+        align-self: center;
+        padding: 2rem;
+    }
+
     .objective-header{
         position: absolute;
         left: 50%;
@@ -407,6 +416,22 @@ a{text-decoration:none}
         font-size: 1rem;
         font-weight: bold;
         margin-top: -25px;
+    }
+
+    .gallery-header{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #0e6666;
+        padding: 0.5rem 1rem;
+        border: 5px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        font-size: 40px;
+        color: #ffffff;
+        text-shadow: 1px 0 #ffffff;
+        letter-spacing:1px;
+        font-weight:bold;
+        font-weight: 900px;
     }
 
     @media (max-width:500px){
@@ -897,7 +922,84 @@ a{text-decoration:none}
     }
 }
 
+/* ------------------------------------------------------------------- 
+ * ## Starburst
+ * ------------------------------------------------------------------- */
+ .starburst-1 {
+    height: 80px;
+    width: 80px; /* adjust to control the size */
+    aspect-ratio: 1;
+    clip-path: polygon(100% 50%,78.98% 57.76%,93.3% 75%,71.21% 71.21%,75% 93.3%,57.76% 78.98%,50% 100%,42.24% 78.98%,25% 93.3%,28.79% 71.21%,6.7% 75%,21.02% 57.76%,0% 50%,21.02% 42.24%,6.7% 25%,28.79% 28.79%,25% 6.7%,42.24% 21.02%,50% 0%,57.76% 21.02%,75% 6.7%,71.21% 28.79%,93.3% 25%,78.98% 42.24%);
+  }
+  
 
+/* ------------------------------------------------------------------- 
+ * ## Sparkle
+ * ------------------------------------------------------------------- */
+
+.sparkle-1 {
+    height: 80px;
+    width: 75px;
+    background: #EDC951;
+    mask: radial-gradient(#0000 71%, #000 72%) 10000% 10000%/99.5% 99.5%;
+
+    /* if you will use a different unit than px consider round()
+    height: round(__,1px);
+    width: round(__,1px);
+    */
+    position: relative;
+    margin-bottom: -50px;
+    z-index:100;
+    animation-name: animation-1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-1 {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+.sparkle-outline {
+    --b: 10px; /* border thickness */
+
+    height: 300px;
+    width: 250px;
+    background: #EDC951;
+    mask: radial-gradient(#0000 71%, #000 72% calc(72% + var(--b)),#0000 calc(73% + var(--b))) 10000% 10000%/99.5% 99.5%;
+
+    /* if you will use a different unit than px consider round()
+    height: round(__,1px);
+    width: round(__,1px);
+    */
+}
 
 /* ------------------------------------------------------------------- 
  * ## Ribbon
@@ -1095,6 +1197,25 @@ a{text-decoration:none}
                 margin-top: -70px;
             }
         }
+
+        .qualifications-ribbon-5 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+            margin-left: -56.5px;
+            margin-top: -77px;
+        }
+            .qualifications-ribbon-5 {
+                --r: .8em; /* control the cutout */
+    
+                border-block: .5em solid #0000;
+                padding-inline: .5em calc(var(--r) + .25em);
+                line-height: 1.8;
+                clip-path: polygon(100% 0,0 0,0 100%,100% 100%,calc(100% - var(--r)) calc(100% - .25em),100% 50%,calc(100% - var(--r)) .25em);
+                background:
+                #548ee4 padding-box; /* the color  */
+                width: 200px;
+            }
 
     .schedule-ribbon{
         position: absolute;
@@ -1294,7 +1415,7 @@ a{text-decoration:none}
 
 
  /* ------------------------------------------------------------------- 
- * ## enroll
+ * ## Subpage enroll
  * ------------------------------------------------------------------- */
     .btn-container{
         display: block;
@@ -1376,6 +1497,374 @@ a{text-decoration:none}
     opacity: 1;
     visibility: visible;
   }  
+
+/* ------------------------------------------------------------------- 
+ * ## Subpage highlight button
+ * ------------------------------------------------------------------- */
+  
+.gallery-previous{
+    float: left;
+    width: 120px;
+    flex: 1;
+    padding: 5px 10px;
+    margin:25px;
+    border-radius: 999px;
+    border: 5px solid #000000;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #000000;
+    cursor: pointer;
+    user-select: none;
+    background: transparent;
+    background-image: url(../asset/nav-bg-fill-blue.png);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+    filter: hue-rotate(300deg);
+}
+
+.gallery-previous:hover {
+    background-position: 500% 100%;
+}
+
+.gallery-next{
+    float: right;
+    width: 120px;
+    flex: 1;
+    padding: 5px 10px;
+    margin:25px;
+    border-radius: 999px;
+    border: 5px solid #000000;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #000000;
+    cursor: pointer;
+    user-select: none;
+    background: transparent;
+    background-image: url(../asset/nav-bg-fill-blue.png);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+    filter: hue-rotate(300deg);
+}
+
+.gallery-next:hover {
+    background-position: 500% 100%;
+}
+
+@media (max-width:600px){
+    .gallery-header{
+        font-size: 1rem;
+        margin-top: -65px;
+    }
+    
+    .gallery-previous{
+        width: 30%;
+        height: 30%;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .gallery-next{
+        width: 30%;
+        height: 30%;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 2px;
+    }
+}
+
+@media (max-width:414px){
+    .gallery-header{
+        font-size: 1rem;
+        margin-top: -65px;
+    }
+    
+    .gallery-previous{
+        width: 30%;
+        height: 30%;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .gallery-next{
+        width: 30%;
+        height: 30%;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 2px;
+    }
+}
+
+/* ------------------------------------------------------------------- 
+ * ## Album 1
+ * ------------------------------------------------------------------- */
+
+#album-hide{
+    display: block;
+}
+
+ .album .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .album .responsive-container-block.bg {
+    max-width: 1320px;
+    margin: 0 0 0 0;
+    justify-content: space-between;
+  }
+  
+  .album .img {
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 7px solid black;
+    border-radius: 10px;
+  }
+  
+  .album #i9rb {
+    color: black;
+  }
+  
+  .album #ir6i {
+    color: black;
+  }
+  
+  .album #ikz3b {
+    color: black;
+  }
+  
+  .album .responsive-container-block.img-cont {
+    flex-direction: column;
+    max-width: 33.3%;
+    min-height: auto;
+    margin: 0 0 0 0;
+    height: 100%;
+  }
+  
+  .album #ipix {
+    color: black;
+  }
+  
+  .album #ipzoh {
+    color: black;
+  }
+  
+  .album #ig5q8 {
+    color: black;
+  }
+  
+  .album #imtzl {
+    color: black;
+  }
+  
+  .album #i53es {
+    color: black;
+  }
+  
+  .album .img.img-big {
+    height: 50%;
+    margin: 0 0 16px 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .album .img {
+      margin: 0 0 18px 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .album .img {
+      max-width: 32.5%;
+      margin: 0 0 0 0;
+    }
+  
+    .album .responsive-container-block.bg {
+      flex-direction: column;
+    }
+  
+    .album .responsive-container-block.img-cont {
+      max-width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .album .img.img-big {
+      max-width: 49%;
+      margin: 0 0 0 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .album .img {
+      max-width: 94%;
+      margin: 0 0 25px 0;
+    }
+  
+    .album .responsive-container-block.img-cont {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 10px 10px 10px;
+    }
+  
+    .album .img.img-big {
+      max-width: 94%;
+      margin: 0 0 25px 0;
+    }
+  
+    .album .img.img-last {
+      margin: 0 0 5px 0;
+    }
+  }
+
+/* ------------------------------------------------------------------- 
+ * ## album 2
+ * ------------------------------------------------------------------- */
+
+ #album-hide-1{
+    display: none;
+}
+
+ .album-1 .responsive-container-block-1 {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .album-1 .responsive-container-block-1 .bg {
+    max-width: 1320px;
+    margin: 0 0 0 0;
+    justify-content: space-between;
+  }
+  
+  .album-1 .img {
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 7px solid black;
+    border-radius: 10px;
+  }
+  
+  .album-1 #i9rb {
+    color: black;
+  }
+  
+  .album-1 #ir6i {
+    color: black;
+  }
+  
+  .album-1 #ikz3b {
+    color: black;
+  }
+  
+  .album-1 .responsive-container-block-1 .img-cont {
+    flex-direction: column;
+    max-width: 33.3%;
+    min-height: auto;
+    margin: 0 0 0 0;
+    height: 100%;
+  }
+  
+  .album-1 #ipix {
+    color: black;
+  }
+  
+  .album-1 #ipzoh {
+    color: black;
+  }
+  
+  .album-1 #ig5q8 {
+    color: black;
+  }
+  
+  .album-1 #imtzl {
+    color: black;
+  }
+  
+  .album-1 #i53es {
+    color: black;
+  }
+  
+  .album-1 .img.img-big {
+    height: 50%;
+    margin: 0 0 16px 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .album-1 .img {
+      margin: 0 0 18px 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .album-1 .img {
+      max-width: 32.5%;
+      margin: 0 0 0 0;
+    }
+  
+    .album-1 .responsive-container-block-1.bg {
+      flex-direction: column;
+    }
+  
+    .album-1 .responsive-container-block-1.img-cont {
+      max-width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .album-1 .img.img-big {
+      max-width: 49%;
+      margin: 0 0 0 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .album-1 .img {
+      max-width: 94%;
+      margin: 0 0 25px 0;
+    }
+  
+    .album-1 .responsive-container-block.img-1-cont {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 10px 10px 10px;
+    }
+  
+    .album-1 .img.img-big {
+      max-width: 94%;
+      margin: 0 0 25px 0;
+    }
+  
+    .album-1 .img.img-last {
+      margin: 0 0 5px 0;
+    }
+  }
 
 /* ------------------------------------------------------------------- 
  * ## medium size devices
