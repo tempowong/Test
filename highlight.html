@@ -75,17 +75,23 @@
                       function myFunction() {
                         var x = document.getElementById("album-hide");
                         var y = document.getElementById("album-hide-1");
+                        var z = document.getElementById("gallery-subhead");
                         if (x.style.display === "block" && y.style.display === "none") {
                           x.style.display = "none";
                           y.style.display = "block";
+                          z.innerHTML = "EOC Inter-SChool Debate Competition - Tuesday February 25, 2025 - Highlights";
                         } else {
                           x.style.display = "block";
                           y.style.display = "none";
+                          z.innerHTML = "EOC Inter-SChool Debate Competition - Tuesday February 18, 2025 - Highlights";
                         }
                       } 
                     </script>
                     <header class="gallery-headline">Daily news</header>
-                    <div class="subhead">EOC Inter-SChool Debate Competition- Friday November 29, 2024 - Highlights</div>
+                    <div id="gallery-subhead">
+                      <div class="subhead">EOC Inter-SChool Debate Competition - Tuesday February 18, 2025 - Highlights</div>
+                    </div>
+                    
                     <div id="album-hide">
                       <div class="album">
                         <div class="responsive-container-block bg">
