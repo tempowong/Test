@@ -72,7 +72,7 @@ a{text-decoration:none}
  
 
 .register-button {
-    background: #FFD700;
+    background: #eeb13f;
     border: 2px solid black;
     border-radius: 5px;
     cursor: pointer;
@@ -151,25 +151,20 @@ a{text-decoration:none}
     height: 100%;
 }
 #container .wrapper{
-    width: 75%; 
-    height: 100%;
+    width: 80%; 
+    height: 80%;
     background-size: cover;
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0 auto;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 .main_view{
-    position: relative;
-    max-width: 1400px;
-    overflow: hidden;
-    width: 100%;
-    margin:auto;
-    padding-top: -50px;
-    opacity: 0;
-    justify-items: center;
+    
+    
 }
 .main_view img{
     width: 100%;
@@ -226,30 +221,16 @@ a{text-decoration:none}
     }
 
     @media (max-width:600px){
-        .main_view{
-            width: 150%;
-            max-width: 150%;
-            margin-left: -28%;
-            margin-right: -28%;
-        }
-
-        .content_wrapper{
-            margin-top: -30px;
-            top: 0;
+        #container .wrapper{
+            width:70%;
+            height:70%;
         }
     }
 
     @media (max-width:414px){
-        .main_view{
-            width: 150%;
-            max-width: 150%;
-            margin-left: -28%;
-            margin-right: -28%;
-        }
-
-        .content_wrapper{
-            margin-top: -30px;
-            top: 0;
+        #container .wrapper{
+            width:70%;
+            height:70%;
         }
     }
 
@@ -344,6 +325,14 @@ a{text-decoration:none}
         background-color: #eedfb0;
         padding: 2rem;
         margin-top: 2vw;
+    }
+
+    .qualifications-container-3 {
+        position: relative;
+        border: 7px solid black;
+        background-color: #eedfb0;
+        padding: 2rem;
+        margin-top: 10vw;
     }
 
     .rules-container {
@@ -1003,6 +992,7 @@ a{text-decoration:none}
         transform-origin: bottom right;
         clip-path: polygon(calc(100% - .7lh/tan(var(--a))) 0,0 0,var(--r) 50%,0 100%,100% 100%);
       }
+    
 
     .qualifications-ribbon{
         position: absolute;
@@ -1029,7 +1019,81 @@ a{text-decoration:none}
             #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% 100% no-repeat;
             clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
             background-color: #834b9c; /* the main color */
-            width: 300px;
+            width: 400px;
+        }
+
+        .qualifications-ribbon-2{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0.5rem 1rem;
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin-top: -87px;
+        }
+            .qualifications-ribbon-2{
+                --s: 1.8em; /* the ribbon size */
+                --d: .8em;  /* the depth */
+                --c: .8em;  /* the cutout part */
+        
+                padding: 0 calc(var(--s) + .5em) var(--d);
+                line-height: 1.8;
+                background:
+                conic-gradient(at left  var(--s) bottom var(--d),
+                #0000 25%,#0008 0 37.5%,#0004 0) 0   /50% 100% no-repeat,
+                conic-gradient(at right var(--s) bottom var(--d),
+                #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% 100% no-repeat;
+                clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
+                background-color: #87bb44; /* the main color */
+                width: 300px;
+            }
+        
+        .qualifications-ribbon-3 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+            margin-left: 20px;
+            margin-top: -63px;
+
+        }
+            .qualifications-ribbon-3 {
+                --r: .8em; /* control the cutout */
+            
+                padding-inline: .5em calc(var(--r) + .25em);
+                line-height: 1.8;
+                clip-path: polygon(100% 0,0 0,0 100%,100% 100%,100% calc(100% - .25em),calc(100% - var(--r)) 50%,100% .25em);
+                background:
+                #e45454 padding-box; /* the color  */
+                width: fit-content;
+
+            }
+
+        .qualifications-ribbon-4 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+            margin-left: 15px;
+            margin-top: -77px;
+        }
+            .qualifications-ribbon-4 {
+                --r: .8em; /* control the cutout */
+    
+                border-block: .5em solid #0000;
+                padding-inline: .5em calc(var(--r) + .25em);
+                line-height: 1.8;
+                clip-path: polygon(100% 0,0 0,0 100%,100% 100%,calc(100% - var(--r)) calc(100% - .25em),100% 50%,calc(100% - var(--r)) .25em);
+                background:
+                #e45454 padding-box; /* the color  */
+                width: fit-content;
+            }
+
+        @media (max-width:376px){
+            .qualifications-ribbon-4{
+                font-size: 22px;
+                margin-top: -70px;
+            }
         }
 
     .schedule-ribbon{
@@ -1232,22 +1296,33 @@ a{text-decoration:none}
  /* ------------------------------------------------------------------- 
  * ## enroll
  * ------------------------------------------------------------------- */
-    .btn{
-        justify-items: center;
-        padding-bottom: 10px;
+    .btn-container{
+        display: block;
+        text-align: center;
     }
+
+    .download-container{
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: #000000;
+
+    }
+
     .enroll_btn {
+        display: inline-block;
         min-width: 200px;
-        height: 80px;
+        height: 70px;
         font-size: 1.625rem;
         text-transform: uppercase;
         letter-spacing: 2.5px;
-        font-weight: 500;
+        font-weight: 900;
         color: #000;
-        background-color: #fff;
-        border: none;
+        background-color: #eeb13f;
+        border: 4px solid black;
         border-radius: 10px;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 9px #474444;
         transition: all 0.3s ease 0s;
         cursor: pointer;
         outline: none;
@@ -1255,7 +1330,13 @@ a{text-decoration:none}
         }
       
       .enroll_btn:hover {
-        transform: translateY(-10px);
+        background-color: #ffb62e;
+      }
+
+      .enroll_btn:active {
+        background-color: #eeb13f;
+        box-shadow: 0 5px #474444;
+        transform: translateY(10px);
       }
     
  /*back to top*/ 
