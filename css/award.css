@@ -45,7 +45,35 @@ h2 {
     font-weight: bold;
 }
 
-@media (max-width: 800px) {
+.prize-info-1{
+    width: 800px;
+    margin-left:50px;
+    float:left;
+    align-items: left;
+}
+
+.prize-info-2{
+    width: 800px;
+    float: right;
+    margin-right:50px;
+    align-items: right;
+}
+
+.prize-info-3{
+    width: 800px;
+    align-items: left;
+}
+
+.prize-headline-1 {
+    text-align: left;
+    
+}
+
+.prize-headline-2 {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
     .prize-info-1{
         flex-direction: column;
         width: 80%;
@@ -63,45 +91,80 @@ h2 {
     .prize-info-3{
         flex-direction: column;
         width: 80%;
-        margin-left:50px;
         align-items: center;
     }
 
 @media (max-width: 600px){
-    .prize-info-1{
-        align-items: center;
-    }
-    
-    .prize-info-2{
-        align-items: center;
+    .award{
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
     }
 
     .award h2 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .award p {
         font-size: 0.8rem;
+    }
+
+    .prize-headline-1{
+        width: 150%;
+    }
+
+    .prize-headline-2{
+        text-align: left;
+        width: 150%;
+    }
+
+    .prize-info-1{
+        display:contents;
+    }
+    
+    .prize-info-2{
+        display:contents;
+    }
+
+    .prize-info-3{
+        display:contents;
     }
 }
 
-@media (max-width: 374px){
-    .prize-info-1{
+@media (max-width: 414px){
+    .award{
         flex-direction: column;
-        align-items: center;
-    }
-    
-    .prize-info-2{
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
+        padding: 5px;
     }
 
     .award h2 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .award p {
         font-size: 0.8rem;
+    }
+
+    .prize-headline-1{
+        width: 150%;
+    }
+
+    .prize-headline-2{
+        text-align: left;
+        width: 150%;
+    }
+
+    .prize-info-1{
+        display:contents;
+    }
+    
+    .prize-info-2{
+        display:contents;
+    }
+
+    .prize-info-3{
+        display:contents;
     }
     }
 
