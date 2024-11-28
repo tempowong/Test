@@ -128,6 +128,15 @@ h2 {
 
     .prize-info-3{
         display:contents;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prize-info-3 {
+    }
+
+    .prize-info-3 a{
+        font-weight: 900px;
     }
 }
 
