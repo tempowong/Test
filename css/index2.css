@@ -13,104 +13,22 @@ a{text-decoration:none}
  * # header styles
  *
  * ------------------------------------------------------------------- */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ .header {
     background: white;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #eee;
 }
 
-.header .header-right{
-    list-style: none
+.logo-container img {
+    height: 60px;
 }
 
-.header .header-right li{
-    display: inline-block;
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
 }
-
-.header .header-right li a{
-    color: #2e2b2b;
-    transition: all 0.3s ease 0s;
-}
-
-.header .access-menu li{
-    display: inline-block;
-    padding: 100 0 0 0;
-}
-
-.header .access-menu li a{
-    font-size: 14px;
-}
-
-.header .offset{
-    -webkit-transform: translate3d(0, -100%, 0);
-    -ms-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-
-.header .scrolling{
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-.header .sticky{
-    position: fixed;
-    top: 0;
-    background-color: #ffffff !important;
-    opacity: 0;
-    z-index: 600;
-}
-
-.header .sticky .header-right {
-    top: 0;
-    right: 20px;
-    left: auto;
-}
-
-.header .sticky .scrolling {
-    opacity: 1;
-    visibility: visible;
-}
-
-nav .animation{
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    transition: all .5s ease 0s;
-    border-radius: 8px;
-}
-
-#mainmenu a:hover {
-    color: #118b6e; /* 悬停时文本颜色 
-    /*border-bottom: 2px solid #118b6e; /* 悬停时底部边框 */
-}
-
-/* -------------------------------------------------------------------
- * ## header logo 
- * ------------------------------------------------------------------- */
-
-.header .logo-container {
-    align-self:center;
-}
-
-.logo-container{
-    display: block;
-    margin: 3px 0 0 0;
-    padding: 0;
-    outline: 0;
-    border: none;
-}
-
-.logo-container img{
-    width: 600px;
-    height: 70px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+.nav-menu a:hover {
+    color: #118b6e; /* 悬停时文本颜色 */
+    border-bottom: 2px solid #118b6e; /* 悬停时底部边框 */
 }
 
 .banner {
@@ -119,7 +37,8 @@ nav .animation{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -128,6 +47,29 @@ nav .animation{
     max-width: 100%;
     height: auto;
 }
+
+/* ===================================================================
+ * # IOS devices not recognices fixed background
+ *
+ * ------------------------------------------------------------------- */
+
+ /* Fixed background for tablet and mobile */
+@media all and (max-width:1024px) {
+    .banner:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-position: inherit;
+        background-image: inherit;
+        background-size: inherit;
+        background-attachment: inherit;
+        background-repeat: inherit;
+        position: fixed;
+        top: 0;
+        z-index: -1;
+    }
+}
+ 
 
 .register-button {
     background: #FFD700;
@@ -234,7 +176,6 @@ nav .animation{
     height: auto;
 }
 
-
 .content_wrapper{
     position: flex;
     max-width: 1400px;
@@ -243,7 +184,7 @@ nav .animation{
     z-index: 2;
     padding: 0 50px 50px 50px;
     box-sizing: border-box;
-       
+    margin-top: -50px;
 }
 .content_wrapper .title{
     position: absolute;
@@ -269,6 +210,49 @@ nav .animation{
         letter-spacing: 1.5px;
         font-weight: bold;
     } 
+
+    @media (max-width:768px){
+        .main_view{
+            width: 150%;
+            max-width: 150%;
+            margin-left: -28%;
+            margin-right: -28%;
+        }
+
+        .content_wrapper{
+            margin-top: -30px;
+            top: 0;
+        }
+    }
+
+    @media (max-width:600px){
+        .main_view{
+            width: 150%;
+            max-width: 150%;
+            margin-left: -28%;
+            margin-right: -28%;
+        }
+
+        .content_wrapper{
+            margin-top: -30px;
+            top: 0;
+        }
+    }
+
+    @media (max-width:414px){
+        .main_view{
+            width: 150%;
+            max-width: 150%;
+            margin-left: -28%;
+            margin-right: -28%;
+        }
+
+        .content_wrapper{
+            margin-top: -30px;
+            top: 0;
+        }
+    }
+
 /* ------------------------------------------------------------------- 
  * ## About redirection GOTO (disabled)
  * ------------------------------------------------------------------- */
@@ -333,7 +317,7 @@ nav .animation{
 
     .objective-container {
         position: relative;
-        padding: 2rem;
+        padding: 1rem;
         margin-top: 2vw;
     }
 
@@ -344,10 +328,6 @@ nav .animation{
         justify-content: center;
         align-items: center;
         perspective: 1000px;
-    }
-
-    .schedule-container img{
-        object-fit: cover;
     }
 
     .qualifications-container {
@@ -384,7 +364,7 @@ nav .animation{
 
     .prize-container {
         position: relative;
-        padding: 2rem;
+        padding: 3rem;
         margin-top: 2vw;
     }
 
@@ -395,6 +375,7 @@ nav .animation{
         background-color: #eeb13f;
         padding: 0.5rem 1rem;
         border: 5px solid black;
+        border-radius: 10px;
         font-size: 1rem;
         font-weight: bold;
         margin-top: -25px;
@@ -407,6 +388,7 @@ nav .animation{
         background-color: #eeb13f;
         padding: 0.5rem 1rem;
         border: 5px solid black;
+        border-radius: 10px;
         font-size: 1rem;
         font-weight: bold;
         margin-top: -70px;
@@ -419,6 +401,7 @@ nav .animation{
         background-color: #eeb13f;
         padding: 0.5rem 1rem;
         border: 5px solid black;
+        border-radius: 10px;
         font-size: 1rem;
         font-weight: bold;
         margin-top: -70px;
@@ -431,9 +414,78 @@ nav .animation{
         background-color: #eeb13f;
         padding: 0.5rem 1rem;
         border: 5px solid black;
+        border-radius: 10px;
         font-size: 1rem;
         font-weight: bold;
         margin-top: -25px;
+    }
+
+    @media (max-width:500px){
+        .objective-header{
+            border: 4px solid black;
+        }
+
+        .rules-header{
+            border: 4px solid black;
+        }
+
+        .qualifications-header{
+            border: 4px solid black;
+        }
+
+        .prize-header{
+            border: 4px solid black;
+        }
+
+        .qualifications-container{
+            border: 4px solid black;
+        }
+
+        .qualifications-container-2{
+            border: 4px solid black;
+        }
+
+        .rules-container{
+            border: 4px solid black;
+        }
+
+        .rules-container-2{
+            border: 4px solid black;
+        }
+    }
+
+    @media (max-width:414px){
+        .objective-header{
+            border: 4px solid black;
+        }
+
+        .rules-header{
+            border: 4px solid black;
+        }
+
+        .qualifications-header{
+            border: 4px solid black;
+        }
+
+        .prize-header{
+            border: 4px solid black;
+        }
+
+        .qualifications-container{
+            border: 4px solid black;
+        }
+
+        .qualifications-container-2{
+            border: 4px solid black;
+        }
+
+        .rules-container{
+            border: 4px solid black;
+        }
+
+        .rules-container-2{
+            border: 4px solid black;
+        }
     }
 
 /* ------------------------------------------------------------------- 
@@ -447,6 +499,7 @@ nav .animation{
         font-weight: 600;
         font-size: 18px;
         justify-content: center;
+        margin-top: -70px;
     }
 
     .index a{
@@ -460,7 +513,7 @@ nav .animation{
 
     .objective-index{
         background-color: #eeb13f;
-        border: 5px solid black;
+        border: 3px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -471,7 +524,7 @@ nav .animation{
 
     .qualifications-index{
         background-color: #eeb13f;
-        border: 5px solid black;
+        border: 3px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -482,7 +535,7 @@ nav .animation{
 
     .rules-index{
         background-color: #eeb13f;
-        border: 5px solid black;
+        border: 3px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -493,7 +546,7 @@ nav .animation{
 
     .prize-index{
         background-color: #eeb13f;
-        border: 5px solid black;
+        border: 3px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -502,34 +555,114 @@ nav .animation{
         font-weight: bold;
     }
 
-    @media (max-width:430px){
+    @media (max-width:1000px){
+        .index{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+            row-gap: .1px;
+            justify-content: center;
+        }
+
+        .index span {
+            border-right: 2px solid #000000
+        }
+    }
+
+
+    @media (max-width:768px){
+        .index{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 3px;
+            row-gap: .1px;
+            justify-content: center;
+        }
+
+        .index span {
+            border-right: 2px solid #000000
+        }
+    }
+
+    @media (max-width:600px){
         .objective-index{
-            width: 80px;
-            height: 30px;
-            padding: 0rem 0.5rem;
-            font-size: .7rem;
+            border: 3px solid black;
+            width: 90px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
 
         }
 
         .qualifications-index{
-            width: 80px;
-            height: 30px;
-            padding: 0rem 0.5rem;
-            font-size: .7rem;
+            border: 3px solid black;
+            width: 90px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
         }
 
         .rules-index{
-            width: 80px;
-            height: 30px;
-            padding: 0rem 0.5rem;
-            font-size: .7rem;
+            border: 3px solid black;
+            width: 90px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
         }
 
         .prize-index{
-            width: 80px;
-            height: 30px;
-            padding: 0rem 0.5rem;
-            font-size: .7rem;
+            border: 3px solid black;
+            width: 90px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
+        }
+
+        .index{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 2.2px;
+            row-gap: .1px;
+            justify-content: center;
+        }
+
+        .index span {
+            border-right: 0px solid #000000
+        }
+    }
+
+    @media (max-width:450px){
+        .objective-index{
+            border: 3px solid black;
+            width: 86px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
+
+        }
+
+        .qualifications-index{
+            border: 3px solid black;
+            width: 86px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
+        }
+
+        .rules-index{
+            border: 3px solid black;
+            width: 86px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
+        }
+
+        .prize-index{
+            border: 3px solid black;
+            width: 86px;
+            height: 40px;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
         }
 
         .index{
@@ -545,6 +678,50 @@ nav .animation{
         }
 
         
+        }
+
+        @media (max-width:414px){
+            .objective-index{
+                width: 75px;
+                height: 40px;
+                padding: 0.3rem 0rem;
+                font-size: .9rem;
+    
+            }
+    
+            .qualifications-index{
+                width: 75px;
+                height: 40px;
+                padding: 0.3rem 0rem;
+                font-size: .9rem;
+            }
+    
+            .rules-index{
+                width: 75px;
+                height: 40px;
+                padding: 0.3rem 0rem;
+                font-size: .9rem;
+            }
+    
+            .prize-index{
+                width: 75px;
+                height: 40px;
+                padding: 0.3rem 0rem;
+                font-size: .9rem;
+            }
+    
+            .index{
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 1px;
+                row-gap: .1px;
+                justify-content: center;
+            }
+    
+            .index span {
+                border-right: 0px solid #000000
+            }
+    
         }
 
 /* ------------------------------------------------------------------- 
@@ -621,6 +798,115 @@ nav .animation{
     transform: rotateY( 180deg );
     transition: transform 1s;
   }
+
+  @media (max-width:768px){
+    .schedule-card-1{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-2{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-3{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-4{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-5{
+        width: 40%;
+        height: 40%
+    }
+  }
+
+
+  @media (max-width:620px){
+    .schedule-card-1{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-2{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-3{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-4{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-5{
+        width: 40%;
+        height: 40%
+    }
+    }
+
+    @media (max-width:500px){
+        .schedule-card-1{
+            width: 40%;
+            height: 40%
+        }
+    
+        .schedule-card-2{
+            width: 40%;
+            height: 40%
+        }
+    
+        .schedule-card-3{
+            width: 40%;
+            height: 40%
+        }
+    
+        .schedule-card-4{
+            width: 40%;
+            height: 40%
+        }
+    
+        .schedule-card-5{
+            width: 40%;
+            height: 40%
+        }
+    }
+
+  @media (max-width:414px){
+    .schedule-card-1{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-2{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-3{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-4{
+        width: 40%;
+        height: 40%
+    }
+
+    .schedule-card-5{
+        width: 40%;
+        height: 40%
+    }
+}
 
 
 
@@ -755,7 +1041,7 @@ nav .animation{
         font-weight: bold;
         color: #fff;
         text-align: center;
-        margin-top: -7px;
+        margin-top: -9px;
     }
         .schedule-ribbon{
             --s: 1.8em; /* the ribbon size */
@@ -786,38 +1072,24 @@ nav .animation{
         border-radius: 3px;
     }
 
-    .prize-info-1{
-        width: 800px;
-        margin-left:50px;
-        float:left;
-        align-items: left;
-    }
-    
-    .prize-info-2{
-        width: 800px;
-        float: right;
-        margin-right:50px;
-        align-items: right;
-    }
-    
-    .prize-info-3{
-        width: 800px;
-        align-items: left;
+    @media (max-width:500px){
+        .objective-border-bottom{
+            padding-bottom: 4px;
+        }
+        
+        .prize-border-bottom{
+            padding-bottom: 4px;
+        }
     }
 
-    .prize-headline-1 {
-        font-size: 300%;
-        text-align: left;
-        font-style: italic;
-        color:#ffffff;    
-        text-shadow: 0px 1px, 1px 0px, 1px 1px;
-        letter-spacing: 1px;
-        font-weight:bolder;
-    }
-    
-    .prize-headline-2 {
-        text-align: right;
-        margin-top: 70px;
+    @media (max-width:414px){
+        .objective-border-bottom{
+            padding-bottom: 4px;
+        }
+        
+        .prize-border-bottom{
+            padding-bottom: 4px;
+        }
     }
 
     .paragraph_cn_objective{
