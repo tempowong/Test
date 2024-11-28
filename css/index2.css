@@ -1092,40 +1092,6 @@ a{text-decoration:none}
         }
     }
 
-    .prize-info-1{
-        width: 800px;
-        margin-left:50px;
-        float:left;
-        align-items: left;
-    }
-    
-    .prize-info-2{
-        width: 800px;
-        float: right;
-        margin-right:50px;
-        align-items: right;
-    }
-    
-    .prize-info-3{
-        width: 800px;
-        align-items: left;
-    }
-
-    .prize-headline-1 {
-        font-size: 300%;
-        text-align: left;
-        font-style: italic;
-        color:#ffffff;    
-        text-shadow: 0px 1px, 1px 0px, 1px 1px;
-        letter-spacing: 1px;
-        font-weight:bolder;
-    }
-    
-    .prize-headline-2 {
-        text-align: right;
-        margin-top: 70px;
-    }
-
     .paragraph_cn_objective{
         font-size: 25px;
         line-height: 200%;
