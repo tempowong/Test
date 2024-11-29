@@ -482,12 +482,17 @@ a{text-decoration:none}
             border: 4px solid black;
         }
 
+        .gallery-container{
+            border: 4px solid black;
+        }
+
         .gallery-header{
             font-size: 1.5rem;
             width: 70%;
             margin-top: -57px;
             text-align: center;
             align-items: center;
+            border: 4px solid rgb(0, 0, 0);
         }
         
         .gallery-previous{
@@ -540,7 +545,8 @@ a{text-decoration:none}
 
         .gallery-header{
             font-size: 1.5rem;
-            margin-top: -60px;
+            margin-top: -55px;
+
         }
 
         .gallery-previous{
@@ -561,7 +567,7 @@ a{text-decoration:none}
     @media (max-width:376px){
         .gallery-header{
             font-size: 1.5rem;
-            margin-top: -60px;
+            margin-top: -55px;
         }
 
         .gallery-previous{
@@ -1531,53 +1537,60 @@ a{text-decoration:none}
     .gallery-previous{
         width: 30%;
         height: 30%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
         padding: 2px;
+        border: 4px solid #000000;
     }
 
     .gallery-next{
         width: 30%;
         height: 30%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
         padding: 2px;
+        border: 4px solid #000000;
     }
+
 }
 
 @media (max-width:414px){
     .gallery-previous{
         width: 30%;
         height: 30%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
         padding: 2px;
+        border: 4px solid #000000;
     }
 
     .gallery-next{
         width: 30%;
         height: 30%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
         padding: 2px;
+        border: 4px solid #000000;
     }
 }
 
 @media (max-width:376px){
     .gallery-previous{
-        width: 28%;
+        width: 30%;
         height: 30%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
         padding: 2px;
+        border: 4px solid #000000;
     }
 
     .gallery-next{
-        width: 28%;
+        width: 30%;
         height: 30%;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
         padding: 2px;
+        border: 4px solid #000000;
     }
 }
 
@@ -1615,7 +1628,7 @@ a{text-decoration:none}
   .album .img {
     width: 100%;
     margin: 0 0 20px 0;
-    border: 7px solid black;
+    border: 5px solid black;
     border-radius: 10px;
   }
   
