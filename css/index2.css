@@ -303,11 +303,12 @@ a{text-decoration:none}
     }
 
     .schedule-container {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 50% 50%;
+        padding: 10px;
+        gap: 10px;
         justify-content: center;
-        align-items: center;
         perspective: 1000px;
     }
 
@@ -359,11 +360,12 @@ a{text-decoration:none}
 
     .gallery-container {
         position: relative;
+        
         border: 7px solid black;
         background-color: #eedfb0;
         justify-content: center;
         align-self: center;
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .objective-header{
@@ -434,6 +436,14 @@ a{text-decoration:none}
         font-weight: 900px;
     }
 
+    @media (max-width:768px){
+        .schedule-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
     @media (max-width:500px){
         .objective-header{
             border: 4px solid black;
@@ -470,25 +480,23 @@ a{text-decoration:none}
         .gallery-header{
             font-size: 1.5rem;
             width: 70%;
-            margin-top: -75px;
+            margin-top: -57px;
             text-align: center;
             align-items: center;
         }
         
         .gallery-previous{
-            width: 30%;
+            width: 100%;
             height: 30%;
-            font-size: 0.8rem;
+            font-size: 2rem;
             text-align: center;
-            padding: 2px;
         }
     
         .gallery-next{
-            width: 30%;
+            width: 100%;
             height: 30%;
-            font-size: 0.8rem;
+            font-size: 2rem;
             text-align: center;
-            padding: 2px;
         }
     }
 
@@ -527,14 +535,42 @@ a{text-decoration:none}
 
         .gallery-header{
             font-size: 1.5rem;
-            margin-top: -72px;
+            margin-top: -60px;
+        }
+
+        .gallery-previous{
+            width: 100%;
+            height: 30%;
+            font-size: 5rem;
+            text-align: center;
+        }
+    
+        .gallery-next{
+            width: 100%;
+            height: 30%;
+            font-size: 5rem;
+            text-align: center;
         }
     }
 
     @media (max-width:376px){
         .gallery-header{
             font-size: 1.5rem;
-            margin-top: -72px;
+            margin-top: -60px;
+        }
+
+        .gallery-previous{
+            width: 100%;
+            height: 30%;
+            font-size: 5rem;
+            text-align: center;
+        }
+    
+        .gallery-next{
+            width: 100%;
+            height: 30%;
+            font-size: 5rem;
+            text-align: center;
         }
     }
 
@@ -778,57 +814,13 @@ a{text-decoration:none}
  * ## About schedule card
  * ------------------------------------------------------------------- */
 
- .schedule-card-1{
+ .schedule-card{
     position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
  }
 
- .schedule-card-1:hover {
-    transform: rotateY( 180deg ) ;
-    transition: transform 0.5s;
- }
-
- .schedule-card-2{
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
- }
-
- .schedule-card-2:hover {
-    transform: rotateY( 180deg ) ;
-    transition: transform 0.5s;
- }
-
- .schedule-card-3{
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
- }
-
- .schedule-card-3:hover {
-    transform: rotateY( 180deg ) ;
-    transition: transform 0.5s;
- }
-
- .schedule-card-4{
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
- }
-
- .schedule-card-4:hover {
-    transform: rotateY( 180deg ) ;
-    transition: transform 0.5s;
- }
-
- .schedule-card-5{
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
- }
-
- .schedule-card-5:hover {
+ .schedule-card:hover {
     transform: rotateY( 180deg ) ;
     transition: transform 0.5s;
  }
@@ -850,113 +842,27 @@ a{text-decoration:none}
   }
 
   @media (max-width:768px){
-    .schedule-card-1{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-2{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-3{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-4{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-5{
-        width: 40%;
-        height: 40%
-    }
-  }
-
-
-  @media (max-width:620px){
-    .schedule-card-1{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-2{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-3{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-4{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-5{
-        width: 40%;
-        height: 40%
-    }
-    }
-
-    @media (max-width:500px){
-        .schedule-card-1{
-            width: 40%;
-            height: 40%
-        }
-    
-        .schedule-card-2{
-            width: 40%;
-            height: 40%
-        }
-    
-        .schedule-card-3{
-            width: 40%;
-            height: 40%
-        }
-    
-        .schedule-card-4{
-            width: 40%;
-            height: 40%
-        }
-    
-        .schedule-card-5{
-            width: 40%;
-            height: 40%
-        }
-    }
-
-  @media (max-width:414px){
-    .schedule-card-1{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-2{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-3{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-4{
-        width: 40%;
-        height: 40%
-    }
-
-    .schedule-card-5{
-        width: 40%;
-        height: 40%
+    .schedule-card{
+        width: 30%;
+        height: 30%
     }
 }
+
+@media (max-width:500px){
+    .schedule-card{
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media (max-width:414px){
+    .schedule-card{
+        width: 30%;
+        height: 30%;
+    }
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * ## Starburst
@@ -1459,7 +1365,9 @@ a{text-decoration:none}
     }
 
     .download-container{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         font-size: 25px;
         font-weight: bold;
