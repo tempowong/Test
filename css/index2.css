@@ -166,6 +166,7 @@ a{text-decoration:none}
     
     
 }
+
 .main_view img{
     width: 100%;
     height: auto;
@@ -466,6 +467,10 @@ a{text-decoration:none}
         }
 
         .qualifications-container-2{
+            border: 4px solid black;
+        }
+
+        .qualifications-container-3{
             border: 4px solid black;
         }
 
