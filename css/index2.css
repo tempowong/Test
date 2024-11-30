@@ -73,16 +73,18 @@ a{text-decoration:none}
 
 .register-button {
     background: #eeb13f;
-    border: 2px solid black;
+    border: 4px solid black;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .deadline {
     background: #008B8B;
     color: white;
-    border: 2px solid black;
+    border: 4px solid black;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .footer {
@@ -1885,7 +1887,7 @@ a{text-decoration:none}
     }
 
     .zbnav a {
-        border-bottom: 1px solid #ffd700;
+        border-bottom: 1px solid #000000;
         width: 70%;
         text-align: center;
         margin-left: 15%;
