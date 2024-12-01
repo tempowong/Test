@@ -1493,28 +1493,32 @@ a{text-decoration:none}
     .sub_paragraph_cn a:hover{
         color: #811608;
     }
+    
     .rundown_tb {
         width: 100%;
         border-collapse: collapse;
         margin-top: -20px;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: #eedfb0;
     }
     .rundown_tb th, td {
-        border: 1px solid #dddddd;
+        border: 3px solid #000000;
         text-align: left;
         padding: 8px;
     }
     .rundown_tb th {
-        background-color: #1d7186;
-        color:#fff;
+        background-color: #1d7f86;
+        color:#000000;
     }
     
     .rundown_tb tr{
-        color:#fff;
+        color:#000000;
     }
     .ul_sty.decimal{
         list-style: circle;
         display: block;
-        color: #fff;
+        color: #000000;
     }
 
 /* ------------------------------------------------------------------- 
@@ -2056,7 +2060,43 @@ a{text-decoration:none}
   }
 
 /* ------------------------------------------------------------------- 
- * ## medium size devices
+ * ## large size devices
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width:2560px){
+    .footer-content .copyright{
+        font-size: 14px;
+        width: 100%;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .footer-content .contact{
+        font-size: 14px;
+        width: 100%;
+        margin-right: 10px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:1800px){
+    .footer-content .copyright{
+        font-size: 14px;
+        width: 100%;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .footer-content .contact{
+        font-size: 14px;
+        width: 100%;
+        margin-right: 10px;
+        text-align: center;
+    }
+}
+
+/* ------------------------------------------------------------------- 
+ * ## laptop size devices
  * ------------------------------------------------------------------- */
  @media only screen and (max-width:1200px) {
     .logo-container img {
@@ -2064,7 +2104,19 @@ a{text-decoration:none}
         height: auto;
     }
 
-    
+    .footer-content .copyright{
+        font-size: 14px;
+        width: 100%;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .footer-content .contact{
+        font-size: 14px;
+        width: 100%;
+        margin-right: 10px;
+        text-align: center;
+    }
 
  }
 
@@ -2173,16 +2225,16 @@ footer{
     text-align: center;
 }
 .footer-content .copyright{
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
 }
 .footer-content{
     flex-direction: column-reverse;
-    gap:10px;
+    gap:5px;
     align-items: center;
 }
 .footer-content .contact{
-    column-gap: 40px;
+    column-gap: 5px;
     text-align:center;
 }
 .footer-content .mbr{display: block;}
@@ -2205,16 +2257,16 @@ footer{
     text-align: center;
 }
 .footer-content .copyright{
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
 }
 .footer-content{
     flex-direction: column-reverse;
-    gap:10px;
+    gap:5px;
     align-items: center;
 }
 .footer-content .contact{
-    column-gap: 40px;
+    column-gap: 5px;
     text-align:center;
 }
 .footer-content .mbr{display: block;}
@@ -2229,16 +2281,16 @@ footer{
     text-align: center;
 }
 .footer-content .copyright{
-    font-size: 14px;
+    font-size: 13px;
     width: 100%;
 }
 .footer-content{
     flex-direction: column-reverse;
-    gap:10px;
+    gap:5px;
     align-items: center;
 }
 .footer-content .contact{
-    column-gap: 40px;
+    column-gap: 5px;
     text-align:center;
 }
 .footer-content .mbr{display: block;}
