@@ -1,7 +1,7 @@
 html {font-size:16px; scroll-behavior:smooth;}
-html.fontsize-s	{font-size:14px;}
-html.fontsize-m	{font-size:16px;}
-html.fontsize-l	{font-size:18px;}
+html.fontsize-s	{font-size:16px;}
+html.fontsize-m	{font-size:18px;}
+html.fontsize-l	{font-size:19px;}
 
 body {
     min-height: 100vh;
