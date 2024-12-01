@@ -1195,12 +1195,13 @@ a{text-decoration:none}
     .objective-cue-card{
         margin:auto;
         margin-top: 10px;
+        padding: 25px;
     }
 
     .objective-cue-card-english{
         margin:auto;
         font-size: 0.8rem;
-        padding: 25px;
+        padding: 20px;
         margin-top: 10px;
     }
 }
