@@ -1,7 +1,7 @@
 html {font-size:16px; scroll-behavior:smooth;}
-html.fontsize-s	{font-size:18px;}
-html.fontsize-m	{font-size:22px;}
-html.fontsize-l	{font-size:24px;}
+html.fontsize-s	{font-size:14px;}
+html.fontsize-m	{font-size:16px;}
+html.fontsize-l	{font-size:18px;}
 
 body {
     min-height: 100vh;
@@ -1096,7 +1096,7 @@ a{text-decoration:none}
     text-align: center;
     padding: 40px;
     margin-top: 20px;
-	background-image: linear-gradient(to bottom, #ebe3ce calc(1em - 1px), #000000 calc(1em - 1px), #ffffff 1em, #ffffff 1em);
+	background-image: linear-gradient(to bottom, #ebe3ce calc(1em - 1px), #4d4a4aad calc(1em - 1px), #ffffff 1em, #ffffff 1em);
 	background-position: 0% 1em;
 	background-size: 100% 1em;
 	background-repeat: repeat-y;
@@ -1137,7 +1137,7 @@ a{text-decoration:none}
     text-align: center;
     padding: 40px;
     margin-top: 20px;
-	background-image: linear-gradient(to bottom, #ebe3ce calc(1em - 1px), #2222229c calc(1em - 1px), #ffffff 1em, #ffffff 1em);
+	background-image: linear-gradient(to bottom, #ebe3ce calc(1em - 1px), #4d4a4aad calc(1em - 1px), #ffffff 1em, #ffffff 1em);
 	background-position: 0% 1em;
 	background-size: 100% 1em;
 	background-repeat: repeat-y;
@@ -2258,15 +2258,15 @@ a{text-decoration:none}
     .footer-content .copyright{
         font-size: 14px;
         width: 100%;
-        margin-right: 10px;
-        text-align: center;
+        margin-left: 70px;
+        text-align: left;
     }
 
     .footer-content .contact{
         font-size: 14px;
         width: 100%;
-        margin-right: 10px;
-        text-align: center;
+        margin-right: 70px;
+        text-align: right;
     }
 }
 
@@ -2274,15 +2274,15 @@ a{text-decoration:none}
     .footer-content .copyright{
         font-size: 14px;
         width: 100%;
-        margin-right: 10px;
-        text-align: center;
+        margin-left: 70px;
+        text-align: left;
     }
 
     .footer-content .contact{
         font-size: 14px;
         width: 100%;
-        margin-right: 10px;
-        text-align: center;
+        margin-right: 70px;
+        text-align: right;
     }
 }
 
@@ -2298,21 +2298,40 @@ a{text-decoration:none}
     .footer-content .copyright{
         font-size: 14px;
         width: 100%;
-        margin-right: 10px;
-        text-align: center;
+        margin-left: 70px;
+        text-align: left;
+
     }
 
     .footer-content .contact{
         font-size: 14px;
         width: 100%;
-        margin-right: 10px;
-        text-align: center;
+        margin-right: 70px;
+        text-align: right;
     }
 
  }
 
  @media only screen and (max-width:1000px){
-    
+    .logo-container img {
+        width: 300px;
+        height: auto;
+    }
+
+    .footer-content .copyright{
+        font-size: 14px;
+        width: 100%;
+        margin-left: 70px;
+        text-align: left;
+
+    }
+
+    .footer-content .contact{
+        font-size: 14px;
+        width: 100%;
+        margin-right: 70px;
+        text-align: right;
+    }
  }
 
 
