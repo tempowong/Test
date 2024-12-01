@@ -15,20 +15,37 @@ a{text-decoration:none}
  * ------------------------------------------------------------------- */
  .header {
     background: white;
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #000000;
+    display: block;
+    justify-content: space-between;
+    font-size: 17px;
 }
 
 .logo-container img {
-    height: 60px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.nav-menu{
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 .nav-menu a {
-    text-decoration: none;
     color: #333;
 }
+
 .nav-menu a:hover {
-    color: #118b6e; /* 悬停时文本颜色 */
-    border-bottom: 2px solid #118b6e; /* 悬停时底部边框 */
+    color: #0e6666; /* 悬停时文本颜色 */
+    border-bottom: 2px solid #0e6666; /* 悬停时底部边框 */
+}
+
+#fanjian{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 20px;
 }
 
 .banner {
@@ -76,7 +93,7 @@ a{text-decoration:none}
     border: 4px solid black;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .deadline {
@@ -85,6 +102,7 @@ a{text-decoration:none}
     border: 4px solid black;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 15px;
 }
 
 .footer {
@@ -130,12 +148,6 @@ a{text-decoration:none}
     max-width: 160%;
     margin-left: -30%;
     margin-right: -30%;
-}
-#fanjian{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 100%;
 }
 /* ------------------------------------------------------------------- 
  * ## Subpage About
@@ -303,6 +315,7 @@ a{text-decoration:none}
         position: relative;
         padding: 1rem;
         margin-top: 2vw;
+        
     }
 
     .schedule-container {
@@ -437,6 +450,10 @@ a{text-decoration:none}
         letter-spacing:1px;
         font-weight:bold;
         font-weight: 900px;
+    }
+
+    .schedule-headline{
+        margin-top: -70px;
     }
 
     @media (max-width:768px){
@@ -1063,6 +1080,160 @@ a{text-decoration:none}
     }
 }
 
+/* ------------------------------------------------------------------- 
+ * ## cue-card
+ * ------------------------------------------------------------------- */
+ .objective-cue-card {
+	position: relative;
+    margin:auto;
+	background-color: #eedfb0;
+	max-width: 700px;
+	height: 200px;
+	box-shadow: -0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
+	justify-content: center;
+	font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    margin-top: 20px;
+	background-image: linear-gradient(to bottom, #ebe3ce calc(1em - 1px), #000000 calc(1em - 1px), #ffffff 1em, #ffffff 1em);
+	background-position: 0% 1em;
+	background-size: 100% 1em;
+	background-repeat: repeat-y;
+	
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #e9dbb7;
+		box-shadow: -0.5rem 0.5rem 1rem rgba(0,0,0,0.1);
+	}
+	
+	&:before {
+		transform: rotate(-2deg);
+		z-index: -1;
+	}
+	
+	&:after {
+		transform: rotate(2deg);
+		z-index: -2;
+	}
+}
+
+.objective-cue-card-english {
+	position: relative;
+    margin:auto;
+	background-color: #eedfb0;
+	max-width: 700px;
+	height: 200px;
+	box-shadow: -0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
+	justify-content: center;
+	font-size:18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    margin-top: 20px;
+	background-image: linear-gradient(to bottom, #ebe3ce calc(1em - 1px), #2222229c calc(1em - 1px), #ffffff 1em, #ffffff 1em);
+	background-position: 0% 1em;
+	background-size: 100% 1em;
+	background-repeat: repeat-y;
+	
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #e9dbb7;
+		box-shadow: -0.5rem 0.5rem 1rem rgba(0,0,0,0.1);
+	}
+	
+	&:before {
+		transform: rotate(-2deg);
+		z-index: -1;
+	}
+	
+	&:after {
+		transform: rotate(2deg);
+		z-index: -2;
+	}
+}
+
+@media only screen and (max-width: 1025px){
+    .objective-cue-card{
+        margin:auto;
+        margin-top: 10px;
+    }
+    
+    .objective-cue-card-english{
+        margin:auto;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .objective-cue-card{
+        margin:auto;
+        margin-top: 10px;
+    }
+
+    .objective-cue-card-english{
+        margin:auto;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .objective-cue-card{
+        margin:auto;
+        margin-top: 10px;
+    }
+
+    .objective-cue-card-english{
+        margin:auto;
+        font-size: 0.8rem;
+        padding: 25px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .objective-cue-card{
+        margin:auto;
+        margin-top: 10px;
+        font-size: 0.95rem;
+    }
+
+    .objective-cue-card-english{
+        margin:auto;
+        font-size: 0.8rem;
+        padding: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .objective-cue-card{
+        margin:auto;
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    .objective-cue-card-english{
+        margin:auto;
+        font-size: 0.7rem;
+        padding: 20px;
+        margin-top: 10px;
+    }
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -1332,6 +1503,25 @@ a{text-decoration:none}
                 background:
                 #e45454 padding-box; /* the color  */
                 width: fit-content;
+            }
+
+        .qualifications-ribbon-english {
+            font-size: 17px;
+            font-weight: bold;
+            color: #fff;
+            margin-left: 15px;
+            margin-top: -72px;
+        }
+            .qualifications-ribbon-english {
+                --r: .8em; /* control the cutout */
+        
+                border-block: .5em solid #0000;
+                padding-inline: .5em calc(var(--r) + .25em);
+                line-height: 3;
+                clip-path: polygon(100% 0,0 0,0 100%,100% 100%,calc(100% - var(--r)) calc(100% - .25em),100% 50%,calc(100% - var(--r)) .25em);
+                background:
+                #e45454 padding-box; /* the color  */
+                width: 300px;
             }
 
         @media (max-width:376px){
@@ -2120,17 +2310,21 @@ a{text-decoration:none}
 
  }
 
+ @media only screen and (max-width:1000px){
+    
+ }
+
 
 /* ------------------------------------------------------------------- 
  * ## tablets
  * ------------------------------------------------------------------- */
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
     .logo-container img {
         width: 400px;
         height: auto;
     }
-    
+
     .nav-menu {
         width: 100%;
         text-align: center;
@@ -2139,10 +2333,12 @@ a{text-decoration:none}
     .nav-menu a {
         display: block;
         padding: 0.5rem 0;
+        font-weight: bold;
     }
 
     .zbnav a {
-        border-bottom: 1px solid #000000;
+        font-weight: bold;
+        border-bottom: 2px solid #000000;
         width: 70%;
         text-align: center;
         margin-left: 15%;
@@ -2154,7 +2350,7 @@ a{text-decoration:none}
         text-align: flex;
         padding-top: 1rem;
         margin-top: 0;
-        /* margin-left: 25%; */
+        margin-left: 20px;
         justify-content:center;
         align-items:baseline
 
@@ -2163,6 +2359,18 @@ a{text-decoration:none}
 
     .nav-menu a:last-child {
         border-bottom: none;
+    }
+
+    
+    .navbar-collapse {
+        position:absolute;
+        margin-top: 0px !important;
+        width: 100% !important;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgb(255, 255, 255);
+        z-index: 1000;
     }
 
     .banner-img {
@@ -2183,16 +2391,8 @@ a{text-decoration:none}
         position: relative;
         top: 0px;
     }
+    
 
-    .navbar-collapse {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: white;
-        z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
     .content_wrapper .title{
         right: 50%;
         transform: translate(50%, 0);
@@ -2218,8 +2418,8 @@ a{text-decoration:none}
  * ------------------------------------------------------------------- */
  @media only screen and (max-width: 600px) {
     .logo-container img {
-    width: 350px;
-    height: auto;
+    width: 300px;
+    height: 100%;
 }
 footer{
     text-align: center;
@@ -2251,7 +2451,7 @@ footer{
 @media only screen and (max-width: 414px) {
     .logo-container img {
     width: 300px;
-    height: auto;
+    height: 100%;
 }
 footer{
     text-align: center;
@@ -2275,7 +2475,7 @@ footer{
 @media only screen and (max-width: 376px) {
     .logo-container img {
     width: 270px;
-    height: auto;
+    height: 100%;
 }
 footer{
     text-align: center;
