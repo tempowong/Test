@@ -34,14 +34,14 @@ h2 {
 .award h2 {
     align-items: center;
     margin: 8px 0;
-    font-size: 20px; /* Set consistent font size for headings */
+    font-size: 17px; /* Set consistent font size for headings */
     font-weight: bold;
 }
 
 .award p {
     align-items: center;
     margin: 8px 0;
-    font-size: 20px; /* Set consistent font size for prize descriptions */
+    font-size: 17px; /* Set consistent font size for prize descriptions */
     font-weight: bold;
 }
 
@@ -79,6 +79,8 @@ h2 {
 }
 
 @media (max-width: 2561px){
+    
+    
     .prize-info-3{
         padding:0px 1000px;
         padding-left: 50px;
@@ -102,6 +104,21 @@ h2 {
         padding-left: 50px;
         display:contents;
     }
+
+    .award{
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .award h2 {
+        font-size: 1.2rem;
+        font-weight: 900px;
+    }
+
+    .award p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -122,12 +139,24 @@ h2 {
         display:contents;
     }
 
+    .award{
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+
     .award h2 {
         font-size: 1rem;
+        font-weight: 900px;
     }
 
     .award p {
         font-size: 0.8rem;
+    }
+
+    .prize-info-3 p{
+        font-size: 0.8rem;
+
     }
 
 @media (max-width: 600px){
@@ -138,11 +167,12 @@ h2 {
     }
 
     .award h2 {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        font-weight: 900px;
     }
 
     .award p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .prize-headline-1{
@@ -166,6 +196,11 @@ h2 {
         display:contents;
 
     }
+
+    .prize-info-3 p{
+        font-size: 0.8rem;
+
+    }
 }
 
 @media (max-width: 414px){
@@ -176,11 +211,12 @@ h2 {
     }
 
     .award h2 {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        font-weight: 900px;
     }
 
     .award p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .prize-headline-1{
@@ -196,6 +232,12 @@ h2 {
         display:contents;
 
     }
+
+    .prize-info-3 p{
+        font-size: 0.8rem;
+
+    }
+
     }
 
 }
