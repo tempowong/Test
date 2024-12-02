@@ -2456,6 +2456,7 @@ footer{
 .footer-content .contact{
     column-gap: 5px;
     text-align:center;
+    margin-right: 0;
 }
 .footer-content .mbr{display: block;}
 }
@@ -2488,6 +2489,7 @@ footer{
 .footer-content .contact{
     column-gap: 5px;
     text-align:center;
+    margin-right: 0;
 }
 .footer-content .mbr{display: block;}
 }
@@ -2512,6 +2514,7 @@ footer{
 .footer-content .contact{
     column-gap: 5px;
     text-align:center;
+    margin-right: 0;
 }
 .footer-content .mbr{display: block;}
 }
