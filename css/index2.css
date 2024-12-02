@@ -2447,6 +2447,8 @@ footer{
 .footer-content .copyright{
     font-size: 13px;
     width: 100%;
+    margin-left: 0;
+    text-align:center;
 }
 .footer-content{
     flex-direction: column-reverse;
@@ -2480,11 +2482,14 @@ footer{
 .footer-content .copyright{
     font-size: 13px;
     width: 100%;
+    margin-left: 0;
+    text-align:center;
 }
 .footer-content{
     flex-direction: column-reverse;
     gap:5px;
     align-items: center;
+    margin-right: 0;
 }
 .footer-content .contact{
     column-gap: 5px;
@@ -2505,6 +2510,8 @@ footer{
 .footer-content .copyright{
     font-size: 13px;
     width: 100%;
+    margin-left: 0;
+    text-align:center;
 }
 .footer-content{
     flex-direction: column-reverse;
