@@ -79,8 +79,17 @@ h2 {
 }
 
 @media (max-width: 2561px){
-    
-    
+    .award h2 {
+        margin-left: 70px;
+        margin-top: 12px;
+        font-size: 1.3rem;
+    }
+
+    .award p {
+        margin-right: 70px;
+        font-size: 1.3rem;
+    }
+
     .prize-info-3{
         padding:0px 1000px;
         padding-left: 50px;
@@ -90,6 +99,17 @@ h2 {
 }
 
 @media (max-width: 1700px){
+    .award h2 {
+        margin-left: 70px;
+        margin-top: 12px;
+        font-size: 1.3rem;
+    }
+
+    .award p {
+        margin-right: 70px;
+        font-size: 1.3rem;
+    }
+    
     .prize-info-3{
         padding:0px 200px;
         padding-left: 50px;
@@ -121,11 +141,13 @@ h2 {
     }
 
     .award h2 {
+        margin-left: 0px;
         font-size: 1.2rem;
         font-weight: 900px;
     }
 
     .award p {
+        margin-right: 0px;
         font-size: 1rem;
     }
 }
@@ -155,16 +177,18 @@ h2 {
     }
 
     .award h2 {
-        font-size: 1rem;
+        margin-left: 0px;
+        font-size: 1.2rem;
         font-weight: 900px;
     }
 
     .award p {
-        font-size: 0.8rem;
+        margin-right: 0px;
+        font-size: 1rem;
     }
 
     .prize-info-3 p{
-        font-size: 0.8rem;
+        font-size: 1rem;
 
     }
 
@@ -176,12 +200,14 @@ h2 {
     }
 
     .award h2 {
-        font-size: 0.8rem;
+        margin-left: 0px;
+        font-size: 1.1rem;
         font-weight: 900px;
     }
 
     .award p {
-        font-size: 0.6rem;
+        margin-right: 0px;
+        font-size: 1rem;
     }
 
     .prize-headline-1{
@@ -207,7 +233,7 @@ h2 {
     }
 
     .prize-info-3 p{
-        font-size: 0.8rem;
+        font-size: 1rem;
 
     }
 }
@@ -220,12 +246,14 @@ h2 {
     }
 
     .award h2 {
-        font-size: 0.9rem;
+        margin-left: 0px;
+        font-size: 1rem;
         font-weight: 900px;
     }
 
     .award p {
-        font-size: 0.6rem;
+        margin-right: 0px;
+        font-size: 0.9rem;
     }
 
     .prize-headline-1{
@@ -243,7 +271,7 @@ h2 {
     }
 
     .prize-info-3 p{
-        font-size: 0.8rem;
+        font-size: 1rem;
 
     }
 

@@ -430,6 +430,19 @@ a{text-decoration:none}
         margin-top: -66px;
     }
 
+    .qualifications-header-2{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #eeb13f;
+        padding: 0.5rem 1rem;
+        border: 5px solid black;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
     .prize-header{
         position: absolute;
         left: 50%;
@@ -1108,7 +1121,7 @@ a{text-decoration:none}
     margin:auto;
 	background-color: #eedfb0;
 	max-width: 700px;
-	height: 200px;
+	height: 250px;
 	box-shadow: -0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
 	justify-content: center;
 	font-size: 1.1rem;
@@ -1784,6 +1797,10 @@ a{text-decoration:none}
         text-align: center;
     }
 
+    .google-form-url{
+        
+    }
+
     .download-container{
         display: flex;
         justify-content: center;
@@ -1861,6 +1878,19 @@ a{text-decoration:none}
     opacity: 1;
     visibility: visible;
   }  
+
+  @media (max-width:431px){
+    .google-form-url{
+        font-size: 12px;
+    }
+  }
+
+  @media (max-width:376px){
+    .google-form-url{
+        font-size: 11px;
+    }
+  }
+
 
 /* ------------------------------------------------------------------- 
  * ## Subpage highlight button
