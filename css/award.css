@@ -201,13 +201,13 @@ h2 {
 
     .award h2 {
         margin-left: 0px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 900px;
     }
 
     .award p {
         margin-right: 0px;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .prize-headline-1{
@@ -247,13 +247,13 @@ h2 {
 
     .award h2 {
         margin-left: 0px;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 900px;
     }
 
     .award p {
         margin-right: 0px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .prize-headline-1{
@@ -271,7 +271,7 @@ h2 {
     }
 
     .prize-info-3 p{
-        font-size: 1rem;
+        font-size: 0.9rem;
 
     }
 
