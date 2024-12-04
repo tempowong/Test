@@ -65,6 +65,10 @@ a{text-decoration:none}
     height: auto;
 }
 
+.index-footer{
+    height: 1000px;
+}
+
 /* ===================================================================
  * # IOS devices not recognices fixed background
  *
