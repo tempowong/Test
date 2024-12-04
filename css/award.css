@@ -84,6 +84,15 @@ h2 {
     .prize-info-3{
         padding:0px 1000px;
         padding-left: 50px;
+        display:block;
+
+    }
+}
+
+@media (max-width: 1700px){
+    .prize-info-3{
+        padding:0px 200px;
+        padding-left: 50px;
         display:contents;
     }
 }
