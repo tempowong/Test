@@ -43,9 +43,33 @@
             <nav class="nav-menu" id="fanjian">
               <a href="index-chinese-simplified.html" class="me-3"><i class="fa fa-home" aria-hidden="true"></i></a>
               <span class="me-3">|</span>
-              <a href="javascript:void(0);" onclick="setFontsize('s')" title="Default Font Size" class="fontsize-s me-3">A</a>
-              <a href="javascript:void(0);" onclick="setFontsize('m')" title="Larger Font Size" class="fontsize-m me-3">A</a>
-              <a href="javascript:void(0);" onclick="setFontsize('l')" title="Largest Font Size" class="fontsize-l me-3">A</a>
+              <a href="javascript:void(0);" onclick="myFunctionSmallFontIncrease()" title="Default Font Size" class="fontsize-s me-3">A</a>
+              <a href="javascript:void(0);" onclick="myFunctionMediumFontIncrease()" title="Larger Font Size" class="fontsize-m me-3">A</a>
+              <a href="javascript:void(0);" onclick="myFunctionLargeFontIncrease()" title="Largest Font Size" class="fontsize-l me-3">A</a>
+              
+              <script>
+                function myFunctionSmallFontIncrease() {
+                  var arr = document.getElementsByTagName('p');
+                  for (var i = 0; i < arr.length; i++) {
+                  arr[i].style.fontSize = "1em";
+                  }
+                } 
+
+                function myFunctionMediumFontIncrease() {
+                  var arr = document.getElementsByTagName('p');
+                  for (var i = 0; i < arr.length; i++) {
+                  arr[i].style.fontSize = "1.3em";
+                  }
+                } 
+
+                function myFunctionLargeFontIncrease() {
+                  var arr = document.getElementsByTagName('p');
+                  for (var i = 0; i < arr.length; i++) {
+                  arr[i].style.fontSize = "1.5em";
+                  }
+                } 
+              </script>
+
               <span class="me-3">|</span>
               <a href="details.html" class="me-3">繁</a>
               <a href="details-chinese-simplified.html" class="me-3">简</a>
@@ -120,8 +144,8 @@
                 <div class="sparkle-1" data-aos="fade-up"></div> 
                 <section id="qualifications" data-aos="fade-up">
                   <div class="qualifications-container">
-                    <div class="qualifications-header">参加资格</div>
-                      <p>参赛学校须为教育局注册之中学或国际学校，每校最多只可派出一支队伍参加赛事，参加者须为现正在校内就读之学生。</p> 
+                    <div class="qualifications-header">参加资格</div><br>
+                    <p>参赛学校须为教育局注册之中学或国际学校，每校最多只可派出一支队伍参加赛事，参加者须为现正在校内就读之学生。</p>
                   </div> 
                 </section>
 
@@ -143,7 +167,7 @@
                 <br><br>
                 <section id="rule" data-aos="fade-up">
                   <div class="rules-container">
-                    <div class="rules-header">一般规则</div>
+                    <div class="rules-header">一般规则</div><br>
                       <ol>
                         <li><p>所有比赛均以粤语及淘汰赛形式举行，参赛队伍上限为32队，胜出者才能晋级下一回合的比赛。如遇报名队伍多于参赛上限，将以抽签决定参赛资格。</p></li>
                         <li><p>每场比赛的辩题及比赛日期均由平机会决定，参赛者不得异议。参赛队伍的正反方，由主办机构抽签决定。</p></li>

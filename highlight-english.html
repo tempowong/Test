@@ -43,9 +43,33 @@
                     <nav class="nav-menu" id="fanjian">
                       <a href="index-english.html" class="me-3"><i class="fa fa-home" aria-hidden="true"></i></a>
                         <span class="me-3">|</span>
-                        <a href="javascript:void(0);" onclick="setFontsize('s')" title="Default Font Size" class="fontsize-s me-3">A</a>
-                        <a href="javascript:void(0);" onclick="setFontsize('m')" title="Larger Font Size" class="fontsize-m me-3">A</a>
-                        <a href="javascript:void(0);" onclick="setFontsize('l')" title="Largest Font Size" class="fontsize-l me-3">A</a>
+                        <a href="javascript:void(0);" onclick="myFunctionSmallFontIncrease()" title="Default Font Size" class="fontsize-s me-3">A</a>
+                        <a href="javascript:void(0);" onclick="myFunctionMediumFontIncrease()" title="Larger Font Size" class="fontsize-m me-3">A</a>
+                        <a href="javascript:void(0);" onclick="myFunctionLargeFontIncrease()" title="Largest Font Size" class="fontsize-l me-3">A</a>
+                        
+                        <script>
+                          function myFunctionSmallFontIncrease() {
+                            var arr = document.getElementsByTagName('p');
+                            for (var i = 0; i < arr.length; i++) {
+                            arr[i].style.fontSize = "1em";
+                            }
+                          } 
+          
+                          function myFunctionMediumFontIncrease() {
+                            var arr = document.getElementsByTagName('p');
+                            for (var i = 0; i < arr.length; i++) {
+                            arr[i].style.fontSize = "1.3em";
+                            }
+                          } 
+          
+                          function myFunctionLargeFontIncrease() {
+                            var arr = document.getElementsByTagName('p');
+                            for (var i = 0; i < arr.length; i++) {
+                            arr[i].style.fontSize = "1.5em";
+                            }
+                          } 
+                        </script>
+                        
                         <span class="me-3">|</span>
                         <a href="highlight.html" class="me-3">繁</a>
                         <a href="highlight-chinese-simplified.html" class="me-3">简</a>
@@ -78,8 +102,8 @@
                       <div class="gallery-header">Highlights</div>
                     </div>
 
-                    <button class="gallery-previous" onclick="myFunction()">previous</button>
-                    <button class="gallery-next" onclick="myFunction()">next</button>
+                    <button class="gallery-previous" onclick="">previous</button>
+                    <button class="gallery-next" onclick="">next</button>
 
                     <script>
                       function myFunction() {
@@ -89,18 +113,21 @@
                         if (x.style.display === "block" && y.style.display === "none") {
                           x.style.display = "none";
                           y.style.display = "block";
-                          z.innerHTML = "EOC Inter-School Debate Competition - Saturday Februray 22, 2025 - Highlights";
+                          z.innerHTML = "EOC Inter-School Debate Competition";
                         } else {
                           x.style.display = "block";
                           y.style.display = "none";
-                          z.innerHTML = "EOC Inter-School Debate Competition - Saturday Februray 15, 2025 - Highlights";
+                          z.innerHTML = "EOC Inter-School Debate Competition";
                         }
                       } 
                     </script>
-                    <header class="gallery-headline">Daily News</header>
+                    <header class="gallery-headline">Event News</header>
                     <div id="gallery-subhead">
-                      <div class="subhead">EOC Inter-School Debate Competition - Saturday Februray 15, 2025 - Highlights</div>
+                      <div class="subhead"><p>EOC Inter-School Debate Competition</p></div>
                     </div>
+
+                    <br><br>
+                    <div style="font-size: 20px; font-weight: bold;"><p>Coming soon</p></div>
                     
                     <div id="album-hide">
                       <div class="album">

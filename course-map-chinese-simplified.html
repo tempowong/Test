@@ -43,9 +43,33 @@
                     <nav class="nav-menu" id="fanjian">
                         <a href="index-chinese-simplified.html" class="me-3"><i class="fa fa-home" aria-hidden="true"></i></a>
                         <span class="me-3">|</span>
-                        <a href="javascript:void(0);" onclick="setFontsize('s')" title="Default Font Size" class="fontsize-s me-3">A</a>
-                        <a href="javascript:void(0);" onclick="setFontsize('m')" title="Larger Font Size" class="fontsize-m me-3">A</a>
-                        <a href="javascript:void(0);" onclick="setFontsize('l')" title="Largest Font Size" class="fontsize-l me-3">A</a>
+                        <a href="javascript:void(0);" onclick="myFunctionSmallFontIncrease()" title="Default Font Size" class="fontsize-s me-3">A</a>
+                        <a href="javascript:void(0);" onclick="myFunctionMediumFontIncrease()" title="Larger Font Size" class="fontsize-m me-3">A</a>
+                        <a href="javascript:void(0);" onclick="myFunctionLargeFontIncrease()" title="Largest Font Size" class="fontsize-l me-3">A</a>
+                        
+                        <script>
+                          function myFunctionSmallFontIncrease() {
+                            var arr = document.getElementsByTagName('p');
+                            for (var i = 0; i < arr.length; i++) {
+                            arr[i].style.fontSize = "1em";
+                            }
+                          } 
+          
+                          function myFunctionMediumFontIncrease() {
+                            var arr = document.getElementsByTagName('p');
+                            for (var i = 0; i < arr.length; i++) {
+                            arr[i].style.fontSize = "1.3em";
+                            }
+                          } 
+          
+                          function myFunctionLargeFontIncrease() {
+                            var arr = document.getElementsByTagName('p');
+                            for (var i = 0; i < arr.length; i++) {
+                            arr[i].style.fontSize = "1.5em";
+                            }
+                          } 
+                        </script>
+                        
                         <span class="me-3">|</span>
                         <a href="course-map.html" class="me-3">繁</a>
                         <a href="course-map-chinese-simplified.html" class="me-3">简</a>
@@ -103,30 +127,30 @@
                     <table class="rundown_tb">
                       <thead>
                           <tr>
-                              <th>日期</th>
-                              <th>项目</th>
+                              <th><p>日期</p></th>
+                              <th><p>项目</p></th>
                           </tr>
                       </thead>
                       <tbody>
                           <tr>
-                              <td>2025年2月22日（星期六）及 23日（星期日） </td>
-                              <td>第一回合初赛</td>
+                              <td><p>2025年2月22日（星期六）及 23日（星期日）</p></td>
+                              <td><P>第一回合初赛</P></td>
                           </tr>
                           <tr>
-                              <td>2025年3月8日（星期六）</td>
-                              <td>第二回合初赛</td>
+                              <td><p>2025年3月8日（星期六）</p></td>
+                              <td><P>第二回合初赛</P></td>
                           </tr>
                           <tr>
-                              <td>2025年3月29日（星期六）</td>
-                              <td>半准决赛</td>
+                              <td><p>2025年3月29日（星期六）</p></td>
+                              <td><P>半准决赛</P></td>
                           </tr>
                           <tr>
-                              <td>2025年4月12日（星期六）</td>
-                              <td>准决赛</td>
+                              <td><P>2025年4月12日（星期六）</P></td>
+                              <td><P>准决赛</P></td>
                           </tr>
                           <tr>
-                              <td>2025年5月3日（星期六）（暂定）</td>
-                              <td>总决赛暨颁奖典礼</td>
+                              <td><p>2025年5月3日（星期六）（暂定）</p></td>
+                              <td><P>总决赛暨颁奖典礼</P></td>
                           </tr>
                       </tbody>
                     </table>
