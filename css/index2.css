@@ -1,7 +1,4 @@
-html {font-size:16px; scroll-behavior:smooth;}
-html.fontsize-s	{font-size:16px;}
-html.fontsize-m	{font-size:18px;}
-html.fontsize-l	{font-size:19px;}
+html {font-size:18px; scroll-behavior:smooth;}
 
 body {
     min-height: 100vh;
@@ -94,6 +91,7 @@ a{text-decoration:none}
     border-radius: 5px;
     cursor: pointer;
     font-weight: bolder;
+    font-size: 25px;
 }
 
 .deadline {
@@ -103,6 +101,7 @@ a{text-decoration:none}
     border-radius: 5px;
     font-weight: bold;
     font-size: 15px;
+    font-size: 20px;
 }
 
 .footer {
@@ -111,6 +110,14 @@ a{text-decoration:none}
     font-size: 16px;
     text-align: center;
     margin-top: 20px;
+}
+
+.index-footer{
+    font-size: 18px;
+}
+
+.index-copyright{
+    font-size: 16px;
 }
 
 /* navbar menu */
@@ -149,6 +156,26 @@ a{text-decoration:none}
     margin-left: -30%;
     margin-right: -30%;
 }
+
+@media (max-width:450px){
+    .register-button {
+        font-size: 1rem;
+    }
+    
+    .deadline {
+        
+        font-size: 0.9rem;
+    }
+
+    .index-footer{
+        font-size: 1rem;
+    }
+    
+    .index-copyright{
+        font-size: 0.8rem;
+    }
+}
+
 /* ------------------------------------------------------------------- 
  * ## Subpage About
  * ------------------------------------------------------------------- */
@@ -456,6 +483,20 @@ a{text-decoration:none}
         margin-top: -25px;
     }
 
+    .download-header{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #e97b3b;
+        padding: 0.5rem 1rem;
+        border: 5px solid black;
+        color: #000;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-top: 80px;
+    }
+
     .gallery-header{
         position: absolute;
         left: 50%;
@@ -489,29 +530,111 @@ a{text-decoration:none}
         margin-top: -70px;
     }
 
+    @media (max-width:2561px){
+        .objective-header{
+            font-size: 1.5rem;
+        }
+
+        .rules-header{
+            font-size: 1.5rem;
+        }
+
+        .qualifications-header{
+            font-size: 1.5rem;
+        }
+
+        .prize-header{
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width:1600px){
+        .objective-header{
+            font-size: 1.3rem;
+        }
+
+        .rules-header{
+            font-size: 1.3rem;
+        }
+
+        .qualifications-header{
+            font-size: 1.3rem;
+        }
+
+        .prize-header{
+            font-size: 1.3rem;
+        }
+    }
+
+    @media (max-width:1200px){
+        .objective-header{
+            font-size: 1.2rem;
+        }
+
+        .rules-header{
+            font-size: 1.2rem;
+        }
+
+        .qualifications-header{
+            font-size: 1.2rem;
+        }
+
+        .prize-header{
+            font-size: 1.2rem;
+        }
+    }
+
     @media (max-width:768px){
         .schedule-container{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
+
+        .objective-header{
+            font-size: 1rem;
+        }
+
+        .rules-header{
+            font-size: 1rem;
+            margin-top: -55px;
+        }
+
+        .qualifications-header{
+            font-size: 1rem;
+            margin-top: -55px;
+        }
+
+        .prize-header{
+            font-size: 1rem;
+        }
     }
 
     @media (max-width:500px){
         .objective-header{
             border: 4px solid black;
+            font-size: 1rem;
         }
 
         .rules-header{
             border: 4px solid black;
+            font-size: 1rem;
+            margin-top: -50px;
         }
 
         .qualifications-header{
             border: 4px solid black;
+            font-size: 1rem;
+            margin-top: -50px;
         }
 
         .prize-header{
             border: 4px solid black;
+            font-size: 1rem;
+        }
+        .download-header{
+            width: 220px;
+            font-size: 1rem;
         }
 
         .qualifications-container{
@@ -657,7 +780,7 @@ a{text-decoration:none}
     }
 
     .index span {
-        border-right: 2px solid #000000
+        border-right: 4px solid #000000
     }
 
     .index-english {
@@ -677,12 +800,12 @@ a{text-decoration:none}
     }
 
     .index-english span {
-        border-right: 2px solid #000000
+        border-right: 4px solid #000000
     }
 
     .objective-index{
         background-color: #eeb13f;
-        border: 3px solid black;
+        border: 4px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -693,7 +816,7 @@ a{text-decoration:none}
 
     .objective-index-english{
         background-color: #eeb13f;
-        border: 3px solid black;
+        border: 4px solid black;
         width: 120px;
         height: 50px;
         text-align: center;
@@ -705,7 +828,7 @@ a{text-decoration:none}
 
     .qualifications-index{
         background-color: #eeb13f;
-        border: 3px solid black;
+        border: 4px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -716,7 +839,7 @@ a{text-decoration:none}
 
     .eligibility-index-english{
         background-color: #eeb13f;
-        border: 3px solid black;
+        border: 4px solid black;
         width: 120px;
         height: 50px;
         text-align: center;
@@ -728,7 +851,7 @@ a{text-decoration:none}
 
     .rules-index{
         background-color: #eeb13f;
-        border: 3px solid black;
+        border: 4px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -739,7 +862,7 @@ a{text-decoration:none}
 
     .rules-index-english{
         background-color: #eeb13f;
-        border: 3px solid black;
+        border: 4px solid black;
         width: 120px;
         height: 50px;
         text-align: center;
@@ -751,7 +874,7 @@ a{text-decoration:none}
 
     .prize-index{
         background-color: #eeb13f;
-        border: 3px solid black;
+        border: 4px solid black;
         width: 120px;
         text-align: center;
         padding: 0.5rem 1rem;
@@ -762,7 +885,7 @@ a{text-decoration:none}
 
     .prize-index-english{
         background-color: #eeb13f;
-        border: 3px solid black;
+        border: 4px solid black;
         width: 120px;
         height: 50px;
         text-align: center;
@@ -770,6 +893,131 @@ a{text-decoration:none}
         border-radius: 10px;
         font-size: 1rem;
         font-weight: bold;
+    }
+
+    @media (max-width:2561px){
+        .index{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 70px;
+            row-gap: .1px;
+            justify-content: center;
+        }
+
+        .index-english{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 70px;
+            row-gap: .1px;
+            justify-content: center;
+        }
+
+        .objective-index{
+            width: 200px;
+            font-size: 2rem;
+        }
+
+        .rules-index{
+            width: 200px;
+            font-size: 2rem;
+        }
+
+        .qualifications-index{
+            width: 200px;
+            font-size: 2rem;
+        }
+
+        .prize-index{
+            width: 200px;
+            font-size: 2rem;
+        }
+
+        .objective-index-english{
+            width: 200px;
+            height: 70px;
+            font-size: 2rem;
+        }
+
+        .rules-index-english{
+            width: 200px;
+            height: 70px;
+            font-size: 2rem;
+        }
+
+        .eligibility-index-english{
+            width: 200px;
+            height: 70px;
+            font-size: 2rem;
+        }
+
+        .prize-index-english{
+            width: 200px;
+            height: 70px;
+            font-size: 2rem;
+        }
+    }
+
+
+    @media (max-width:1600px){
+        .index{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 50px;
+            row-gap: .1px;
+            justify-content: center;
+        }
+
+        .index-english{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 50px;
+            row-gap: .1px;
+            justify-content: center;
+        }
+
+        .objective-index{
+            width: 140px;
+            font-size: 1.4rem;
+        }
+
+        .rules-index{
+            width: 140px;
+            font-size: 1.4rem;
+        }
+
+        .qualifications-index{
+            width: 140px;
+            font-size: 1.4rem;
+        }
+
+        .prize-index{
+            width: 140px;
+            font-size: 1.4rem;
+        }
+
+        .objective-index-english{
+            width: 140px;
+            height: 60px;
+            font-size: 1.5rem;
+        }
+
+        .rules-index-english{
+            width: 140px;
+            height: 60px;
+            font-size: 1.5rem;
+        }
+
+        .eligibility-index-english{
+            width: 140px;
+            height: 60px;
+            font-size: 1.5rem;
+        }
+
+        .prize-index-english{
+            width: 140px;
+            height: 60px;
+            font-size: 1.5rem;
+        }
     }
 
     @media (max-width:1000px){
@@ -796,6 +1044,62 @@ a{text-decoration:none}
         .index-english span {
             border-right: 2px solid #000000
         }
+
+        .objective-index{
+            width: 120px;
+            height: 50px;
+            padding: 0.4rem 0rem;
+            font-size: 1.2rem;
+        }
+
+        .rules-index{
+            width: 120px;
+            height: 50px;
+            padding: 0.4rem 0rem;
+            font-size: 1.2rem;
+        }
+
+        .qualifications-index{
+            width: 120px;
+            height: 50px;
+            padding: 0.4rem 0rem;
+            font-size: 1.2rem;
+        }
+
+        .prize-index{
+            width: 120px;
+            height: 50px;
+            padding: 0.4rem 0rem;
+            font-size: 1.2rem;
+        }
+
+        .objective-index-english{
+            width: 140px;
+            height: 50px;
+            padding: 0.3rem 0rem;
+            font-size: 1.4rem;
+        }
+
+        .rules-index-english{
+            width: 140px;
+            height: 50px;
+            padding: 0.3rem 0rem;
+            font-size: 1.4rem;
+        }
+
+        .eligibility-index-english{
+            width: 140px;
+            height: 50px;
+            padding: 0.3rem 0rem;
+            font-size: 1.4rem;
+        }
+
+        .prize-index-english{
+            width: 140px;
+            height: 50px;
+            padding: 0.3rem 0rem;
+            font-size: 1.4rem;
+        }
     }
 
 
@@ -809,7 +1113,7 @@ a{text-decoration:none}
         }
 
         .index span {
-            border-right: 2px solid #000000
+            border-right: 0px solid #000000
         }
 
         .index-english{
@@ -823,6 +1127,71 @@ a{text-decoration:none}
         .index-english span {
             border-right: 0px solid #000000
         }
+
+        .objective-index{
+            border: 3px solid black;
+            width: 120px;
+            height: 50px;
+            padding: 0.6rem 0rem;
+            font-size: 1rem;
+
+        }
+
+        .qualifications-index{
+            border: 3px solid black;
+            width: 120px;
+            height: 50px;
+            padding: 0.6rem 0rem;
+            font-size: 1rem;
+        }
+
+        .rules-index{
+            border: 3px solid black;
+            width: 120px;
+            height: 50px;
+            padding: 0.6rem 0rem;
+            font-size: 1rem;
+        }
+
+        .prize-index{
+            border: 3px solid black;
+            width: 120px;
+            height: 50px;
+            padding: 0.6rem 0rem;
+            font-size: 1rem;
+        }
+
+        .objective-index-english{
+            border: 3px solid black;
+            width: 120px;
+            height: 50px;
+            padding: 0.6rem 0rem;
+            font-size: 1rem;
+        }
+
+        .eligibility-index-english{
+            border: 3px solid black;
+            width: 120px;
+            height: 50px;
+            padding: 0.6rem 0rem;
+            font-size: 1rem;
+        }
+
+        .rules-index-english{
+            border: 3px solid black;
+            width: 120px;
+            height: 50px;
+            padding: 0.6rem 0rem;
+            font-size: 1rem;
+        }
+
+        .prize-index-english{
+            border: 3px solid black;
+            width: 120px;
+            height: 50px;
+            padding: 0.6rem 0rem;
+            font-size: 1rem;
+        }
     }
 
     @media (max-width:600px){
@@ -830,7 +1199,7 @@ a{text-decoration:none}
             border: 3px solid black;
             width: 90px;
             height: 40px;
-            padding: 0.25rem 0rem;
+            padding: 0.4rem 0rem;
             font-size: 1rem;
 
         }
@@ -839,7 +1208,7 @@ a{text-decoration:none}
             border: 3px solid black;
             width: 90px;
             height: 40px;
-            padding: 0.25rem 0rem;
+            padding: 0.4rem 0rem;
             font-size: 1rem;
         }
 
@@ -847,7 +1216,7 @@ a{text-decoration:none}
             border: 3px solid black;
             width: 90px;
             height: 40px;
-            padding: 0.25rem 0rem;
+            padding: 0.4rem 0rem;
             font-size: 1rem;
         }
 
@@ -855,7 +1224,7 @@ a{text-decoration:none}
             border: 3px solid black;
             width: 90px;
             height: 40px;
-            padding: 0.25rem 0rem;
+            padding: 0.4rem 0rem;
             font-size: 1rem;
         }
 
@@ -884,31 +1253,35 @@ a{text-decoration:none}
         }
 
         .objective-index-english{
+            border: 3px solid black;
             width: 90px;
-            height: 35px;
-            padding: 0.25rem 0rem;
-            font-size: 0.8rem;
+            height: 40px;
+            padding: 0.4rem 0rem;
+            font-size: 1rem;
         }
 
         .eligibility-index-english{
+            border: 3px solid black;
             width: 90px;
-            height: 35px;
-            padding: 0.25rem 0rem;
-            font-size: 0.8rem;
+            height: 40px;
+            padding: 0.4rem 0rem;
+            font-size: 1rem;
         }
 
         .rules-index-english{
+            border: 3px solid black;
             width: 90px;
-            height: 35px;
-            padding: 0.25rem 0rem;
-            font-size: 0.8rem;
+            height: 40px;
+            padding: 0.4rem 0rem;
+            font-size: 1rem;
         }
 
         .prize-index-english{
+            border: 3px solid black;
             width: 90px;
-            height: 35px;
-            padding: 0.25rem 0rem;
-            font-size: 0.8rem;
+            height: 40px;
+            padding: 0.4rem 0rem;
+            font-size: 1rem;
         }
     }
 
@@ -917,7 +1290,7 @@ a{text-decoration:none}
             border: 3px solid black;
             width: 86px;
             height: 40px;
-            padding: 0.25rem 0rem;
+            padding: 0.4rem 0rem;
             font-size: 1rem;
 
         }
@@ -926,7 +1299,7 @@ a{text-decoration:none}
             border: 3px solid black;
             width: 86px;
             height: 40px;
-            padding: 0.25rem 0rem;
+            padding: 0.4rem 0rem;
             font-size: 1rem;
         }
 
@@ -934,7 +1307,7 @@ a{text-decoration:none}
             border: 3px solid black;
             width: 86px;
             height: 40px;
-            padding: 0.25rem 0rem;
+            padding: 0.4rem 0rem;
             font-size: 1rem;
         }
 
@@ -942,7 +1315,7 @@ a{text-decoration:none}
             border: 3px solid black;
             width: 86px;
             height: 40px;
-            padding: 0.25rem 0rem;
+            padding: 0.4rem 0rem;
             font-size: 1rem;
         }
 
@@ -959,31 +1332,35 @@ a{text-decoration:none}
         }
 
         .objective-index-english{
+            border: 3px solid black;
             width: 80px;
-            height: 35px;
-            padding: 0.25rem 0rem;
-            font-size: 0.7rem;
+            height: 40px;
+            padding: 0.55rem 0rem;
+            font-size: 0.8rem;
         }
 
         .eligibility-index-english{
+            border: 3px solid black;
             width: 80px;
-            height: 35px;
-            padding: 0.25rem 0rem;
-            font-size: 0.7rem;
+            height: 40px;
+            padding: 0.55rem 0rem;
+            font-size: 0.8rem;
         }
 
         .rules-index-english{
+            border: 3px solid black;
             width: 80px;
-            height: 35px;
-            padding: 0.25rem 0rem;
-            font-size: 0.7rem;
+            height: 40px;
+            padding: 0.55rem 0rem;
+            font-size: 0.8rem;
         }
 
         .prize-index-english{
+            border: 3px solid black;
             width: 80px;
-            height: 35px;
-            padding: 0.25rem 0rem;
-            font-size: 0.7rem;
+            height: 40px;
+            padding: 0.55rem 0rem;
+            font-size: 0.8rem;
         }
 
         
@@ -993,7 +1370,7 @@ a{text-decoration:none}
             .objective-index{
                 width: 75px;
                 height: 40px;
-                padding: 0.3rem 0rem;
+                padding: 0.4rem 0rem;
                 font-size: .9rem;
     
             }
@@ -1001,21 +1378,21 @@ a{text-decoration:none}
             .qualifications-index{
                 width: 75px;
                 height: 40px;
-                padding: 0.3rem 0rem;
+                padding: 0.4rem 0rem;
                 font-size: .9rem;
             }
     
             .rules-index{
                 width: 75px;
                 height: 40px;
-                padding: 0.3rem 0rem;
+                padding: 0.4rem 0rem;
                 font-size: .9rem;
             }
     
             .prize-index{
                 width: 75px;
                 height: 40px;
-                padding: 0.3rem 0rem;
+                padding: 0.4rem 0rem;
                 font-size: .9rem;
             }
     
@@ -1032,31 +1409,35 @@ a{text-decoration:none}
             }
 
             .objective-index-english{
+                border: 3px solid black;
                 width: 70px;
                 height: 35px;
-                padding: 0.3rem 0rem;
-                font-size: 0.6rem;
+                padding: 0.5rem 0rem;
+                font-size: 0.7rem;
             }
     
             .eligibility-index-english{
+                border: 3px solid black;
                 width: 70px;
                 height: 35px;
-                padding: 0.3rem 0rem;
-                font-size: 0.6rem;
+                padding: 0.5rem 0rem;
+                font-size: 0.7rem;
             }
     
             .rules-index-english{
+                border: 3px solid black;
                 width: 70px;
                 height: 35px;
-                padding: 0.3rem 0rem;
-                font-size: 0.6rem;
+                padding: 0.5rem 0rem;
+                font-size: 0.7rem;
             }
     
             .prize-index-english{
+                border: 3px solid black;
                 width: 70px;
                 height: 35px;
-                padding: 0.3rem 0rem;
-                font-size: 0.6rem;
+                padding: 0.5rem 0rem;
+                font-size: 0.7rem;
             }
     
         }
@@ -1133,6 +1514,7 @@ a{text-decoration:none}
 	background-position: 0% 1em;
 	background-size: 100% 1em;
 	background-repeat: repeat-y;
+    text-align: left;
 	
 	&:before,
 	&:after {
@@ -1174,6 +1556,7 @@ a{text-decoration:none}
 	background-position: 0% 1em;
 	background-size: 100% 1em;
 	background-repeat: repeat-y;
+    text-align: left;
 	
 	&:before,
 	&:after {
@@ -1198,16 +1581,31 @@ a{text-decoration:none}
 	}
 }
 
-@media only screen and (max-width: 1025px){
+@media only screen and (max-width: 2000px){
     .objective-cue-card{
         margin:auto;
         margin-top: 10px;
+        font-size: 1.5rem;
     }
     
     .objective-cue-card-english{
         margin:auto;
-        font-size: 1rem;
         margin-top: 10px;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 1025px){
+    .objective-cue-card{
+        margin:auto;
+        margin-top: 10px;
+        font-size: 1.3rem;
+    }
+    
+    .objective-cue-card-english{
+        margin:auto;
+        margin-top: 10px;
+        font-size: 1.3rem;
     }
 }
 
@@ -1215,11 +1613,12 @@ a{text-decoration:none}
     .objective-cue-card{
         margin:auto;
         margin-top: 10px;
+        font-size: 1.2rem;
     }
 
     .objective-cue-card-english{
         margin:auto;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         margin-top: 10px;
     }
 }
@@ -1229,13 +1628,15 @@ a{text-decoration:none}
         margin:auto;
         margin-top: 10px;
         padding: 25px;
+        font-size: 1rem;
     }
 
     .objective-cue-card-english{
         margin:auto;
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 20px;
         margin-top: 10px;
+        font-size: 1rem;
     }
 }
 
@@ -1243,12 +1644,12 @@ a{text-decoration:none}
     .objective-cue-card{
         margin:auto;
         margin-top: 10px;
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .objective-cue-card-english{
         margin:auto;
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 20px;
         margin-top: 10px;
     }
@@ -1258,12 +1659,12 @@ a{text-decoration:none}
     .objective-cue-card{
         margin:auto;
         margin-top: 10px;
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .objective-cue-card-english{
         margin:auto;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         padding: 20px;
         margin-top: 10px;
     }
@@ -1784,10 +2185,6 @@ a{text-decoration:none}
     }
     .footer-content .mbr{display: none;}
 
-    .index-copyright {
-        font-size: 0.6rem;
-    }
-
 
  /* ------------------------------------------------------------------- 
  * ## Subpage enroll
@@ -1895,7 +2292,8 @@ a{text-decoration:none}
 /* ------------------------------------------------------------------- 
  * ## Subpage highlight button
  * ------------------------------------------------------------------- */
-.gallery-headline{
+
+ .gallery-headline{
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 80px;
@@ -2039,7 +2437,9 @@ a{text-decoration:none}
  * ------------------------------------------------------------------- */
 
 #album-hide{
-    display: block;
+    display: none;
+    /* enable to show album 1 */
+    /*display: block;*/
 }
 
  .album .responsive-container-block {
@@ -2344,30 +2744,30 @@ a{text-decoration:none}
 
 @media only screen and (max-width:2560px){
     .footer-content .copyright{
-        font-size: 14px;
+        font-size: 23px;
         width: 100%;
-        margin-left: 70px;
+        margin-left: -180px;
         text-align: left;
     }
 
     .footer-content .contact{
-        font-size: 14px;
+        font-size: 23px;
         width: 100%;
-        margin-right: 70px;
+        margin-right: -180px;
         text-align: right;
     }
 }
 
 @media only screen and (max-width:1800px){
     .footer-content .copyright{
-        font-size: 14px;
+        font-size: 20px;
         width: 100%;
         margin-left: 70px;
         text-align: left;
     }
 
     .footer-content .contact{
-        font-size: 14px;
+        font-size: 20px;
         width: 100%;
         margin-right: 70px;
         text-align: right;
@@ -2384,7 +2784,7 @@ a{text-decoration:none}
     }
 
     .footer-content .copyright{
-        font-size: 14px;
+        font-size: 18px;
         width: 100%;
         margin-left: 70px;
         text-align: left;
@@ -2392,7 +2792,7 @@ a{text-decoration:none}
     }
 
     .footer-content .contact{
-        font-size: 14px;
+        font-size: 18px;
         width: 100%;
         margin-right: 70px;
         text-align: right;
@@ -2407,7 +2807,7 @@ a{text-decoration:none}
     }
 
     .footer-content .copyright{
-        font-size: 14px;
+        font-size: 17px;
         width: 100%;
         margin-left: 70px;
         text-align: left;
@@ -2415,7 +2815,7 @@ a{text-decoration:none}
     }
 
     .footer-content .contact{
-        font-size: 14px;
+        font-size: 17px;
         width: 100%;
         margin-right: 70px;
         text-align: right;
@@ -2492,6 +2892,21 @@ a{text-decoration:none}
         position: static;
         text-align: center;
         margin-top: 2rem;
+    }
+
+    .footer-content .copyright{
+        font-size: 15px;
+        width: 100%;
+        margin-left: 70px;
+        text-align: left;
+
+    }
+
+    .footer-content .contact{
+        font-size: 15px;
+        width: 100%;
+        margin-right: 70px;
+        text-align: right;
     }
 
     #btns {
