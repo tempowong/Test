@@ -79,15 +79,26 @@ h2 {
 }
 
 @media (max-width: 2561px){
-    .award h2 {
-        margin-left: 70px;
-        margin-top: 12px;
-        font-size: 1.3rem;
+    .award .title {
+        margin-left: 60px;
+        margin-top: 8px;
+        font-size: 1.2rem;
     }
 
-    .award p {
+    .award .sub {
+        margin-right: 60px;
+        font-size: 1.2rem;
+    }
+
+    .award .title-english {
+        margin-left: 70px;
+        margin-top: 8px;
+        font-size: 1.2rem;
+    }
+
+    .award .sub-english {
         margin-right: 70px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .prize-info-3{
@@ -99,15 +110,26 @@ h2 {
 }
 
 @media (max-width: 1700px){
-    .award h2 {
+    .award .title{
         margin-left: 70px;
-        margin-top: 12px;
-        font-size: 1.3rem;
+        margin-top: 8px;
+        font-size: 1.1rem;
     }
 
-    .award p {
+    .award .sub{
         margin-right: 70px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+    }
+
+    .award .title-english {
+        margin-left: 50px;
+        margin-top: 8px;
+        font-size: 0.9rem;
+    }
+
+    .award .sub-english {
+        margin-right: 50px;
+        font-size: 0.9rem;
     }
     
     .prize-info-3{
@@ -140,13 +162,24 @@ h2 {
         padding: 5px;
     }
 
-    .award h2 {
+    .award .title {
         margin-left: 0px;
         font-size: 1.2rem;
         font-weight: 900px;
     }
 
-    .award p {
+    .award .sub{
+        margin-right: 0px;
+        font-size: 1rem;
+    }
+
+    .award .title-english {
+        margin-left: 0px;
+        font-size: 1rem;
+        font-weight: 900px;
+    }
+
+    .award .sub-english {
         margin-right: 0px;
         font-size: 1rem;
     }
@@ -176,15 +209,26 @@ h2 {
         padding: 5px;
     }
 
-    .award h2 {
+    .award .title {
         margin-left: 0px;
         font-size: 1.2rem;
         font-weight: 900px;
     }
 
-    .award p {
+    .award .sub {
         margin-right: 0px;
         font-size: 1rem;
+    }
+
+    .award .title-english {
+        margin-left: 0px;
+        font-size: 1rem;
+        font-weight: 900px;
+    }
+
+    .award .sub-english {
+        margin-right: 0px;
+        font-size: 0.7rem;
     }
 
     .prize-info-3 p{
@@ -199,13 +243,24 @@ h2 {
         padding: 5px;
     }
 
-    .award h2 {
+    .award .title {
         margin-left: 0px;
         font-size: 1rem;
         font-weight: 900px;
     }
 
-    .award p {
+    .award .sub {
+        margin-right: 0px;
+        font-size: 0.8rem;
+    }
+
+    .award .title-english {
+        margin-left: 0px;
+        font-size: 1rem;
+        font-weight: 900px;
+    }
+
+    .award .sub-english {
         margin-right: 0px;
         font-size: 0.8rem;
     }
@@ -245,13 +300,24 @@ h2 {
         padding: 5px;
     }
 
-    .award h2 {
+    .award .title {
         margin-left: 0px;
         font-size: 0.9rem;
         font-weight: 900px;
     }
 
-    .award p {
+    .award .sub {
+        margin-right: 0px;
+        font-size: 0.7rem;
+    }
+
+    .award .title-english {
+        margin-left: 0px;
+        font-size: 0.9rem;
+        font-weight: 900px;
+    }
+
+    .award .sub-english {
         margin-right: 0px;
         font-size: 0.7rem;
     }
