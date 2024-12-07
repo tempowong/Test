@@ -83,22 +83,26 @@ h2 {
         margin-left: 60px;
         margin-top: 8px;
         font-size: 1.2rem;
+        color: black;
     }
 
     .award .sub {
         margin-right: 60px;
         font-size: 1.2rem;
+        color: black;
     }
 
     .award .title-english {
         margin-left: 70px;
         margin-top: 8px;
         font-size: 1.2rem;
+        color: black;
     }
 
     .award .sub-english {
         margin-right: 70px;
         font-size: 1.2rem;
+        color: black;
     }
 
     .prize-info-3{
@@ -166,22 +170,26 @@ h2 {
         margin-left: 0px;
         font-size: 1.2rem;
         font-weight: 900px;
+        color: black;
     }
 
     .award .sub{
         margin-right: 0px;
         font-size: 1rem;
+        color: black;
     }
 
     .award .title-english {
         margin-left: 0px;
         font-size: 1rem;
         font-weight: 900px;
+        color: black;
     }
 
     .award .sub-english {
         margin-right: 0px;
         font-size: 1rem;
+        color: black;
     }
 }
 

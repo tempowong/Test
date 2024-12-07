@@ -96,11 +96,10 @@ a{text-decoration:none}
 
 .deadline {
     background: #008B8B;
-    color: white;
+    color: rgb(0, 0, 0);
     border: 4px solid black;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 15px;
     font-size: 20px;
 }
 
@@ -510,10 +509,10 @@ a{text-decoration:none}
         border-radius: 10px;
         font-size: 40px;
         color: #ffffff;
-        text-shadow: 1px 0 #ffffff;
         letter-spacing:1px;
         font-weight:bold;
         font-weight: 900px;
+        -webkit-text-stroke: 1.3px black;
     }
 
     .poster-header{
@@ -687,12 +686,13 @@ a{text-decoration:none}
         }
 
         .gallery-header{
-            font-size: 1.5rem;
+            font-size: 2rem;
             width: 70%;
             margin-top: -57px;
             text-align: center;
             align-items: center;
             border: 4px solid rgb(0, 0, 0);
+            -webkit-text-stroke: 1.2px black;
         }
         
         .gallery-previous{
@@ -748,8 +748,9 @@ a{text-decoration:none}
         }
 
         .gallery-header{
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-top: -55px;
+            -webkit-text-stroke: 1.2px black;
 
         }
 
@@ -770,8 +771,9 @@ a{text-decoration:none}
 
     @media (max-width:376px){
         .gallery-header{
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-top: -55px;
+            -webkit-text-stroke: 1.2px black;
         }
 
         .gallery-previous{
@@ -1912,6 +1914,8 @@ a{text-decoration:none}
             color: #fff;
             text-align: center;
             margin-top: -80px;
+            -webkit-text-stroke: 1px black;
+
         }
             .qualifications-ribbon-2{
                 --s: 1.8em; /* the ribbon size */
@@ -1956,6 +1960,7 @@ a{text-decoration:none}
             color: #fff;
             margin-left: 15px;
             margin-top: -77px;
+            -webkit-text-stroke: 1px black;
         }
             .qualifications-ribbon-4 {
                 --r: .8em; /* control the cutout */
@@ -2023,7 +2028,8 @@ a{text-decoration:none}
         font-weight: bold;
         color: #fff;
         text-align: center;
-        margin-top: -15px;
+        margin-top: -17px;
+        -webkit-text-stroke: 1px black;
     }
         .schedule-ribbon{
             --s: 1.8em; /* the ribbon size */
@@ -2112,7 +2118,7 @@ a{text-decoration:none}
         float: left;
         font-size: 25px;
         font-weight: bold;
-        color: #fff;
+        color: black;
     }
     
     .ul_sty-decimal{
@@ -2228,7 +2234,8 @@ a{text-decoration:none}
     }
 
     .download-container{
-        display: flex;
+        display: none;
+        /*display: flex;*/
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -2325,11 +2332,12 @@ a{text-decoration:none}
  .gallery-headline{
     font-family: 'Playfair Display', serif;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 70px;
     text-transform: uppercase;
     display: inline-block;
     line-height: 72px;
     margin-bottom: 20px;
+    
  } 
 
  #gallery-subhead{
