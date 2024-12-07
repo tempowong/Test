@@ -83,26 +83,30 @@ h2 {
         margin-left: 60px;
         margin-top: 8px;
         font-size: 1.2rem;
-        color: black;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .award .sub {
         margin-right: 60px;
         font-size: 1.2rem;
-        color: black;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .award .title-english {
         margin-left: 70px;
         margin-top: 8px;
         font-size: 1.2rem;
-        color: black;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .award .sub-english {
         margin-right: 70px;
         font-size: 1.2rem;
-        color: black;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .prize-info-3{
@@ -114,26 +118,34 @@ h2 {
 }
 
 @media (max-width: 1700px){
-    .award .title{
-        margin-left: 70px;
+    .award .title {
+        margin-left: 60px;
         margin-top: 8px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
-    .award .sub{
-        margin-right: 70px;
-        font-size: 1.1rem;
+    .award .sub {
+        margin-right: 60px;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .award .title-english {
-        margin-left: 50px;
+        margin-left: 60px;
         margin-top: 8px;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .award .sub-english {
-        margin-right: 50px;
-        font-size: 0.9rem;
+        margin-right: 60px;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
     
     .prize-info-3{
@@ -170,26 +182,30 @@ h2 {
         margin-left: 0px;
         font-size: 1.2rem;
         font-weight: 900px;
-        color: black;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .award .sub{
         margin-right: 0px;
         font-size: 1rem;
-        color: black;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .award .title-english {
         margin-left: 0px;
         font-size: 1rem;
         font-weight: 900px;
-        color: black;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 
     .award .sub-english {
         margin-right: 0px;
         font-size: 1rem;
-        color: black;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
 }
 
