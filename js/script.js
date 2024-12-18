@@ -50,23 +50,37 @@ window.addEventListener("load", function() {
   }
 });
 // set font size
+function getFontSize() {
+  if (localStorage.getItem('FontSize') === null){
+    // Initialize to default font size
+    setFontsize('m');
+  }else{
+    console.log(localStorage.getItem('FontSize'));
+    setFontsize(localStorage.getItem('FontSize')); 
+  }
+}
+
+
 const setFontsize = (size) => {
-  let thisSize = 's';
+  let thisSize = 'm';
   const validSizes = ['s', 'm', 'l'];
 
   if (size && validSizes.includes(size)) {
       thisSize = size;
   }
 
-  let body = document.querySelector('html');
+  let body = document.querySelector('body:not(.container)');
+  /*let arr = document.getElementsByTagName("p");*/
   let classname = 'fontsize-' + thisSize;
   let bodyClassList = body.classList;
   let existingFontclass = Array.from(bodyClassList).find((x) => x.includes('fontsize-'));
 
   if (existingFontclass) {
       bodyClassList.replace(existingFontclass, classname);
+      localStorage.setItem("FontSize", size);
   } else {
       bodyClassList.add(classname);
+      localStorage.setItem("FontSize", size);
   }
 
   // Clear previous selection
@@ -79,8 +93,13 @@ const setFontsize = (size) => {
   if (currentOption) {
       currentOption.classList.add('on'); // Mark selected option
       currentOption.classList.add('active'); 
+      
   }
 };
 
+
+window.onload = getFontSize();
+
+
 // Initialize to default font size
-setFontsize('s'); 
+/*setFontsize('m'); */
