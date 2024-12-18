@@ -44,32 +44,9 @@
                     <nav class="nav-menu" id="fanjian">
                         <a href="index.html" class="me-3"><i class="fa fa-home" aria-hidden="true"></i></a>
                         <span class="me-3">|</span>
-                        <a href="javascript:void(0);" onclick="myFunctionSmallFontIncrease()" title="Default Font Size" class="fontsize-s me-3">A</a>
-                        <a href="javascript:void(0);" onclick="myFunctionMediumFontIncrease()" title="Larger Font Size" class="fontsize-m me-3">A</a>
-                        <a href="javascript:void(0);" onclick="myFunctionLargeFontIncrease()" title="Largest Font Size" id="dot" class="fontsize-l me-3">A</a>
-                        
-                        <script>
-                            function myFunctionSmallFontIncrease() {
-                              var arr = document.getElementsByTagName('p');
-                              for (var i = 0; i < arr.length; i++) {
-                              arr[i].style.fontSize = "1em";
-                              }
-                            } 
-            
-                            function myFunctionMediumFontIncrease() {
-                              var arr = document.getElementsByTagName('p');
-                              for (var i = 0; i < arr.length; i++) {
-                              arr[i].style.fontSize = "1.3em";
-                              }
-                            } 
-            
-                            function myFunctionLargeFontIncrease() {
-                              var arr = document.getElementsByTagName('p');
-                              for (var i = 0; i < arr.length; i++) {
-                              arr[i].style.fontSize = "1.5em";
-                              }
-                            } 
-                        </script>
+                        <a href="javascript:void(0);" onclick="setFontsize('s')" title="Smaller Font Size" class="fontsize-s me-3">A</a>
+                        <a href="javascript:void(0);" onclick="setFontsize('m')" title="Default Font Size" class="fontsize-m me-3">A</a>
+                        <a href="javascript:void(0);" onclick="setFontsize('l')" title="Larger Font Size" class="fontsize-l me-3">A</a>
                         
                         <span class="me-3">|</span>
                         <a href="index.html" class="me-3">繁</a>
@@ -96,11 +73,11 @@
                 <div class="col-12 col-md-10 col-lg-8 text-center" data-aos="fade-down">
                     <img src="./asset/banner_full.png" alt="" class="img-fluid mb-4 banner-img">
                     <div class="mt-n5 px-3" id="btns" data-aos="fade-down">
-                        <button class="register-button  btn-lg w-100 mb-3 py-3" onclick="">立即報名</button>
+                        <button class="register-button  btn-lg w-100 mb-3 py-3" onclick="window.location.href='https://forms.gle/appzPSZ5RNPzCbye9'">立即報名</button>
                         <div class="deadline p-3">截止日期：2025年1月20日</div><br>
                         <div class="index-footer">
                             <div class="mt-2">
-                                <i class="fas fa-phone me-2"></i><span>(852) xxxx xxxx</span> <br class="mbr"> |
+                                <i class="fas fa-phone me-2"></i><span>(852) 44477891</span> <br class="mbr"> |
                                 <i class="fas fa-envelope me-2"></i><a href="mailto:eodebate@eoc.org.hk">eodebate@eoc.org.hk</a>
                             </div>
                             <div class="index-copyright">2024 © 平等機會委員會，版權所有 不得轉載</div>

@@ -43,32 +43,9 @@
             <nav class="nav-menu" id="fanjian">
               <a href="index-chinese-simplified.html" class="me-3"><i class="fa fa-home" aria-hidden="true"></i></a>
               <span class="me-3">|</span>
-              <a href="javascript:void(0);" onclick="myFunctionSmallFontIncrease()" title="Default Font Size" class="fontsize-s me-3">A</a>
-              <a href="javascript:void(0);" onclick="myFunctionMediumFontIncrease()" title="Larger Font Size" class="fontsize-m me-3">A</a>
-              <a href="javascript:void(0);" onclick="myFunctionLargeFontIncrease()" title="Largest Font Size" class="fontsize-l me-3">A</a>
-              
-              <script>
-                function myFunctionSmallFontIncrease() {
-                  var arr = document.getElementsByTagName('p');
-                  for (var i = 0; i < arr.length; i++) {
-                  arr[i].style.fontSize = "1em";
-                  }
-                } 
-
-                function myFunctionMediumFontIncrease() {
-                  var arr = document.getElementsByTagName('p');
-                  for (var i = 0; i < arr.length; i++) {
-                  arr[i].style.fontSize = "1.3em";
-                  }
-                } 
-
-                function myFunctionLargeFontIncrease() {
-                  var arr = document.getElementsByTagName('p');
-                  for (var i = 0; i < arr.length; i++) {
-                  arr[i].style.fontSize = "1.5em";
-                  }
-                } 
-              </script>
+              <a href="javascript:void(0);" onclick="setFontsize('s')" title="Smaller Font Size" class="fontsize-s me-3">A</a>
+              <a href="javascript:void(0);" onclick="setFontsize('m')" title="Default Font Size" class="fontsize-m me-3">A</a>
+              <a href="javascript:void(0);" onclick="setFontsize('l')" title="Larger Font Size" class="fontsize-l me-3">A</a>
 
               <span class="me-3">|</span>
               <a href="details.html" class="me-3">繁</a>
@@ -135,7 +112,7 @@
                     <div class="objective-border-bottom"></div>
                     <br>
                     <div class="objective-cue-card">
-                      平等机会委员会（平机会）举办此次辩论比赛的目的，是让青少年通过参与辩论比赛，了解香港平等机会的现况，提高公众对现行四条反歧视条例的认识，包括《性别歧视条例》、《残疾歧视条例》、《家庭岗位歧视条例》及《种族歧视条例》，并消除歧视态度，推广多元共融。
+                      平等机会委员会（平机会）举办此次辩论比赛的目的，是让青少年通过参与辩论比赛，了解香港平等机会的现况，提高公众对现行四条反歧视条例的认识，包括《性别歧视条例》、《残疾歧视条例》、《家庭岗位歧视条例》及《种族歧视条例》，以消除歧视态度，推广多元共融。
                     </div>
                   </div>
                 </section>
@@ -157,7 +134,7 @@
                     <ul class="ul_sty-decimal">
                       <li><p>委派最少一位称任的导师（如具备辩论／语文教学经验）担任第一回合至半准决赛之评判；</p></li>
                       <li><p>提供最少一天的比赛场地，分别包括比赛用之房间／学校礼堂、评判休息室，以及两个准备室（供正反双方之用）；</p></li>
-                      <li><p>参赛学校所委派之导师一经大会确认并获安排担任指定日子赛事之评判后，必须准时出席，如因事而未能出席，必须于比赛前三日通知大会，并提供一名替补导师代为担任有关赛事之评判；</p></li>
+                      <li><p>参赛学校所委派之导师一经主办机构确认并获安排担任指定日子赛事之评判后，必须准时出席，如因事而未能出席，必须于比赛前三日通知主办机构，并提供一名替补导师代为担任有关赛事之评判；</p></li>
                       <li><p>每支参赛队伍由四至十人组成，当中包括四位正选及一至六位后备；</p></li>
                       <li><p>每队须委派最少一位代表出席于 2025年 2 月8 日举行之简介会（暂定）。</p></li>
                     </ul>
@@ -170,8 +147,7 @@
                     <div class="rules-header">一般规则</div><br>
                       <ol>
                         <li><p>所有比赛均以粤语及淘汰赛形式举行，参赛队伍上限为32队，胜出者才能晋级下一回合的比赛。如遇报名队伍多于参赛上限，将以抽签决定参赛资格。</p></li>
-                        <li><p>每场比赛的辩题及比赛日期均由平机会决定，参赛者不得异议。参赛队伍的正反方，由主办机构抽签决定。</p></li>
-                        <li><p>各队比赛时间及比赛辩题均由赛会安排决定，参赛队伍不得异议及自行修改。赛期时间表暂定如下：</p></li>
+                        <li><p>各队比赛时间及比赛辩题均由主办机构安排决定，参赛队伍不得异议及自行修改。参赛队伍的正反方，由主办机构抽签决定。赛期时间表暂定如下：</p></li>
                       </ol><br>
                       <div class="schedule-ribbon">赛程表</div>
                   </div>
@@ -201,8 +177,8 @@
                   
                   <div class="rules-container-2">
                     <ol start="4">
-                      <li><p>迟到及缺席之安排：若任何一支队伍在比赛当日迟到15分钟或以上，该队伍将被取消 参赛资格，而其对手将直接取得出线权。</p></li>
-                      <li><p>主办单位有权邀请任何人士担任评判、顾问及赛会主席。</p></li>
+                      <li><p>迟到及缺席之安排：若任何一支队伍在比赛当日迟到15分钟或以上，该队伍将被取消参赛资格，而其对手将直接取得出线权。</p></li>
+                      <li><p>主办机构有权邀请任何人士担任评判、顾问及比赛主席。</p></li>
                     </ol>
                   </div>               
                   </div>
@@ -262,7 +238,7 @@
             <div class="footer-content">
               <div class="copyright ">2024 © 平等机会委员会，版权所有 不得转载</div>
               <div class="contact">
-                <i class="fas fa-phone me-2 "></i><span>(852) xxxx xxxx</span> <br class="mbr"> 
+                <i class="fas fa-phone me-2 "></i><span>(852) 44477891</span> <br class="mbr"> 
                 <i class="fas fa-envelope me-2"></i><span><a href="mailto:eodebate@eoc.org.hk">eodebate@eoc.org.hk</a></span>
               </div>
             </div>

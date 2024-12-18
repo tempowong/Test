@@ -8,8 +8,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.png">
   <title>Equal Opportunities Cup - Inter-School Debate Competition</title>
   <meta name="description" content="Registration details: Participating schools can fill out the Google Form to register. 
-  The organizer reserves the right to film the competition and use it for promotional purposes. 
-  All disputes are subject to the organizer’s interpretation. 
+  The organiser reserves the right to film the competition and use it for promotional purposes. 
+  All disputes are subject to the organiser’s interpretation. 
   If you have any questions, please call 2511 8211 or send an email to youth@eoc.org.hk for inquiries."/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -45,32 +45,9 @@
                     <nav class="nav-menu" id="fanjian">
                       <a href="index-english.html" class="me-3"><i class="fa fa-home" aria-hidden="true"></i></a>
                         <span class="me-3">|</span>
-                        <a href="javascript:void(0);" onclick="myFunctionSmallFontIncrease()" title="Default Font Size" class="fontsize-s me-3">A</a>
-                        <a href="javascript:void(0);" onclick="myFunctionMediumFontIncrease()" title="Larger Font Size" class="fontsize-m me-3">A</a>
-                        <a href="javascript:void(0);" onclick="myFunctionLargeFontIncrease()" title="Largest Font Size" class="fontsize-l me-3">A</a>
-                        
-                        <script>
-                          function myFunctionSmallFontIncrease() {
-                            var arr = document.getElementsByTagName('p');
-                            for (var i = 0; i < arr.length; i++) {
-                            arr[i].style.fontSize = "1em";
-                            }
-                          } 
-          
-                          function myFunctionMediumFontIncrease() {
-                            var arr = document.getElementsByTagName('p');
-                            for (var i = 0; i < arr.length; i++) {
-                            arr[i].style.fontSize = "1.3em";
-                            }
-                          } 
-          
-                          function myFunctionLargeFontIncrease() {
-                            var arr = document.getElementsByTagName('p');
-                            for (var i = 0; i < arr.length; i++) {
-                            arr[i].style.fontSize = "1.5em";
-                            }
-                          } 
-                        </script>
+                        <a href="javascript:void(0);" onclick="setFontsize('s')" title="Smaller Font Size" class="fontsize-s me-3">A</a>
+                        <a href="javascript:void(0);" onclick="setFontsize('m')" title="Default Font Size" class="fontsize-m me-3">A</a>
+                        <a href="javascript:void(0);" onclick="setFontsize('l')" title="Larger Font Size" class="fontsize-l me-3">A</a>
                         
                         <span class="me-3">|</span>
                         <a href="enroll.html" class="me-3">繁</a>
@@ -103,22 +80,47 @@
               <div class="content_wrapper">
         
                 <div class="qualifications-container-3" data-aos="fade-up">
-                  <div class="qualifications-ribbon-2">Registration</div>
+                  <div class="qualifications-ribbon-2-english">Application and Enquiries</div>
                   <ol>
-                    <li><p>Participants can complete the registration via Google Form (the QR Code is available on the
-                        poster, or click below.). In case of multiple submissions,
-                        the latest version will be considered final.</p></li>
-                    <li><p>The Organizer reserves the right to record the proceedings of each match for promotional
-                        purposes.</p></li>
-                    <li><p>All disputes will be interpreted by the Organizer.</p></li>
-                    <li><p>For any inquiries, please do not hesitate to call 2511 8211 to contact the Organizer, or you can
-                        send an email to eodebate@eoc.org.hk for inquiries with Equal Opportunities Commission.</p></li>
+                    <li><p>Participating schools can complete the registration via the following link <a href="https://forms.gle/MBBmNpLbawyZf5gX8" class="google-form-url">https://forms.gle/MBBmNpLbawyZf5gX8</a>or via the QR Code below. In case of multiple submissions, the latest version will be considered final. </p></li>
+                  </ol>
+                  <div class="enroll-qrcode"><img src="./asset/qrcode-3.png"></div><br><br>
+                  <ol start="2">
+                    <li><p>The EOC has commissioned a service provider to coordinate the related activities. If you have any questions, please feel free to contact Mr Chan, the person-in-charge of the service provider, by calling 44477891, or you can send an email to <a href="mailto:eodebate@eoc.org.hk">eodebate@eoc.org.hk</a> to inquire with the EOC.</p></li>
                   </ol><br>
                   <div class="btn-container" data-aos="fade-up">  
-                    <button class="enroll_btn" onclick="">Register now</button>
+                    <button class="enroll_btn" onclick="window.location.href='https://forms.gle/MBBmNpLbawyZf5gX8'">Register now</button>
                   </div><br>
                   <div class="download-container" data-aos="fade-up">
                     <a href="" class="download-header" download>Click here to download Competition Guidelines</a>
+                  </div>
+                  <div class="qualifications-container-4">
+                    <div class="sparkle-1" data-aos="fade-up"></div> 
+                    <br><br><br><br>
+                    <div class="qualifications-ribbon-4">Points to note:</div>
+                    <ol>
+                      <li><p>By participating in the debate competition, contestants acknowledge and agree that the competitions may be photographed and filmed. The Organiser reserves the right to use any photographs, videos, audios, and any other forms of media captured during the competitions in promotional materials, publications, and other communication materials of the EOC without further notification or any compensation to contestants. If a contestant does not wish to be photographed or filmed, please inform the staff of the competition upon arrival at the venue. The Organiser will respect your privacy and exclude the contestant from any individual photo and video capturing where possible.</p></li>
+                      <li><p>Information collected will be used solely for purposes of registration, communications, and related activities of the debate competition. All personal information collected will be kept confidential and accessible only by the EOC and authorised service contractors. Contestants have the right to request access to, correct, or delete their personal data.</p></li>
+                      <li><p>If the following situations occur on the day of the debate competition, all competitions on that day (including afternoon competitions) will be rescheduled:</p></li>
+                    </ol>
+                    <ol type="a">
+                      <li style="margin-left: 18px;"><p>The Hong Kong Observatory is still enforcing Tropical Cyclone Warning Signal No. 8 two hours before the competition on that day or Tropical Cyclone Warning Signal No. 8 will remain in force;</p></li>
+                      <li style="margin-left: 18px;"><p>The black rainstorm warning is in effect two hours before the competition on that day; or</p></li>
+                      <li style="margin-left: 18px;"><p>The Government issues an announcement about extreme conditions owing to adverse weather.</p></li>
+                    </ol>
+                      <p style="margin-left: 33px;">The EOC and the service provider shall not be deemed liable for any losses, damages or costs incurred by the contestants under the above circumstances.</p>
+                    <ol start="4">
+                      <li><p>After the match of the competition commences, it will be suspended if the following situations occur:</p></li>
+                    </ol>
+                    <ol type="a">
+                      <li style="margin-left: 18px;"><p>The Hong Kong Observatory announces that Tropical Cyclone Warning Signal No. 8 or black rainstorm warning will be hoisted in the coming two hours; or</p></li>
+                      <li style="margin-left: 18px;"><p>The Government issues an announcement about extreme conditions owing to adverse weather.</p></li>
+                    </ol>
+                      <p style="margin-left: 33px;">The EOC and the service provider shall not be deemed liable for any losses, damages or costs incurred by the contestants under the above circumstances.</p>
+                    <ol start="5">
+                      <li><p>The EOC and the service provider will not be responsible for any personal injury or damage to property experienced during the competition.</p></li>
+                      <li><p>For any disputes or controversies arising from this debate competition, the EOC and the service provider reserve the right to make the final decision.</p></li>
+                    </ol><br>
                   </div>
                 </div>
             </main>
@@ -127,7 +129,7 @@
             <div class="footer-content">
                 <div class="copyright ">2024 © Equal Opportunities Commission, All rights reserved. No reproduction allowed.</div>
                 <div class="contact">
-                  <i class="fas fa-phone me-2 "></i><span>(852) xxxx xxxx</span> <br class="mbr"> 
+                  <i class="fas fa-phone me-2 "></i><span>(852) 44477891</span> <br class="mbr"> 
                   <i class="fas fa-envelope me-2"></i><span><a href="mailto:eodebate@eoc.org.hk">eodebate@eoc.org.hk</a></span>
                 </div>
             </div>

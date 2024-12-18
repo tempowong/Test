@@ -42,32 +42,9 @@
                     <nav class="nav-menu" id="fanjian">
                       <a href="index.html" class="me-3"><i class="fa fa-home" aria-hidden="true"></i></a>
                         <span class="me-3">|</span>
-                        <a href="javascript:void(0);" onclick="myFunctionSmallFontIncrease()" title="Default Font Size" class="fontsize-s me-3">A</a>
-                        <a href="javascript:void(0);" onclick="myFunctionMediumFontIncrease()" title="Larger Font Size" class="fontsize-m me-3">A</a>
-                        <a href="javascript:void(0);" onclick="myFunctionLargeFontIncrease()" title="Largest Font Size" class="fontsize-l me-3">A</a>
-                        
-                        <script>
-                          function myFunctionSmallFontIncrease() {
-                            var arr = document.getElementsByTagName('p');
-                            for (var i = 0; i < arr.length; i++) {
-                            arr[i].style.fontSize = "1em";
-                            }
-                          } 
-          
-                          function myFunctionMediumFontIncrease() {
-                            var arr = document.getElementsByTagName('p');
-                            for (var i = 0; i < arr.length; i++) {
-                            arr[i].style.fontSize = "1.3em";
-                            }
-                          } 
-          
-                          function myFunctionLargeFontIncrease() {
-                            var arr = document.getElementsByTagName('p');
-                            for (var i = 0; i < arr.length; i++) {
-                            arr[i].style.fontSize = "1.5em";
-                            }
-                          } 
-                        </script>
+                        <a href="javascript:void(0);" onclick="setFontsize('s')" title="Smaller Font Size" class="fontsize-s me-3">A</a>
+                        <a href="javascript:void(0);" onclick="setFontsize('m')" title="Default Font Size" class="fontsize-m me-3">A</a>
+                        <a href="javascript:void(0);" onclick="setFontsize('l')" title="Larger Font Size" class="fontsize-l me-3">A</a>
                         
                         <span class="me-3">|</span>
                         <a href="highlight.html" class="me-3">繁</a>
@@ -124,8 +101,18 @@
                     <div id="gallery-subhead">
                       <div class="subhead"><p>平等機會盃中學校際辯論比賽</p></div>
                     </div>
-                    <br><br>
-                    <div style="font-size: 20px; font-weight: bold;"><P>即將推出</P></div>
+
+                    <section id="schedule-2" data-aos="fade-up"><br>
+                      <div class="schedule-table">
+                        <p>第一回合初賽：2025年2月22日(六)及23日(日)</p>
+                        <p>第二回合初賽：2025年3月8日(日)</p>
+                        <p>半準決賽：2025年3月29日(日)</p>
+                        <p>準決賽：2025年4月12日(六)</p>
+                        <p>總決賽暨頒獎典禮：2025年5月3日(六)（暫定）</p>
+                        <br><br>
+                        <P>(即將推出)</P>
+                      </div>
+                    </section>
                     
                     <div id="album-hide">
                       <div class="album">
@@ -189,7 +176,7 @@
             <div class="footer-content">
                 <div class="copyright ">2024 © 平等機會委員會，版權所有 不得轉載</div>
                 <div class="contact">
-                  <i class="fas fa-phone me-2 "></i><span>(852) xxxx xxxx</span> <br class="mbr"> 
+                  <i class="fas fa-phone me-2 "></i><span>(852) 44477891</span> <br class="mbr"> 
                   <i class="fas fa-envelope me-2"></i><span><a href="mailto:eodebate@eoc.org.hk">eodebate@eoc.org.hk</a></span>
                 </div>
             </div>
