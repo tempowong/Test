@@ -1,4 +1,4 @@
-html {font-size:18px; scroll-behavior:smooth;}
+html {font-size: 16px; scroll-behavior:smooth;}
 
 body {
     min-height: 100vh;
@@ -138,15 +138,18 @@ a{text-decoration:none}
 }
 /*font option*/
 .fontsize-s {
-    font-size: 90%;
+    /*font-size: 90%;*/
+    font-size: 18px;
 }
 
 .fontsize-m {
-    font-size: 115%;
+    /*font-size: 115%;*/
+    font-size: 20px;
 }
 
 .fontsize-l {
-    font-size: 130%;
+    /*font-size: 130%;*/
+    font-size: 22px;
 }
 
 /* banner zoom out */
@@ -1480,13 +1483,17 @@ a{text-decoration:none}
 
  .schedule-card{
     position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
+
+    /*----Flip animation----*/
+    /*transition: transform 1s;*/
+    /*transform-style: preserve-3d;*/
  }
 
  .schedule-card:hover {
-    transform: rotateY( 180deg ) ;
-    transition: transform 0.5s;
+
+    /*----Flip animation----*/
+    /*transform: rotateY( 180deg ) ;*/
+    /*transition: transform 0.5s;*/
  }
 
 .front, .back{
@@ -1624,6 +1631,7 @@ a{text-decoration:none}
         margin:auto;
         margin-top: 10px;
         font-size: 1.3rem;
+        height: 400px;
     }
 }
 
@@ -1638,6 +1646,8 @@ a{text-decoration:none}
         margin:auto;
         margin-top: 10px;
         font-size: 1.3rem;
+        height: 400px;
+
     }
 }
 
@@ -1652,6 +1662,7 @@ a{text-decoration:none}
         margin:auto;
         font-size: 1.2rem;
         margin-top: 10px;
+        height: 400px;
     }
 }
 
@@ -1669,6 +1680,7 @@ a{text-decoration:none}
         padding: 20px;
         margin-top: 10px;
         font-size: 1rem;
+        height: 450px;
     }
 }
 
@@ -1684,6 +1696,7 @@ a{text-decoration:none}
         font-size: 1rem;
         padding: 20px;
         margin-top: 10px;
+        height: 480px;
     }
 }
 
@@ -1699,6 +1712,7 @@ a{text-decoration:none}
         font-size: 0.9rem;
         padding: 20px;
         margin-top: 10px;
+        height: 450px;
     }
 }
 
@@ -1910,11 +1924,11 @@ a{text-decoration:none}
             left: 50%;
             transform: translateX(-50%);
             padding: 0.5rem 1rem;
-            font-size: 28px;
+            font-size: 25px;
             font-weight: bold;
             color: #fff;
             text-align: center;
-            margin-top: -80px;
+            margin-top: -75px;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
         }
@@ -1933,6 +1947,52 @@ a{text-decoration:none}
                 clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
                 background-color: #87bb44; /* the main color */
                 width: 300px;
+            }
+
+            .qualifications-ribbon-2-english{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 0.5rem 1rem;
+                font-size: 25px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                margin-top: -75px;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    
+            }
+                .qualifications-ribbon-2-english{
+                    --s: 1.8em; /* the ribbon size */
+                    --d: .8em;  /* the depth */
+                    --c: .8em;  /* the cutout part */
+            
+                    padding: 0 calc(var(--s) + .5em) var(--d);
+                    line-height: 1.8;
+                    background:
+                    conic-gradient(at left  var(--s) bottom var(--d),
+                    #0000 25%,#0008 0 37.5%,#0004 0) 0   /50% 100% no-repeat,
+                    conic-gradient(at right var(--s) bottom var(--d),
+                    #0004 62.5%,#0008 0 75%,#0000 0) 100%/50% 100% no-repeat;
+                    clip-path: polygon(0 var(--d), var(--s) var(--d),var(--s) 0,calc(100% - var(--s)) 0,calc(100% - var(--s)) var(--d),100% var(--d),calc(100% - var(--c)) calc(50% + var(--d)/2),100% 100%,calc(100% - var(--s) - var(--d)) 100%,calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) calc(100% - var(--d)),calc(var(--s) + var(--d)) 100%,0 100%,var(--c) calc(50% + var(--d)/2));
+                    background-color: #87bb44; /* the main color */
+                    width: 450px;
+                }
+
+            @media (max-width:500px){
+                .qualifications-ribbon-2-english{
+                    font-size: 20px;
+                    width: 350px;
+                    margin-top: -65px;
+                }
+            }
+
+            @media (max-width:376px){
+                .qualifications-ribbon-2-english{
+                    font-size: 20px;
+                    width: 350px;
+                    margin-top: -65px;
+                }
             }
         
         .qualifications-ribbon-3 {
@@ -2030,7 +2090,7 @@ a{text-decoration:none}
         font-weight: bold;
         color: #fff;
         text-align: center;
-        margin-top: -17px;
+        margin-top: -12px;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
         .schedule-ribbon{
@@ -2121,6 +2181,15 @@ a{text-decoration:none}
         font-size: 25px;
         font-weight: bold;
         color: black;
+        width: 1200px;
+    }
+
+    .sub_main-eng{
+        float: left;
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+        width: 1200px;
     }
     
     .ul_sty-decimal{
@@ -2160,7 +2229,7 @@ a{text-decoration:none}
         width: 100%;
         border-collapse: collapse;
         margin-top: -20px;
-        font-size: 15px;
+        /*font-size: 15px;*/
         font-weight: bold;
         background-color: #eedfb0;
     }
@@ -2182,6 +2251,44 @@ a{text-decoration:none}
         display: block;
         color: #000000;
     }
+
+    @media (max-width:1000px){
+        .sub_main-eng{
+            width: 600px;
+        }
+      }
+
+    
+
+      @media (max-width:600px){
+        .sub_main{
+            width: 350px;
+        }
+
+        .sub_main-eng{
+            width: 400px;
+        }
+      }
+    
+      @media (max-width:431px){
+        .sub_main{
+            width: 300px;
+        }
+
+        .sub_main-eng{
+            width: 300px;
+        }
+      }
+    
+      @media (max-width:376px){
+        .sub_main{
+            width: 300px;
+        }
+
+        .sub_main-eng{
+            width: 300px;
+        }
+      }
 
 /* ------------------------------------------------------------------- 
  * ## footer
@@ -2245,6 +2352,15 @@ a{text-decoration:none}
         font-weight: bold;
         color: #000000;
 
+    }
+
+    .enroll-qrcode{
+        display: flex; 
+        justify-content: center;
+    }
+
+    .enroll-qrcode img{
+        width: 20%;
     }
 
     .enroll_btn {
@@ -2314,15 +2430,35 @@ a{text-decoration:none}
     visibility: visible;
   }  
 
+  @media (max-width:1000px){
+    .enroll-qrcode img{
+        width: 30%;
+    }
+  }
+
+  @media (max-width:600px){
+    .enroll-qrcode img{
+        width: 50%;
+    }
+  }
+
   @media (max-width:431px){
     .google-form-url{
         font-size: 12px;
+    }
+
+    .enroll-qrcode img{
+        width: 70%;
     }
   }
 
   @media (max-width:376px){
     .google-form-url{
         font-size: 11px;
+    }
+
+    .enroll-qrcode img{
+        width: 70%;
     }
   }
 
@@ -2746,7 +2882,7 @@ a{text-decoration:none}
 
  .poster {  
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
   }

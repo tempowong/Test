@@ -47,7 +47,7 @@ h2 {
 
 .prize-info-1{
     display: block;
-    padding:0px 400px;
+    padding:0px 0px;
     padding-left: 50px;
     float:left;
     align-items: left;
@@ -55,7 +55,7 @@ h2 {
 
 .prize-info-2{
     display: block;
-    padding:0px 400px;
+    padding: 0px 0px;
     padding-right: 50px;
     float:right;
     align-items: right;
@@ -63,7 +63,7 @@ h2 {
 
 .prize-info-3{
     display: block;
-    padding:0px 400px;
+    padding: 0px 500px;
     padding-left: 50px;
     float:left;
     align-items: left;
@@ -144,10 +144,11 @@ h2 {
     .award .sub-english {
         margin-right: 60px;
         font-size: 1.2rem;
+        padding-left: 100px;
         color: rgb(255, 255, 255);
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-    
+
     .prize-info-3{
         padding:0px 200px;
         padding-left: 50px;
@@ -204,6 +205,7 @@ h2 {
     .award .sub-english {
         margin-right: 0px;
         font-size: 1rem;
+        padding-left: 0px;
         color: rgb(255, 255, 255);
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
