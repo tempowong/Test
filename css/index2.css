@@ -3135,6 +3135,13 @@ footer{
 .footer-content .mbr{display: none;}
 }
 
+@media only screen and (max-width: 414px){
+    .footer-content .mbr{display: none;}
+}
+
+@media only screen and (max-width: 376px){
+    .footer-content .mbr{display: none;}
+}
 
 /* ------------------------------------------------------------------- 
  * ## small mobile devices
