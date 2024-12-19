@@ -52,7 +52,7 @@ window.addEventListener("load", function() {
 // set font size
 function getFontSize() {
   if (localStorage.getItem('FontSize') === null){
-    //setFontsize('m');
+    setFontsize('m');
 
   }else{
     console.log(localStorage.getItem('FontSize'));
