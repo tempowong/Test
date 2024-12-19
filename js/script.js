@@ -52,14 +52,13 @@ window.addEventListener("load", function() {
 // set font size
 function getFontSize() {
   if (localStorage.getItem('FontSize') === null){
-    // Initialize to default font size
-    setFontsize('m');
+    //setFontsize('m');
+
   }else{
     console.log(localStorage.getItem('FontSize'));
     setFontsize(localStorage.getItem('FontSize')); 
   }
 }
-
 
 const setFontsize = (size) => {
   let thisSize = 'm';
@@ -97,9 +96,17 @@ const setFontsize = (size) => {
   }
 };
 
+/*const mediaQuery = window.matchMedia('(max-width: 600px)');
+
+          if (mediaQuery.matches) {
+            console.log('Viewport is 600px or less');
+            setFontsize('s');
+          } else {
+            console.log('Viewport is greater than 600px');
+            setFontsize('l');
+          }*/
 
 window.onload = getFontSize();
-
 
 // Initialize to default font size
 /*setFontsize('m'); */
