@@ -2055,6 +2055,14 @@ a{text-decoration:none}
                 width: 300px;
             }
 
+            @media (max-width:414px){
+                .qualifications-ribbon-4{
+                    font-size: 22px;
+                    margin-top: -70px;
+                }
+            }
+
+
         @media (max-width:378px){
             .qualifications-ribbon-4{
                 font-size: 22px;
