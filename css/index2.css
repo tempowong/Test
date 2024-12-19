@@ -139,17 +139,17 @@ a{text-decoration:none}
 /*font option*/
 .fontsize-s {
     /*font-size: 90%;*/
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .fontsize-m {
     /*font-size: 115%;*/
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .fontsize-l {
     /*font-size: 130%;*/
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /* banner zoom out */
@@ -657,7 +657,7 @@ a{text-decoration:none}
 
         .download-header{
             width: 220px;
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
 
         .poster-header{
@@ -2343,8 +2343,7 @@ a{text-decoration:none}
     }
 
     .download-container{
-        display: none;
-        /*display: flex;*/
+        display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -2444,7 +2443,7 @@ a{text-decoration:none}
 
   @media (max-width:431px){
     .google-form-url{
-        font-size: 12px;
+        /*font-size: 12px;*/
     }
 
     .enroll-qrcode img{
@@ -2454,7 +2453,7 @@ a{text-decoration:none}
 
   @media (max-width:376px){
     .google-form-url{
-        font-size: 11px;
+        /*font-size: 11px;*/
     }
 
     .enroll-qrcode img{
@@ -3097,7 +3096,7 @@ a{text-decoration:none}
     }
 
     .rules-container {
-        font-size: 1rem;
+        /*font-size: 1rem;*/
     }
 
     .goto a{

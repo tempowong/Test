@@ -105,6 +105,7 @@ h2 {
     .award .sub-english {
         margin-right: 70px;
         font-size: 1.2rem;
+        padding-left: 100px;
         color: rgb(255, 255, 255);
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
