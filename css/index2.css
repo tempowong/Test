@@ -2554,6 +2554,11 @@ a{text-decoration:none}
 }
 
 @media (max-width:600px){
+    .gallery-headline{
+        font-weight: 900;
+        font-size: 60px;    
+    }
+
     .gallery-previous{
         width: 30%;
         height: 30%;
