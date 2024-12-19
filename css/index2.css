@@ -773,7 +773,7 @@ a{text-decoration:none}
         }
     }
 
-    @media (max-width:376px){
+    @media (max-width:378px){
         .gallery-header{
             font-size: 2rem;
             margin-top: -55px;
@@ -1987,7 +1987,7 @@ a{text-decoration:none}
                 }
             }
 
-            @media (max-width:376px){
+            @media (max-width:378px){
                 .qualifications-ribbon-2-english{
                     font-size: 20px;
                     width: 350px;
@@ -2055,7 +2055,7 @@ a{text-decoration:none}
                 width: 300px;
             }
 
-        @media (max-width:376px){
+        @media (max-width:378px){
             .qualifications-ribbon-4{
                 font-size: 22px;
                 margin-top: -70px;
@@ -2280,7 +2280,7 @@ a{text-decoration:none}
         }
       }
     
-      @media (max-width:376px){
+      @media (max-width:378px){
         .sub_main{
             width: 300px;
         }
@@ -2451,7 +2451,7 @@ a{text-decoration:none}
     }
   }
 
-  @media (max-width:376px){
+  @media (max-width:378px){
     .google-form-url{
         /*font-size: 11px;*/
     }
