@@ -677,6 +677,10 @@ a{text-decoration:none}
             border: 4px solid black;
         }
 
+        .news-container-1{
+            border: 4px solid black;
+        }
+
         .rules-container{
             border: 4px solid black;
         }
@@ -2911,11 +2915,61 @@ a{text-decoration:none}
     filter: grayscale(0);
   }
 
+  .news-container-1 {
+    position: relative;
+    border: 7px solid black;
+    background-color: #eedfb0;
+    padding: 2rem;
+}
+
+
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+    border-bottom: 2px solid #5aa3a7;
+}
+
+
+
+.news-date {
+    background-color: #f2dede; /* Light pink background for the date */
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-date .year {
+    font-size: 0.9rem;
+    color: #8d4a4a; /* Slightly darker pink for year text */
+}
+
+.news-date .date {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.news-text a{
+    text-decoration: none;
+    flex-grow: 1;
+    font-size: 1rem;
+    color: black;
+}
 
 @media only screen and (max-width:414px){
     .poster-img {
         width: 300px;
         height: 100%;
+      }
+      .news-item {
+        width: 100%;
       }
   }
 
