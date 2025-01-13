@@ -2961,6 +2961,7 @@ a{text-decoration:none}
     flex-grow: 1;
     font-size: 1rem;
     color: black;
+    font-weight:bold
 }
 
 @media only screen and (max-width:414px){
