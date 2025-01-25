@@ -1,0 +1,492 @@
+.tournament-container {
+  margin: 10px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  background-color: #eedfb0;
+}
+
+.tournament-headers {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 0 20px;
+}
+
+.tournament-headers h3 {
+  width: auto;
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  border-right: 1px dashed #ccc;
+  margin: 0;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.tournament-headers h3:last-child {
+  border-right: none;
+}
+
+.date {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.tournament-brackets {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  background: #fdfdfd;
+  margin-bottom: 50px;
+  padding: 0 30px;
+  justify-content: space-between;
+}
+
+.bracket {
+  flex: 1;
+  display: flex;
+  margin: 0;
+  padding: 30px 0;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.bracket-left{
+    border-right: 1px dashed #ccc;
+}   
+
+.bracket-right{
+    border-left: 1px dashed #ccc;
+}
+
+.team-item {
+  background-color: #fff;
+  padding: .5rem;
+  display: block;
+  margin: .5rem 10px;
+  position: relative;
+  line-height: 2;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+
+.team-item:after {
+  content: '';
+  border-color: #000;
+  border-width: 2px;
+  position: absolute;
+  display: block;
+  width: 10px;
+  right: -11px;
+}
+
+.team-item:nth-of-type(odd):after {
+  border-right-style: solid;
+  border-top-style: solid;
+  height: 100%;
+  top: 50%;
+}
+
+.team-item:nth-of-type(even):after {
+  border-right-style: solid;
+  border-bottom-style: solid;
+  height: 100%;
+  top: -50%;
+}
+
+.team-item:before {
+  content: '';
+  border-top: 2px solid #000;
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  left: -10px;
+  top: 50%;
+}
+
+
+.bracket-2 .team-item:nth-of-type(odd):after {
+  height: 200%;
+  top: 50%;
+}
+
+.bracket-2 .team-item:nth-of-type(even):after {
+  height: 200%;
+  top: -150%;
+}
+
+.bracket-3 .team-item:nth-of-type(odd):after {
+  height: 350%;
+  top: 50%;
+}
+
+.bracket-3 .team-item:nth-of-type(even):after {
+  height: 350%;
+  top: -300%;
+}
+
+
+.bracket:last-of-type .team-item:after,
+.bracket:last-of-type .team-item:before {
+    display: none;
+}
+
+
+.bracket-left:first-of-type .team-item:before {
+    display: none;
+}
+
+.bracket-right:last-of-type .team-item:before {
+    display: none;
+}
+
+
+.bracket-right.bracket-1 .team-item:after {
+    display: block;
+    left: -11px;
+    right: auto;
+    border-left-style: solid;
+    border-right-style: none;
+}
+
+.bracket-right.bracket-1 .team-item:nth-of-type(odd):after {
+    border-top-style: solid;
+    height: 100%;
+    top: 50%;
+}
+
+.bracket-right.bracket-1 .team-item:nth-of-type(even):after {
+    border-bottom-style: solid;
+    height: 100%;
+    top: -50%;
+}
+
+.team-item time {
+  display: inline-block;
+  background-color: #dbdbdb;
+  font-size: .8rem;
+  padding: 0 .6rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .tournament-brackets {
+    padding: 0 20px;
+  }
+  
+  .team-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tournament-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .tournament-container {
+    min-width: 900px;
+    padding-bottom: 20px;
+  }
+  
+  .team-item {
+    font-size: 14px;
+    padding: .3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tournament-headers h3 {
+    font-size: 14px;
+    padding: .5rem;
+  }
+  
+  .date {
+    font-size: 12px;
+  }
+
+  .team-item {
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+
+  .team-item:after {
+    width: 8px;
+    right: -9px;
+  }
+
+  .team-item:before {
+    width: 8px;
+    left: -8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tournament-container {
+    margin: 0 -15px;
+  }
+
+  .tournament-headers h3 {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .team-item {
+    font-size: 0.75rem;
+    padding: .2rem;
+    margin: .2rem 8px;
+  }
+
+  .team-item time {
+    padding: 0 .4rem;
+  }
+
+  .bracket-2 {
+    .team-item:nth-of-type(odd):after {
+      height: 180%;
+      top: 55%;
+    }
+    .team-item:nth-of-type(even):after {
+      height: 180%;
+      top: -140%;
+    }
+  }
+
+  .bracket-3 {
+    .team-item:nth-of-type(odd):after {
+      height: 300%;
+      top: 45%;
+    }
+    .team-item:nth-of-type(even):after {
+      height: 300%;
+      top: -250%;
+    }
+  }
+
+  .bracket-4 {
+    .team-item:nth-of-type(odd):after {
+      height: 600%;
+      top: 45%;
+    }
+    .team-item:nth-of-type(even):after {
+      height: 600%;
+      top: -550%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .tournament-container {
+    position: relative;
+  }
+
+  .tournament-container:after {
+    content: '← 左右滑動查看更多 →';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: #666;
+    white-space: nowrap;
+  }
+
+  /* 優化觸控滾動 */
+  .tournament-brackets {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .tournament-headers,
+  .tournament-brackets {
+    padding: 0 15px;
+  }
+  
+  .tournament-headers h3 {
+    font-size: 12px;
+  }
+}
+
+/* 右側區域的連接線調整 */
+.bracket-right .team-item:after {
+    left: -11px;
+    right: auto;
+}
+
+.bracket-right .team-item:before {
+    right: -10px;
+    left: auto;
+}
+
+.bracket-right .team-item:nth-of-type(odd):after {
+    border-left-style: solid;
+    border-top-style: solid;
+    border-right-style: none;
+    height: 100%;
+    top: 50%;
+}
+
+.bracket-right .team-item:nth-of-type(even):after {
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-right-style: none;
+    height: 100%;
+    top: -50%;
+}
+
+
+.bracket-right.bracket-2 .team-item:nth-of-type(odd):after {
+    height: 200%;
+    top: 50%;
+    left: -11px;
+}
+
+.bracket-right.bracket-2 .team-item:nth-of-type(even):after {
+    height: 200%;
+    top: -150%;
+    left: -11px;
+}
+
+
+.bracket-right.bracket-3 .team-item:nth-of-type(odd):after {
+    height: 350%;
+    top: 50%;
+    left: -11px;
+}
+
+.bracket-right.bracket-3 .team-item:nth-of-type(even):after {
+    height: 350%;
+    top: -300%;
+    left: -11px;
+}
+
+.bracket-right .team-item:before {
+    content: '';
+    border-top: 2px solid #000;
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    right: -10px;
+    left: auto;
+    top: 50%;
+}
+
+.bracket-right:first-child .team-item:after {
+    display: none;
+}
+
+.bracket-final {
+    flex: 1;
+    border-right: none;
+    border-left: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.final-match {
+    display: block;
+    background-color: #fff8e7;
+    border: 2px solid #000;
+    padding: .5rem;
+    width: 78px;
+    text-align: center;
+}
+
+.final-match .date {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* 響應式調整 */
+@media screen and (max-width: 992px) {
+    .bracket-final {
+        flex: 0.4;
+        margin: 0 5px;
+    }
+    
+    .final-match {
+        margin: 10px 5px;
+        font-size: 0.9em;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .final-match {
+        width: 80px;
+    }
+}
+
+/* 移除 bracket-4 的 after effect */
+.bracket-4 .team-item:after {
+    display: none;
+}
+
+.bracket-4.bracket-right .team-item:after {
+    display: none;
+}
+
+/* 移除相關的高度設置 */
+.bracket-4 .team-item:nth-of-type(odd):after,
+.bracket-4 .team-item:nth-of-type(even):after,
+.bracket-4.bracket-right .team-item:nth-of-type(odd):after,
+.bracket-4.bracket-right .team-item:nth-of-type(even):after {
+    display: none;
+}
+
+/* 保留其他必要的樣式 */
+.bracket-4 {
+    flex: 1;
+    display: flex;
+    margin: 0;
+    padding: 30px 0;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+/* 移除 bracket-9 的所有樣式 */
+.bracket-9 {
+    flex: 1;
+    border-right: none;
+    border-left: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.bracket-9 .team-item:before,
+.bracket-9 .team-item:after {
+    content: '';
+    border-top: 1px solid #000;
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    top: 50%;
+}
+
+.bracket-9 .team-item:before {
+    left: -10px;
+}
+
+.bracket-9 .team-item:after {
+    right: -10px;
+}
+

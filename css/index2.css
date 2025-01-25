@@ -2241,7 +2241,7 @@ a{text-decoration:none}
        margin-top: 5%;
         position: relative;
         width: 100%;
-        padding-top: 56.25%; /* 16:9 aspect ratio */
+      
         overflow: hidden;
     }
     .iframe-container iframe {
