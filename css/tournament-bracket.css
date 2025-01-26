@@ -441,7 +441,7 @@
     display: none;
 }
 
-/* 移除相關的高度設置 */
+
 .bracket-4 .team-item:nth-of-type(odd):after,
 .bracket-4 .team-item:nth-of-type(even):after,
 .bracket-4.bracket-right .team-item:nth-of-type(odd):after,
@@ -449,7 +449,7 @@
     display: none;
 }
 
-/* 保留其他必要的樣式 */
+
 .bracket-4 {
     flex: 1;
     display: flex;
@@ -460,7 +460,7 @@
     list-style-type: none;
 }
 
-/* 移除 bracket-9 的所有樣式 */
+
 .bracket-9 {
     flex: 1;
     border-right: none;
@@ -488,5 +488,30 @@
 
 .bracket-9 .team-item:after {
     right: -10px;
+}
+
+
+.zh-Hant-HK .tournament-container:after {
+    content: '← 左右滑動查看更多 →';
+}
+
+
+[lang="zh-CN"] .tournament-container:after {
+    content: '← 左右滑动查看更多 →';
+}
+
+
+[lang="en"] .tournament-container:after {
+    content: '← Slide to view more →';
+}
+
+.tournament-container:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: #666;
+    white-space: nowrap;
 }
 
