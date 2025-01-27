@@ -1,6 +1,6 @@
 .tournament-container {
   margin: 10px auto;
-  max-width: 1200px;
+  max-width: 1800px;
   display: flex;
   flex-direction: column;
   border: 3px solid black;
@@ -8,23 +8,24 @@
 }
 
 .tournament-headers {
-  flex-grow: 1;
+  flex-grow: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   border-bottom: 1px solid #ccc;
-  padding: 0 20px;
+  padding: 0;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .tournament-headers h3 {
-  width: auto;
-  flex: 1;
+  width: 140px;
+  flex: none;
   text-align: center;
   font-weight: bold;
   border-right: 1px dashed #ccc;
   margin: 0;
   padding: 1rem;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .tournament-headers h3:last-child {
@@ -45,12 +46,14 @@
   list-style-type: none;
   background: #fdfdfd;
   margin-bottom: 50px;
-  padding: 0 30px;
-  justify-content: space-between;
+  padding: 0;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .bracket {
-  flex: 1;
+  flex: none;
+  width: 140px;
   display: flex;
   margin: 0;
   padding: 30px 0;
@@ -73,9 +76,16 @@
   display: block;
   margin: .5rem 10px;
   position: relative;
-  line-height: 2;
+  line-height: 1.4;
   text-align: center;
   border: 1px solid #dee2e6;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  width: 120px;
+  word-break: break-word;
 }
 
 
@@ -180,11 +190,7 @@
 
 @media screen and (max-width: 1200px) {
   .tournament-brackets {
-    padding: 0 20px;
-  }
-  
-  .team-item {
-    font-size: 0.9rem;
+    padding: 0;
   }
 }
 
@@ -195,45 +201,45 @@
   }
   
   .tournament-container {
-    min-width: 900px;
+    min-width: 1500px;
     padding-bottom: 20px;
   }
-  
-  .team-item {
+
+  .tournament-headers h3 {
+    width: 140px;
     font-size: 14px;
-    padding: .3rem;
+    padding: .5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .tournament-headers h3 {
-    font-size: 14px;
-    padding: .5rem;
+    width: 140px;
+    font-size: 12px;
   }
   
   .date {
     font-size: 12px;
   }
-
-  .team-item {
-    font-size: 0.8rem;
-    line-height: 1.8;
-  }
-
-  .team-item:after {
-    width: 8px;
-    right: -9px;
-  }
-
-  .team-item:before {
-    width: 8px;
-    left: -8px;
-  }
 }
 
 @media screen and (max-width: 576px) {
   .tournament-container {
-    margin: 0 -15px;
+    margin: 0;
+    width: 100%;
+    min-width: 1300px;
+  }
+
+  #bracket {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .tournament-wrapper {
+    padding: 0;
+    width: 100%;
   }
 
   .tournament-headers h3 {
@@ -246,75 +252,11 @@
     padding: .2rem;
     margin: .2rem 8px;
   }
-
-  .team-item time {
-    padding: 0 .4rem;
-  }
-
-  .bracket-2 {
-    .team-item:nth-of-type(odd):after {
-      height: 180%;
-      top: 55%;
-    }
-    .team-item:nth-of-type(even):after {
-      height: 180%;
-      top: -140%;
-    }
-  }
-
-  .bracket-3 {
-    .team-item:nth-of-type(odd):after {
-      height: 300%;
-      top: 45%;
-    }
-    .team-item:nth-of-type(even):after {
-      height: 300%;
-      top: -250%;
-    }
-  }
-
-  .bracket-4 {
-    .team-item:nth-of-type(odd):after {
-      height: 600%;
-      top: 45%;
-    }
-    .team-item:nth-of-type(even):after {
-      height: 600%;
-      top: -550%;
-    }
-  }
 }
-
 
 @media screen and (max-width: 992px) {
   .tournament-container {
     position: relative;
-  }
-
-  .tournament-container:after {
-    content: '← 左右滑動查看更多 →';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.8rem;
-    color: #666;
-    white-space: nowrap;
-  }
-
-  /* 優化觸控滾動 */
-  .tournament-brackets {
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-  }
-
-  .tournament-headers,
-  .tournament-brackets {
-    padding: 0 15px;
-  }
-  
-  .tournament-headers h3 {
-    font-size: 12px;
   }
 }
 
@@ -387,7 +329,7 @@
 }
 
 .bracket-final {
-    flex: 1;
+    width: 140px;
     border-right: none;
     border-left: none;
     position: relative;
@@ -402,7 +344,7 @@
     background-color: #fff8e7;
     border: 2px solid #000;
     padding: .5rem;
-    width: 78px;
+    width: 140px;
     text-align: center;
 }
 
@@ -415,20 +357,20 @@
 /* 響應式調整 */
 @media screen and (max-width: 992px) {
     .bracket-final {
-        flex: 0.4;
+        flex: none;
         margin: 0 5px;
     }
     
     .final-match {
         margin: 10px 5px;
         font-size: 0.9em;
-        width: 100px;
+        width: 140px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .final-match {
-        width: 80px;
+        width: 140px;
     }
 }
 
@@ -451,7 +393,8 @@
 
 
 .bracket-4 {
-    flex: 1;
+    flex: none;
+    width: 140px;
     display: flex;
     margin: 0;
     padding: 30px 0;
@@ -491,20 +434,6 @@
 }
 
 
-.zh-Hant-HK .tournament-container:after {
-    content: '← 左右滑動查看更多 →';
-}
-
-
-[lang="zh-CN"] .tournament-container:after {
-    content: '← 左右滑动查看更多 →';
-}
-
-
-[lang="en"] .tournament-container:after {
-    content: '← Slide to view more →';
-}
-
 .tournament-container:after {
     position: absolute;
     bottom: 0;
@@ -513,5 +442,61 @@
     font-size: 0.8rem;
     color: #666;
     white-space: nowrap;
+}
+
+#bracket {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tournament-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.bracket-4.bracket-right {
+    width: 140px;
+    flex: none;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .tournament-container {
+        position: relative;
+    }
+
+    .tournament-container:after {
+        content: '← 左右滑動查看更多 →';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem;
+        color: #666;
+        white-space: nowrap;
+        display: none; 
+    }
+
+  
+    .tournament-wrapper::-webkit-scrollbar {
+        display: block;
+    }
+
+    .tournament-wrapper.scrollable .tournament-container:after {
+        display: block;
+    }
+
+ 
+    .zh-Hant-HK .tournament-container:after {
+        content: '← 左右滑動查看更多 →';
+    }
+
+    [lang="zh-CN"] .tournament-container:after {
+        content: '← 左右滑动查看更多 →';
+    }
+
+    [lang="en"] .tournament-container:after {
+        content: '← Slide to view more →';
+    }
 }
 

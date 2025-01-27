@@ -110,3 +110,19 @@ window.onload = getFontSize();
 
 // Initialize to default font size
 /*setFontsize('m'); */
+document.addEventListener('DOMContentLoaded', function() {
+  const wrapper = document.querySelector('.tournament-wrapper');
+  
+  function checkScrollable() {
+      if (wrapper.scrollWidth > wrapper.clientWidth) {
+          wrapper.classList.add('scrollable');
+      } else {
+          wrapper.classList.remove('scrollable');
+      }
+  }
+
+
+  checkScrollable();
+
+  window.addEventListener('resize', checkScrollable);
+});
