@@ -471,7 +471,7 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 0.8rem;
+        font-size: 13px;
         color: black;
         white-space: nowrap;
         display: none; 
