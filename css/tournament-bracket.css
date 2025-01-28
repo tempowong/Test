@@ -206,7 +206,6 @@
   
   .tournament-container {
     min-width: 1500px;
-    padding-bottom: 20px;
   }
 
   .tournament-headers h3 {
@@ -264,7 +263,6 @@
   }
 }
 
-/* 右側區域的連接線調整 */
 .bracket-right .team-item:after {
     left: -11px;
     right: auto;
@@ -358,7 +356,6 @@
     margin-top: 5px;
 }
 
-/* 響應式調整 */
 @media screen and (max-width: 992px) {
     .bracket-final {
         flex: none;
@@ -378,7 +375,6 @@
     }
 }
 
-/* 移除 bracket-4 的 after effect */
 .bracket-4 .team-item:after {
     display: none;
 }
@@ -471,12 +467,12 @@
 
     .tournament-container:after {
         content: '← 左右滑動查看更多 →';
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         font-size: 0.8rem;
-        color: #666;
+        color: black;
         white-space: nowrap;
         display: none; 
     }
