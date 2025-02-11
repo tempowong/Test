@@ -1,152 +1,185 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-HK">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.png" />
+        <title>平等機會盃 - 中學校際辯論比賽</title>
+        <meta name="description" content="報名詳情 - 平等機會盃中學校際辯論比賽" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <!-- AOS特效的Css -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link href="./css/index2.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/award.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image/x-icon" href="./favicon.png">
-  <title>平等機會盃 - 中學校際辯論比賽</title>
-  <meta name="description" content="報名詳情 - 平等機會盃中學校際辯論比賽"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- AOS特效的Css -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="./css/index2.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/award.css">
+        <meta property="og:title" content="報名詳情 - 平等機會盃中學校際辯論比賽" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/hei08285744/Test/refs/heads/main/asset/meta-image.png" />
+        <meta property="og:site_name" content="平等機會盃中學校際辯論比賽" />
+        <meta property="og:email" content="eodebate@eoc.org.hk" />
+        <meta property="og:phone_number" content="(852) 44477891" />
+        <meta property="og:locale" content="zh_HK" />
+    </head>
 
-  <meta property="og:title" content="報名詳情 - 平等機會盃中學校際辯論比賽">
-  <meta property="og:description" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="https://raw.githubusercontent.com/hei08285744/Test/refs/heads/main/asset/meta-image.png" />
-  <meta property="og:site_name" content="平等機會盃中學校際辯論比賽" />
-  <meta property="og:email" content="eodebate@eoc.org.hk" />
-  <meta property="og:phone_number" content="(852) 44477891" />
-  <meta property="og:locale" content="zh_HK" />
-</head>
+    <body>
+        <!-- header -->
+        <header class="header py-3">
+            <div class="nav-container">
+                <nav class="navbar navbar-expand-md p-0">
+                    <div class="logo-container">
+                        <img src="./asset/logo-chinese.png" alt="平等機會委員會" class="img-fluid" />
+                    </div>
 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-<body>
-  <!-- header -->
-  <header class="header py-3">
-    <div class="nav-container">
-        <nav class="navbar navbar-expand-md p-0">
-            <div class="logo-container">
-                <img src="./asset/logo-chinese.png" alt="平等機會委員會" class="img-fluid">
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <div class="ms-auto d-flex flex-column">
+                            <nav class="nav-menu" id="fanjian">
+                                <a href="index.html" class="me-3"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                <span class="me-3">|</span>
+                                <a href="javascript:void(0);" onclick="setFontsize('s')" title="Smaller Font Size" class="fontsize-s me-3">A</a>
+                                <a href="javascript:void(0);" onclick="setFontsize('m')" title="Default Font Size" class="fontsize-m me-3">A</a>
+                                <a href="javascript:void(0);" onclick="setFontsize('l')" title="Larger Font Size" class="fontsize-l me-3">A</a>
+
+                                <span class="me-3">|</span>
+                                <a href="enroll.html" class="me-3">繁</a>
+                                <a href="enroll-chinese-simplified.html" class="me-3">简</a>
+                                <a href="enroll-english.html" class="me-3">Eng</a>
+                            </nav>
+                            <nav class="nav-menu zbnav">
+                                <a href="details.html" class="me-3">關於比賽</a>
+                                <a href="enroll.html" class="me-3">報名詳情</a>
+                                <a href="course-map.html" class="me-3">賽程表</a>
+                                <a href="highlight.html" class="me-3">比賽花絮</a>
+                                <a href="news.html" class="me-3">宣傳推廣</a>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
             </div>
+        </header>
+        <!-- container -->
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <div class="ms-auto d-flex flex-column">
-                    <nav class="nav-menu" id="fanjian">
-                      <a href="index.html" class="me-3"><i class="fa fa-home" aria-hidden="true"></i></a>
-                        <span class="me-3">|</span>
-                        <a href="javascript:void(0);" onclick="setFontsize('s')" title="Smaller Font Size" class="fontsize-s me-3">A</a>
-                        <a href="javascript:void(0);" onclick="setFontsize('m')" title="Default Font Size" class="fontsize-m me-3">A</a>
-                        <a href="javascript:void(0);" onclick="setFontsize('l')" title="Larger Font Size" class="fontsize-l me-3">A</a>
-                        
-                        <span class="me-3">|</span>
-                        <a href="enroll.html" class="me-3">繁</a>
-                        <a href="enroll-chinese-simplified.html" class="me-3">简</a>
-                        <a href="enroll-english.html" class="me-3">Eng</a>
-                    </nav>
-                    <nav class="nav-menu zbnav">
-                        <a href="details.html" class="me-3">關於比賽</a>
-                        <a href="enroll.html" class="me-3">報名詳情</a>
-                        <a href="course-map.html" class="me-3">賽程表</a>
-                        <a href="highlight.html" class="me-3">比賽花絮</a>
-                        <a href="news.html" class="me-3">宣傳推廣</a>
-                    </nav>
-                </div>
-            </div>
-        </nav>
-    </div>
-</header>
-  <!-- container -->
-  
         <div id="container">
-          <!-- Back to top button -->
-          <a id="totop"></a>
+            <!-- Back to top button -->
+            <a id="totop"></a>
             <section>
-              <div class="wrapper">
-                <div class="main_view" data-aos="fade-up"><img src="./asset/banner_title.png" alt="2024-2024 平等機會 中學辯論比賽" />
-                </div>        
-                </h2>
-              </div>
+                <div class="wrapper">
+                    <div class="main_view" data-aos="fade-up"><img src="./asset/banner_title.png" alt="2024-2024 平等機會 中學辯論比賽" /></div>
+                </div>
             </section>
             <main>
-              <div class="content_wrapper">
-        
-                <div class="qualifications-container-3" data-aos="fade-up">
-                  <div class="qualifications-ribbon-2">報名方法及查詢</div>
-                  <ol>
-                    <li><p>參賽學校可經以下<a href="https://forms.gle/appzPSZ5RNPzCbye9" class="google-form-url">連結</a>或QR Code 報名。重覆遞交者，以較後時間遞交的版本為準。</p></li>
-                  </ol>
-                  <br><br>
-                  <ol start="2">
-                    <li><p>平機會已委託籌辦機構負責統籌活動，如有任何疑問，歡迎致電 44477891 與籌辦機構負責人陳先生聯絡，亦可發送電郵至<a href="mailto:eodebate@eoc.org.hk">eodebate@eoc.org.hk</a> 向平機會查詢。</p></li>
-                  </ol><br>
-                  <br>
-                  <div class="download-container" data-aos="fade-up">
-                    <a href="https://bit.ly/4fnZLZs" class="download-header" download>比賽章程</a>
-                  </div><br><br><br>
+                <div class="content_wrapper">
+                    <div class="qualifications-container-3" data-aos="fade-up">
+                        <div class="qualifications-ribbon-2">報名方法及查詢</div>
+                        <ol>
+                            <li>
+                                <p>
+                                    參賽學校可經以下
+                                    <a href="https://forms.gle/appzPSZ5RNPzCbye9" class="google-form-url">連結</a>
+                                    或QR Code 報名。重覆遞交者，以較後時間遞交的版本為準。
+                                </p>
+                            </li>
+                        </ol>
+                        <br />
+                        <br />
+                        <ol start="2">
+                            <li>
+                                <p>
+                                    平機會已委託籌辦機構負責統籌活動，如有任何疑問，歡迎致電 44477891 與籌辦機構負責人陳先生聯絡，亦可發送電郵至
+                                    <a href="mailto:eodebate@eoc.org.hk">eodebate@eoc.org.hk</a>
+                                    向平機會查詢。
+                                </p>
+                            </li>
+                        </ol>
+                        <br />
+                        <br />
+                        <div class="download-container" data-aos="fade-up">
+                            <a href="https://bit.ly/4fnZLZs" class="download-header" download>比賽章程</a>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
 
-                  <div class="qualifications-container-4">
-                    <div class="sparkle-1" data-aos="fade-up"></div> 
-                    <br><br><br>
-                    <div class="qualifications-ribbon-4">注意事項</div>
-                    <ol>
-                      <li><p>參加賽事即代表參賽者確認並同意活動可能會被拍攝及錄影。主辦機構保留在平機會的宣傳材料、刊物和其他通訊材料中使用於比賽場地拍攝或錄製的任何照片、錄影、錄音及任何形式媒體的權利，而毋須另行通知或向參賽者提供任何補償。如參賽者不願意被拍攝或錄影，請於到達比賽場地時明確告知工作人員。主辦機構將尊重參賽者的私隱，並盡可能將參賽者排除在任何個人相片拍攝及錄影之外。</p></li>
-                      <li><p>所有收集的資料僅用於比賽登記、通訊及與比賽的相關活動。所有收集的個人資料將予以保密，並僅供平機會及獲授權的籌辦機構使用。參賽者有權要求查閱、更正或刪除其個人資料。</p></li>
-                      <li><p>辯論比賽當天如出現以下情況，當天所有比賽（包括下午賽事）將會改期:</p></li>
-                    </ol>
-                    <ol type="a">
-                      <li style="margin-left: 18px;"><p>香港天文台在當天比賽前兩小時仍懸掛8號熱帶氣旋警告信號，或8號熱帶氣旋警告信號將持續生效;</p></li>
-                      <li style="margin-left: 18px;"><p>當天比賽兩小時前黑色暴雨警告正生效; 或</p></li>
-                      <li style="margin-left: 18px;"><p>政府發出有關惡劣天氣的極端情況公告。</p></li>
-                    </ol>
-                      <p style="margin-left: 33px;">對於以上情況下參賽者所遭受的任何損失、破壞或衍生的費用，平機會及籌辦機構概不負責</p>
-                    <ol start="4">
-                      <li><p>比賽開始後，如出現以下情況比賽將會暫停:</p></li>
-                    </ol>
-                    <ol type="a">
-                      <li style="margin-left: 18px;"><p>香港天文台宣佈將於未來2小時內懸掛8號熱帶氣旋警告信號或發出黑色暴雨警告; 或</p></li>
-                      <li style="margin-left: 18px;"><p>政府發出有關惡劣天氣的極端情況公告。</p></li>
-                    </ol>
-                      <p style="margin-left: 33px;">對於以上情況下參賽者所遭受的任何損失、破壞或衍生的費用，平機會及籌辦機構概不負責。</p>
-                    <ol start="5">
-                      <li><p>平機會及籌辦機構不會對於在活動期間發生的任何人身傷害或財物損失負責。</p></li>
-                      <li><p>由是次辯論比賽所引起的任何糾紛或爭議，平機會及籌辦機構擁有具約束力的最終決定權。</p></li>
-                    </ol><br>
-                  </div>
+                        <div class="qualifications-container-4">
+                            <div class="sparkle-1" data-aos="fade-up"></div>
+                            <br />
+                            <br />
+                            <br />
+                            <div class="qualifications-ribbon-4">注意事項</div>
+                            <ol>
+                                <li>
+                                    <p>
+                                        參加賽事即代表參賽者確認並同意活動可能會被拍攝及錄影。主辦機構保留在平機會的宣傳材料、刊物和其他通訊材料中使用於比賽場地拍攝或錄製的任何照片、錄影、錄音及任何形式媒體的權利，而毋須另行通知或向參賽者提供任何補償。如參賽者不願意被拍攝或錄影，請於到達比賽場地時明確告知工作人員。主辦機構將尊重參賽者的私隱，並盡可能將參賽者排除在任何個人相片拍攝及錄影之外。
+                                    </p>
+                                </li>
+                                <li><p>所有收集的資料僅用於比賽登記、通訊及與比賽的相關活動。所有收集的個人資料將予以保密，並僅供平機會及獲授權的籌辦機構使用。參賽者有權要求查閱、更正或刪除其個人資料。</p></li>
+                                <li><p>辯論比賽當天如出現以下情況，當天所有比賽（包括下午賽事）將會改期:</p></li>
+                            </ol>
+                            <ol type="a">
+                                <li style="margin-left: 18px"><p>香港天文台在當天比賽前兩小時仍懸掛8號熱帶氣旋警告信號，或8號熱帶氣旋警告信號將持續生效;</p></li>
+                                <li style="margin-left: 18px"><p>當天比賽兩小時前黑色暴雨警告正生效; 或</p></li>
+                                <li style="margin-left: 18px"><p>政府發出有關惡劣天氣的極端情況公告。</p></li>
+                            </ol>
+                            <p style="margin-left: 33px">對於以上情況下參賽者所遭受的任何損失、破壞或衍生的費用，平機會及籌辦機構概不負責</p>
+                            <ol start="4">
+                                <li><p>比賽開始後，如出現以下情況比賽將會暫停:</p></li>
+                            </ol>
+                            <ol type="a">
+                                <li style="margin-left: 18px"><p>香港天文台宣佈將於未來2小時內懸掛8號熱帶氣旋警告信號或發出黑色暴雨警告; 或</p></li>
+                                <li style="margin-left: 18px"><p>政府發出有關惡劣天氣的極端情況公告。</p></li>
+                            </ol>
+                            <p style="margin-left: 33px">對於以上情況下參賽者所遭受的任何損失、破壞或衍生的費用，平機會及籌辦機構概不負責。</p>
+                            <ol start="5">
+                                <li><p>平機會及籌辦機構不會對於在活動期間發生的任何人身傷害或財物損失負責。</p></li>
+                                <li><p>由是次辯論比賽所引起的任何糾紛或爭議，平機會及籌辦機構擁有具約束力的最終決定權。</p></li>
+                            </ol>
+                            <br />
+                        </div>
+                    </div>
                 </div>
-              </div>
             </main>
-          </div>
-          <footer>
+        </div>
+        <footer>
             <div class="footer-content">
-                <div class="copyright ">版權所有 © 2024 平等機會委員會</div>
+                <div class="copyright">版權所有 © 2024 平等機會委員會</div>
                 <div class="contact">
-                  <i class="fas fa-envelope me-2"></i><span><a href="mailto:eodebate@eoc.org.hk">eodebate@eoc.org.hk</a></span>
-                  <i class="fas fa-phone me-2 "></i><span>(852) 44477891</span>
-                  <br><span style="font-size: 14px;">（平機會委託之籌辦機構聯絡電話）</span><br class="mbr">
+                    <i class="fas fa-envelope me-2"></i>
+                    <span><a href="mailto:eodebate@eoc.org.hk">eodebate@eoc.org.hk</a></span>
+                    <i class="fas fa-phone me-2"></i>
+                    <span>(852) 44477891</span>
+                    <br />
+                    <span style="font-size: 14px">（平機會委託之籌辦機構聯絡電話）</span>
+                    <br class="mbr" />
                 </div>
             </div>
-          </footer>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS特效的JavaScript -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/script.js"></script>
-  <script>
-    // 執行AOS的程式
-    AOS.init();
-</script>
-</body>
+        </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- AOS特效的JavaScript -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            // 執行AOS的程式
+            AOS.init();
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEG8QSTXRX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-MEG8QSTXRX");
+        </script>
+    </body>
 </html>
