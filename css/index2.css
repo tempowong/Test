@@ -412,8 +412,8 @@ a{text-decoration:none}
         justify-content: center;
         align-self: center;
         padding: 1rem;
-        padding-top: 6rem; /* 增加頂部間距 */
-        margin-top: 3rem; /* 增加與上方元素的間距 */
+        padding-top: 6rem; 
+
     }
 
     .news-container {
