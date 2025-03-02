@@ -24,11 +24,6 @@
         <meta property="og:phone_number" content="(852) 44477891" />
         <meta property="og:locale" content="zh_HK" />
 
-        <!-- 添加資源預加載 -->
-        <link rel="preload" href="./css/index2.css" as="style">
-        <link rel="preload" href="./js/script.js" as="script">
-        <!-- 預加載關鍵圖片 -->
-        <link rel="preload" href="./asset/matches/round1/match1-team1.jpg" as="image">
     </head>
 
     <body>
@@ -62,7 +57,15 @@
                                 <a href="details.html" class="me-3">關於比賽</a>
                                 <a href="enroll.html" class="me-3">報名詳情</a>
                                 <a href="course-map.html" class="me-3">賽程表</a>
-                                <a href="highlight.html" class="me-3">比賽花絮</a>
+                                <div class="nav-dropdown me-3">
+                                    <a href="highlight.html" class="dropdown-toggle">比賽花絮</a>
+                                    <div class="dropdown-menu">
+                                        <a href="firstround.html" class="dropdown-item active">第一回合</a>
+                                        <a href="secondround.html" class="dropdown-item">第二回合</a>
+                                        <a href="thirdround.html" class="dropdown-item">第三回合</a>
+                                        <a href="finalround.html" class="dropdown-item">決賽</a>
+                                    </div>
+                                </div>
                                 <a href="news.html" class="me-3">宣傳推廣</a>
                             </nav>
                         </div>
@@ -87,7 +90,7 @@
                                
                             </div>
                           
-                            <button class="gallery-next" onclick="">第二回合</button>
+                            <button class="gallery-next" onclick="window.location.href='secondround.html'">第二回合</button>
                             <header class="gallery-headline"><br /></header>
                             <section id="schedule-table">
                                 <h3 class="text-center mb-4">2024/25 平等機會盃中學校際辯論比賽</h3>
@@ -435,14 +438,7 @@
             gtag("config", "G-MEG8QSTXRX");
         </script>
 
-        <!-- 在 body 結束標籤前添加模態框 -->
-        <div id="imageModal" class="modal">
-            <div class="modal-wrapper">
-                <span class="modal-close">&times;</span>
-                <img class="modal-content" id="modalImage">
-                <div id="modalCaption"></div>
-            </div>
-        </div>
+       
     </body>
 </html>
 
