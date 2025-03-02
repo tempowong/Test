@@ -404,6 +404,7 @@ a{text-decoration:none}
         margin-top: 2vw;
     }
 
+    /* 調整 gallery-container 的樣式 */
     .gallery-container {
         position: relative;
         border: 7px solid black;
@@ -411,6 +412,8 @@ a{text-decoration:none}
         justify-content: center;
         align-self: center;
         padding: 1rem;
+        padding-top: 6rem; /* 增加頂部間距 */
+        margin-top: 3rem; /* 增加與上方元素的間距 */
     }
 
     .news-container {
@@ -503,20 +506,22 @@ a{text-decoration:none}
         margin-top: 80px;
     }
 
-    .gallery-header{
+    /* 調整 gallery-header 的位置 */
+    .gallery-header {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        top: -30px; /* 調整標題位置，確保不會被遮擋 */
         background-color: #0e6666;
         padding: 0.5rem 1rem;
         border: 5px solid rgb(0, 0, 0);
         border-radius: 10px;
         font-size: 40px;
         color: #ffffff;
-        letter-spacing:1px;
-        font-weight:bold;
-        font-weight: 900px;
+        letter-spacing: 1px;
+        font-weight: bold;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        z-index: 1; /* 確保標題在最上層 */
     }
 
     .poster-header{
@@ -2646,7 +2651,7 @@ a{text-decoration:none}
  * ------------------------------------------------------------------- */
 
 #album-hide{
-    display: none;
+    display: block;
     /* enable to show album 1 */
     /*display: block;*/
 }
@@ -3109,18 +3114,6 @@ a{text-decoration:none}
         margin-left: 15%;
     }
 
-    #fanjian {
-        display: flex;
-        width: 100%;
-        text-align: flex;
-        padding-top: 1rem;
-        margin-top: 0;
-        margin-left: 20px;
-        justify-content:center;
-        align-items:baseline
-
-    }
-
 
     .nav-menu a:last-child {
         border-bottom: none;
@@ -3184,9 +3177,6 @@ a{text-decoration:none}
         padding: 0 20px 50px 20px;
     }
 
-    .rules-container {
-        /*font-size: 1rem;*/
-    }
 
     .goto a{
         font-size: 20px;
@@ -3291,4 +3281,178 @@ footer{
     margin-right: 0;
 }
 .footer-content .mbr{display: block;}
+}
+
+/* 比賽容器樣式 */
+.match-container {
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #000000;
+}
+
+/* 最後一場比賽不需要底線 */
+.match-container:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* 響應式表格 */
+.rundown_tb {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 768px) {
+    .rundown_tb {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .rundown_tb th,
+    .rundown_tb td {
+        min-width: 120px;
+        white-space: normal;
+        word-break: break-word;
+    }
+}
+
+/* 照片區域樣式 */
+.match-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.photo-caption {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 響應式照片布局 */
+@media screen and (max-width: 992px) {
+    .match-photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .match-photos {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rundown_tb td {
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.rundown_tb td strong {
+    color: #333;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .rundown_tb td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* 修改模態框樣式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 1400px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-close {
+    position: fixed;
+    right: 35px;
+    top: 15px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#modalCaption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1400px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 響應式調整 */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        max-height: 80vh;
+        object-fit: contain;
+    }
+
+    .modal-close {
+        right: 10px;
+        top: 10px;
+    }
+
+    #modalCaption {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        bottom: 0;
+        padding: 10px;
+    }
+}
+
+/* 如果需要，也可以調整 schedule-table 的上邊距 */
+#schedule-table {
+    margin-top: 3rem; /* 增加與上方元素的間距 */
 }

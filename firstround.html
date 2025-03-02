@@ -23,6 +23,12 @@
         <meta property="og:email" content="eodebate@eoc.org.hk" />
         <meta property="og:phone_number" content="(852) 44477891" />
         <meta property="og:locale" content="zh_HK" />
+
+        <!-- 添加資源預加載 -->
+        <link rel="preload" href="./css/index2.css" as="style">
+        <link rel="preload" href="./js/script.js" as="script">
+        <!-- 預加載關鍵圖片 -->
+        <link rel="preload" href="./asset/matches/round1/match1-team1.jpg" as="image">
     </head>
 
     <body>
@@ -77,143 +83,316 @@
                                 <div class="gallery-header">比賽花絮</div>
                             </div>
 
-                            <button class="gallery-previous" onclick="">上一頁</button>
-                            <button class="gallery-next" onclick="">下一頁</button>
-
-                            <script>
-                                function myFunction() {
-                                    var x = document.getElementById("album-hide");
-                                    var y = document.getElementById("album-hide-1");
-                                    var z = document.getElementById("gallery-subhead");
-                                    if (x.style.display === "block" && y.style.display === "none") {
-                                        x.style.display = "none";
-                                        y.style.display = "block";
-                                        z.innerHTML = "平等機會盃中學校際辯論比賽";
-                                    } else {
-                                        x.style.display = "block";
-                                        y.style.display = "none";
-                                        z.innerHTML = "平等機會盃中學校際辯論比賽";
-                                    }
-                                }
-                            </script>
-                            <header class="gallery-headline">比賽新聞</header>
                             <div id="gallery-subhead">
                                
                             </div>
+                          
+                            <button class="gallery-next" onclick="">第二回合</button>
+                            <header class="gallery-headline"><br /></header>
+                            <section id="schedule-table">
+                                <h3 class="text-center mb-4">2024/25 平等機會盃中學校際辯論比賽</h3>
+                                <h4 class="text-center mb-4">第一回合初賽首日</h4>
+                                <p class="text-center mb-4">
+                                    日期：二零二五年二月二十二日（六）<br>
+                                    時間：上午九時至下午一時<br>
+                                    地點：宣道會陳元喜小學
+                                </p>
 
-                            <section id="schedule-2" data-aos="fade-up">
-                                <br />
-                                <div class="schedule-table">
-                                    <h3>第一回合初賽首日：二零二五年二月二十二日（六）</h3>
-                                    <h3>時間：上午九時至下午一時</h3>
-                                    <h3>地點：宣道會陳元喜小學</h3>
-                                    <br />
-                                    <h3>辯題及賽果</h3>
-                                    <br />
-                                    <p>辯題：少數族裔人士在港就業選擇仍然狹窄</p>
-                                    <p>正方：陳瑞祺（喇沙）書院</p>
-                                    <p>反方：十八鄉鄉事委員會公益社中學</p>
-                                    <p>賽果：0：3，反方勝出</p>
-                                    <p>最佳辯論員：正方第二副辯 黃文家同學</p>
-                                    <br />
-                                    <p>辯題：少數族裔人士在港就業選擇仍然狹窄</p>
-                                    <p>正方：彩虹邨天主教英文中學</p>
-                                    <p>反方：明愛莊月明中學</p>
-                                    <p>賽果：3：0，正方勝出</p>
-                                    <p>最佳辯論員：正方結辯 楊日朗同學</p>
-                                    <br />
-                                    <p>辯題：香港應立法強制舉報虐待殘疾人士</p>
-                                    <p>正方：保良局第一張永慶中學</p>
-                                    <p>反方：基督教崇真中學</p>
-                                    <p>賽果：0：3，反方勝出</p>
-                                    <p>最佳辯論員：反方第二副辯 譚卓彤同學</p>
-                                    <br />
-                                    <p>辯題：香港應立法強制舉報虐待殘疾人士</p>
-                                    <p>正方：聖馬可中學</p>
-                                    <p>反方：英華女學校</p>
-                                    <p>賽果：0：3，反方勝出</p>
-                                    <p>最佳辯論員：反方第二副辯 楊心研同學</p>
-                                    <br />
-                                    <p>辯題：香港政府應延長男士侍產假</p>
-                                    <p>正方：中華基督教會銘賢書院</p>
-                                    <p>反方：協恩中學</p>
-                                    <p>賽果：0：3，反方勝出</p>
-                                    <p>最佳辯論員：反方第一副辯 廖萱嵐同學</p>
-                                    <br />
-                                    <p>辯題：香港政府應延長男士侍產假</p>
-                                    <p>正方：港澳信義會慕德中學</p>
-                                    <p>反方：聖類斯中學</p>
-                                    <p>賽果：0：3，反方勝出</p>
-                                    <p>最佳辯論員：反方主辯 鄭思璡同學</p>
-                                    <br />
-                                    <p>辯題：港鐵應設立女性地鐵專用車廂</p>
-                                    <p>正方：嗇色園主辦可道中學</p>
-                                    <p>反方：東華三院黃笏南中學</p>
-                                    <p>賽果：反方自動晉級</p>
-                                    <br />
-                                    <p>辯題：港鐵應設立女性地鐵專用車廂</p>
-                                    <p>正方：保良局甲子何玉清中學</p>
-                                    <p>反方：寶安商會王少清中學</p>
-                                    <p>賽果：1：2，反方勝出</p>
-                                    <p>最佳辯論員：反方主辯 許卓謙同學</p>
-                                
-                                    <br />
-                                    
+                                <!-- 第一場 -->
+                                <div class="match-container">
+                                    <table class="rundown_tb mb-4">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>辯題：</strong>少數族裔人士在港就業選擇仍然狹窄</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>正方：</strong>1 陳瑞祺（喇沙）書院</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>反方：</strong>2 十八鄉鄉事委員會公益社中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>賽果：</strong>0：3，反方 2 十八鄉鄉事委員會公益社中學 勝出</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>最佳辯論員：</strong>正方第二副辯 黃文家同學</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="match-photos">
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match1-team1.jpg" alt="陳瑞祺（喇沙）書院隊伍" loading="lazy">
+                                            <p class="photo-caption">正方：1 陳瑞祺（喇沙）書院</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match1-team2.jpg" alt="十八鄉鄉事委員會公益社中學隊伍">
+                                            <p class="photo-caption">反方：2 十八鄉鄉事委員會公益社中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match1-group.jpg" alt="賽後大合照">
+                                            <p class="photo-caption">賽後大合照</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第二場 -->
+                                <div class="match-container">
+                                    <table class="rundown_tb mb-4">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>辯題：</strong>少數族裔人士在港就業選擇仍然狹窄</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>正方：</strong>3 彩虹邨天主教英文中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>反方：</strong>4 明愛莊月明中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>賽果：</strong>3：0，正方 3 彩虹邨天主教英文中學 勝出</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>最佳辯論員：</strong>正方結辯 楊日朗同學</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="match-photos">
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match2-team1.jpg" alt="彩虹邨天主教英文中學隊伍">
+                                            <p class="photo-caption">正方：3 彩虹邨天主教英文中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match2-team2.jpg" alt="明愛莊月明中學隊伍">
+                                            <p class="photo-caption">反方：4 明愛莊月明中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match2-group.jpg" alt="賽後大合照">
+                                            <p class="photo-caption">賽後大合照</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第三場 -->
+                                <div class="match-container">
+                                    <table class="rundown_tb mb-4">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>辯題：</strong>香港應立法強制舉報虐待殘疾人士</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>正方：</strong>5 保良局第一張永慶中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>反方：</strong>6 基督教崇真中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>賽果：</strong>0：3，反方 6 基督教崇真中學 勝出</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>最佳辯論員：</strong>反方第二副辯 譚卓彤同學</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="match-photos">
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match3-team1.jpg" alt="保良局第一張永慶中學隊伍">
+                                            <p class="photo-caption">正方：5 保良局第一張永慶中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match3-team2.jpg" alt="基督教崇真中學隊伍">
+                                            <p class="photo-caption">反方：6 基督教崇真中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match3-group.jpg" alt="賽後大合照">
+                                            <p class="photo-caption">賽後大合照</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第四場 -->
+                                <div class="match-container">
+                                    <table class="rundown_tb mb-4">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>辯題：</strong>香港應立法強制舉報虐待殘疾人士</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>正方：</strong>7 聖馬可中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>反方：</strong>8 英華女學校</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>賽果：</strong>0：3，反方 8 英華女學校 勝出</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>最佳辯論員：</strong>反方第二副辯 楊心研同學</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="match-photos">
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match4-team1.jpg" alt="聖馬可中學隊伍">
+                                            <p class="photo-caption">正方：7 聖馬可中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match4-team2.jpg" alt="英華女學校隊伍">
+                                            <p class="photo-caption">反方：8 英華女學校</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match4-group.jpg" alt="賽後大合照">
+                                            <p class="photo-caption">賽後大合照</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第五場 -->
+                                <div class="match-container">
+                                    <table class="rundown_tb mb-4">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>辯題：</strong>香港政府應延長男士侍產假</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>正方：</strong>9 中華基督教會銘賢書院</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>反方：</strong>10 協恩中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>賽果：</strong>0：3，反方 10 協恩中學 勝出</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>最佳辯論員：</strong>反方第一副辯 廖萱嵐同學</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="match-photos">
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match5-team1.jpg" alt="中華基督教會銘賢書院隊伍">
+                                            <p class="photo-caption">正方：9 中華基督教會銘賢書院</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match5-team2.jpg" alt="協恩中學隊伍">
+                                            <p class="photo-caption">反方：10 協恩中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match5-group.jpg" alt="賽後大合照">
+                                            <p class="photo-caption">賽後大合照</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第六場 -->
+                                <div class="match-container">
+                                    <table class="rundown_tb mb-4">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>辯題：</strong>香港政府應延長男士侍產假</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>正方：</strong>11 港澳信義會慕德中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>反方：</strong>12 聖類斯中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>賽果：</strong>0：3，反方 12 聖類斯中學 勝出</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>最佳辯論員：</strong>反方主辯 鄭思璡同學</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="match-photos">
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match6-team1.jpg" alt="港澳信義會慕德中學隊伍">
+                                            <p class="photo-caption">正方：11 港澳信義會慕德中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match6-team2.jpg" alt="聖類斯中學隊伍">
+                                            <p class="photo-caption">反方：12 聖類斯中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match6-group.jpg" alt="賽後大合照">
+                                            <p class="photo-caption">賽後大合照</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第七場 -->
+                                <div class="match-container">
+                                    <table class="rundown_tb mb-4">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>辯題：</strong>港鐵應設立女性地鐵專用車廂</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>正方：</strong>13 嗇色園主辦可道中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>反方：</strong>14 東華三院黃笏南中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>賽果：</strong>由於 13 嗇色園主辦可道中學申請退賽，因此 14 東華三院黃笏南中學將自動晉級下一回合賽事。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="match-photos">
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match7-team1.jpg" alt="嗇色園主辦可道中學隊伍">
+                                            <p class="photo-caption">正方：13 嗇色園主辦可道中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match7-team2.jpg" alt="東華三院黃笏南中學隊伍">
+                                            <p class="photo-caption">反方：14 東華三院黃笏南中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match7-group.jpg" alt="賽後大合照">
+                                            <p class="photo-caption">賽後大合照</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 第八場 -->
+                                <div class="match-container">
+                                    <table class="rundown_tb mb-4">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>辯題：</strong>港鐵應設立女性地鐵專用車廂</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>正方：</strong>15 保良局甲子何玉清中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>反方：</strong>16 寶安商會王少清中學</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>賽果：</strong>1：2，反方 16 寶安商會王少清中學 勝出</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>最佳辯論員：</strong>反方主辯 許卓謙同學</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="match-photos">
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match8-team1.jpg" alt="保良局甲子何玉清中學隊伍">
+                                            <p class="photo-caption">正方：15 保良局甲子何玉清中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match8-team2.jpg" alt="寶安商會王少清中學隊伍">
+                                            <p class="photo-caption">反方：16 寶安商會王少清中學</p>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="./asset/matches/round1/match8-group.jpg" alt="賽後大合照">
+                                            <p class="photo-caption">賽後大合照</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </section>
 
-                            <div id="album-hide">
-                                <div class="album">
-                                    <div class="responsive-container-block bg">
-                                        <div class="responsive-container-block img-cont">
-                                            <img class="img" src="./asset/Comimg-soon-1.png" />
-                                            <img class="img" src="./asset/Coming-soon-2.png" />
-                                            <img class="img img-last" src="./asset/Coming-soon-2.png" />
-                                        </div>
-                                        <div class="responsive-container-block img-cont">
-                                            <img class="img img-big" src="./asset/Coming-soon-2.png" />
-                                            <img class="img img-big img-last" src="./asset/Coming-soon-2.png" />
-                                        </div>
-                                        <div class="responsive-container-block img-cont">
-                                            <img class="img" src="./asset/Comimg-soon-1.png" />
-                                            <img class="img" src="./asset/Coming-soon-2.png" />
-                                            <img class="img" src="./asset/Comimg-soon-1.png" />
-                                        </div>
-                                    </div>
-
-                                    <div class="download-container" data-aos="fade-up">
-                                        <a href="./asset/doc/繁體版＿平等機會盃章程.pdf" class="download-container" download>按此下載比賽相片</a>
-                                    </div>
-                                    <br />
-                                    <br />
-                                </div>
-                            </div>
-
-                            <div id="album-hide-1">
-                                <div class="album-1">
-                                    <div class="responsive-container-block-1 bg">
-                                        <div class="responsive-container-block-1 img-cont">
-                                            <img class="img" src="./asset/Comimg-soon-1.png" />
-                                            <img class="img" src="./asset/Comimg-soon-1.png" />
-                                            <img class="img img-last" src="./asset/Coming-soon-2.png" />
-                                        </div>
-                                        <div class="responsive-container-block-1 img-cont">
-                                            <img class="img img-big" src="./asset/Comimg-soon-1.png" />
-                                            <img class="img img-big img-last" src="./asset/Coming-soon-2.png" />
-                                        </div>
-                                        <div class="responsive-container-block-1 img-cont">
-                                            <img class="img" src="./asset/Comimg-soon-1.png" />
-                                            <img class="img" src="./asset/Coming-soon-2.png" />
-                                            <img class="img" src="./asset/Comimg-soon-1.png" />
-                                        </div>
-                                    </div>
-                                    <div class="download-container" data-aos="fade-up">
-                                        <a href="./asset/doc/英文版＿平等機會盃章程.pdf" class="download-container" download>按此下載比賽相片</a>
-                                    </div>
-                                    <br />
-                                    <br />
-                                </div>
-                            </div>
+                            
                         </div>
                     </section>
                 </div>
@@ -255,5 +434,15 @@
 
             gtag("config", "G-MEG8QSTXRX");
         </script>
+
+        <!-- 在 body 結束標籤前添加模態框 -->
+        <div id="imageModal" class="modal">
+            <div class="modal-wrapper">
+                <span class="modal-close">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="modalCaption"></div>
+            </div>
+        </div>
     </body>
 </html>
+

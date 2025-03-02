@@ -126,3 +126,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
   window.addEventListener('resize', checkScrollable);
 });
+
+// 圖片點擊放大功能
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('imageModal');
+    var modalImg = document.getElementById('modalImage');
+    var captionText = document.getElementById('modalCaption');
+    var closeBtn = document.getElementsByClassName('modal-close')[0];
+
+    // 為所有比賽照片添加點擊事件
+    document.querySelectorAll('.photo-item img').forEach(function(img) {
+        img.onclick = function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            captionText.innerHTML = this.nextElementSibling.innerHTML;
+        }
+    });
+
+    // 關閉按鈕點擊事件
+    closeBtn.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    // 點擊模態框外部關閉
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+});
+
+// 延遲加載非關鍵 JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    // 延遲加載 AOS
+    const aosScript = document.createElement('script');
+    aosScript.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+    document.body.appendChild(aosScript);
+    
+    aosScript.onload = function() {
+        AOS.init();
+    };
+});
