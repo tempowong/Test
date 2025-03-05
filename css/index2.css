@@ -33,8 +33,8 @@ a{text-decoration:none}
 }
 
 .nav-menu a:hover {
-    color: #0e6666; /* 悬停时文本颜色 */
-    border-bottom: 2px solid #0e6666; /* 悬停时底部边框 */
+    color: #0e6666; 
+    border-bottom: 2px solid #0e6666; 
 }
 
 #fanjian{
@@ -295,9 +295,9 @@ a{text-decoration:none}
     .goto a {
         text-decoration: none;
         position: relative;
-        color: white; /* 初始颜色为白色 */
+        color: white; 
         padding: 5px 0;
-        transition: color 0.3s; /* 文字颜色过渡 */
+        transition: color 0.3s;
         justify-content: center;
     }
     
@@ -2258,19 +2258,13 @@ a{text-decoration:none}
         border: none;
     }
     
+  
     .rundown_tb {
         width: 100%;
+        margin-bottom: 1.5rem; 
         border-collapse: collapse;
-        margin-top: -20px;
-        /*font-size: 15px;*/
-        font-weight: bold;
-        background-color: #eedfb0;
     }
-    .rundown_tb th, td {
-        border: 3px solid #000000;
-        text-align: left;
-        padding: 8px;
-    }
+
     .rundown_tb th {
         background-color: #1d7f86;
         color:#000000;
@@ -3298,7 +3292,7 @@ footer{
 /* 響應式表格 */
 .rundown_tb {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem; /* 減少底部間距 */
     border-collapse: collapse;
 }
 
@@ -3355,22 +3349,13 @@ footer{
 }
 
 .rundown_tb td {
-    padding: 10px;
     border: none;
     font-size: 16px;
-    line-height: 1.6;
 }
 
 .rundown_tb td strong {
     color: #333;
     margin-right: 10px;
-}
-
-@media screen and (max-width: 576px) {
-    .rundown_tb td {
-        font-size: 14px;
-        padding: 8px;
-    }
 }
 
 /* 修改模態框樣式 */
@@ -3569,3 +3554,338 @@ footer{
         border-bottom: none;
     }
 }
+
+/* 日期和地點樣式 */
+.schedule-info {
+    margin-bottom: 2rem;
+    font-size: 16px;  
+    line-height: 1.8;
+    color: #000000;
+}
+
+/* 比賽資訊文字顏色 */
+.rundown_tb td strong {
+    color: #0e6666; 
+    margin-right: 8px; 
+}
+
+
+/* 回合標題樣式 */
+.round-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0e6666;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.highlight-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0e6666;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.round-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #0e6666, transparent);
+}
+
+/* 回合選擇區域樣式 */
+.rounds-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.round-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.round-link:hover {
+    transform: translateY(-5px);
+}
+
+.round-card {
+    background-color: #fff;
+    border: 3px solid #0e6666;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.round-card:hover {
+    background-color: #0e6666;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.round-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #0e6666;
+}
+
+.round-card:hover h3 {
+    color: #fff;
+}
+
+.round-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+.round-card:hover p {
+    color: #fff;
+}
+
+/* 響應式調整 */
+@media screen and (max-width: 768px) {
+    .rounds-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .round-card {
+        padding: 1rem;
+    }
+    
+    .round-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .round-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 花絮頁面標題樣式 */
+.highlight-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.highlight-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0e6666;
+    margin-bottom: 1rem;
+}
+
+.highlight-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0;
+}
+
+.highlight-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, transparent, #0e6666, transparent);
+}
+
+@media screen and (max-width: 768px) {
+    .highlight-header h1 {
+        font-size: 2rem;
+    }
+    
+    .highlight-header p {
+        font-size: 1rem;
+    }
+}
+
+/* 保留原有的 gallery-header 樣式，添加副標題樣式 */
+.gallery-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* 花絮頁面副標題樣式 */
+.gallery-subtitle {
+    font-size: 1.5rem;
+    color: #0e6666;
+    margin: 2rem auto 3rem;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.gallery-subtitle::before,
+.gallery-subtitle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background-color: #0e6666;
+}
+
+.gallery-subtitle::before {
+    left: -40px;
+}
+
+.gallery-subtitle::after {
+    right: -40px;
+}
+
+/* 響應式調整 */
+@media screen and (max-width: 768px) {
+    .gallery-subtitle {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+    
+    .gallery-subtitle::before,
+    .gallery-subtitle::after {
+        width: 30px;
+    }
+    
+    .gallery-subtitle::before {
+        left: -20px;
+    }
+    
+    .gallery-subtitle::after {
+        right: -20px;
+    }
+}
+
+/* 比賽標題樣式 */
+.debate-title {
+    text-align: center;
+    color: #0e6666;
+    margin: 2rem 0 3rem;
+}
+
+/* 在電腦端添加較大的上邊距 */
+@media screen and (min-width: 992px) {
+    .debate-title {
+        margin-top: 100px;
+    }
+}
+
+.debate-title-main {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.debate-title-sub {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* 回合流程樣式 */
+.rounds-flow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.round-box {
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    text-align: center;
+    padding: 1.5rem;
+    background: #fff;
+    border: 2px solid #0e6666;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.round-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: #0e6666;
+    color: #fff;
+}
+
+.round-box h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.round-box p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+.round-box:hover p {
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .debate-title-main {
+        font-size: 1.5rem;
+    }
+    
+    .debate-title-sub {
+        font-size: 1.3rem;
+    }
+    
+    .rounds-flow {
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .round-box {
+        padding: 1rem;
+        min-width: 160px;
+    }
+    
+    .round-box h3 {
+        font-size: 1.1rem;
+    }
+    
+    .round-box p {
+        font-size: 0.9rem;
+    }
+}
+
