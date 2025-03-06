@@ -3330,10 +3330,7 @@ footer{
     margin-bottom: 1rem;
 }
 
-.photo-caption {
-    font-size: 0.9rem;
-    color: #666;
-}
+
 
 /* 響應式照片布局 */
 @media screen and (max-width: 992px) {
@@ -3350,7 +3347,6 @@ footer{
 
 .rundown_tb td {
     border: none;
-    font-size: 16px;
 }
 
 .rundown_tb td strong {
@@ -3558,7 +3554,6 @@ footer{
 /* 日期和地點樣式 */
 .schedule-info {
     margin-bottom: 2rem;
-    font-size: 16px;  
     line-height: 1.8;
     color: #000000;
 }
