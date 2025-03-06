@@ -3809,6 +3809,10 @@ footer{
     .gallery-subtitle::after {
         right: -20px;
     }
+    .highlight-link {
+        flex-direction:column
+    }
+    
 }
 
 
