@@ -3584,6 +3584,7 @@ footer{
     margin-bottom: 2rem;
     line-height: 1.8;
     color: #000000;
+    text-align: center;
 }
 
 
@@ -3815,7 +3816,9 @@ footer{
     
 }
 
-
+.photo-caption{
+    font-weight: bold;
+}
 .debate-title {
     text-align: center;
     color: #0e6666;
