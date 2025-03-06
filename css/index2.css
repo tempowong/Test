@@ -412,8 +412,7 @@ a{text-decoration:none}
         justify-content: center;
         align-self: center;
         padding: 1rem;
-        padding-top: 6rem; 
-
+        padding-top: 6rem;
     }
 
     .news-container {
@@ -511,7 +510,7 @@ a{text-decoration:none}
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: -30px; /* 調整標題位置，確保不會被遮擋 */
+        top: -30px;
         background-color: #0e6666;
         padding: 0.5rem 1rem;
         border: 5px solid rgb(0, 0, 0);
@@ -521,7 +520,7 @@ a{text-decoration:none}
         letter-spacing: 1px;
         font-weight: bold;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        z-index: 1; /* 確保標題在最上層 */
+        z-index: 1;
     }
 
     .poster-header{
@@ -2482,10 +2481,6 @@ a{text-decoration:none}
   }
 
   @media (max-width:378px){
-    .google-form-url{
-        /*font-size: 11px;*/
-    }
-
     .enroll-qrcode img{
         width: 70%;
     }
@@ -2499,20 +2494,28 @@ a{text-decoration:none}
  .gallery-headline{
     font-family: 'Playfair Display', serif;
     font-weight: 900;
-    font-size: 70px;
+    font-size: 50px;
     text-transform: uppercase;
     line-height: 72px;
     margin-bottom: 20px;
     display: inline;
+    font-weight: bold;
+    color: #0e6666;
  } 
 
  #gallery-subhead{
     text-transform: uppercase;
     border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
     padding: 12px 0 12px 0;
     font-size: 15px;
 
 }
+#gallery-subhead p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0e6666;
+} 
 
 .gallery-previous{
     float: left;
@@ -3283,6 +3286,8 @@ footer{
     border-bottom: 1px solid #000000;
 }
 
+
+
 /* 最後一場比賽不需要底線 */
 .match-container:last-child {
     border-bottom: none;
@@ -3787,14 +3792,7 @@ footer{
 .debate-title {
     text-align: center;
     color: #0e6666;
-    margin: 2rem 0 3rem;
-}
-
-/* 在電腦端添加較大的上邊距 */
-@media screen and (min-width: 992px) {
-    .debate-title {
-        margin-top: 100px;
-    }
+    margin: 2rem 0;
 }
 
 .debate-title-main {
@@ -3802,85 +3800,3 @@ footer{
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
-
-.debate-title-sub {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* 回合流程樣式 */
-.rounds-flow {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.round-box {
-    flex: 1;
-    min-width: 200px;
-    max-width: 280px;
-    text-align: center;
-    padding: 1.5rem;
-    background: #fff;
-    border: 2px solid #0e6666;
-    border-radius: 8px;
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.3s ease;
-}
-
-.round-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    background: #0e6666;
-    color: #fff;
-}
-
-.round-box h3 {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 0.8rem;
-}
-
-.round-box p {
-    font-size: 1rem;
-    color: #666;
-    margin: 0;
-}
-
-.round-box:hover p {
-    color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-    .debate-title-main {
-        font-size: 1.5rem;
-    }
-    
-    .debate-title-sub {
-        font-size: 1.3rem;
-    }
-    
-    .rounds-flow {
-        gap: 1rem;
-        padding: 1rem;
-    }
-    
-    .round-box {
-        padding: 1rem;
-        min-width: 160px;
-    }
-    
-    .round-box h3 {
-        font-size: 1.1rem;
-    }
-    
-    .round-box p {
-        font-size: 0.9rem;
-    }
-}
-
