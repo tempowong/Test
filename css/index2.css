@@ -3437,12 +3437,12 @@ footer{
     }
 }
 
-/* 如果需要，也可以調整 schedule-table 的上邊距 */
+
 #schedule-table {
-    margin-top: 3rem; /* 增加與上方元素的間距 */
+    margin-top: 3rem; 
 }
 
-/* 子菜單樣式 */
+
 .submenu {
     display: flex;
     justify-content: center;
@@ -3483,7 +3483,7 @@ footer{
     }
 }
 
-/* 導航欄下拉菜單樣式 */
+
 .nav-dropdown {
     position: relative;
     display: inline-block;
@@ -3508,31 +3508,31 @@ footer{
     display: block;
 }
 
-/* 下拉菜單項目的基本樣式 */
+
 .dropdown-item {
     display: block;
     padding: 8px 16px;
-    color: #000 !important; /* 使用 !important 覆蓋超鏈接默認樣式 */
+    color: #000 !important; 
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-/* 下拉菜單項目的懸停樣式 */
+
 .dropdown-item:hover {
     background-color: #0e6666;
-    color: #fff !important; /* 使用 !important 確保懸停時顏色正確 */
+    color: #fff !important; 
     text-decoration: none;
 }
 
-/* 當前活動項目的樣式 */
+
 .dropdown-item.active {
     background-color: #0e6666;
-    color: #fff !important; /* 使用 !important 確保活動項目顏色正確 */
+    color: #fff !important; 
     font-weight: bold;
     text-decoration: none;
 }
 
-/* 響應式調整 */
+
 @media only screen and (max-width: 767px) {
     .nav-dropdown {
         width: 100%;
@@ -3556,21 +3556,21 @@ footer{
     }
 }
 
-/* 日期和地點樣式 */
+
 .schedule-info {
     margin-bottom: 2rem;
     line-height: 1.8;
     color: #000000;
 }
 
-/* 比賽資訊文字顏色 */
+
 .rundown_tb td strong {
     color: #0e6666; 
     margin-right: 8px; 
 }
 
 
-/* 回合標題樣式 */
+
 .round-title {
     font-size: 24px;
     font-weight: bold;
@@ -3605,7 +3605,7 @@ footer{
     background: linear-gradient(to right, transparent, #0e6666, transparent);
 }
 
-/* 回合選擇區域樣式 */
+
 .rounds-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -3661,7 +3661,7 @@ footer{
     color: #fff;
 }
 
-/* 響應式調整 */
+
 @media screen and (max-width: 768px) {
     .rounds-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -3724,7 +3724,7 @@ footer{
     }
 }
 
-/* 保留原有的 gallery-header 樣式，添加副標題樣式 */
+
 .gallery-subtitle {
     font-size: 1.2rem;
     color: #666;
@@ -3738,7 +3738,7 @@ footer{
     }
 }
 
-/* 花絮頁面副標題樣式 */
+
 .gallery-subtitle {
     font-size: 1.5rem;
     color: #0e6666;
@@ -3767,7 +3767,7 @@ footer{
     right: -40px;
 }
 
-/* 響應式調整 */
+
 @media screen and (max-width: 768px) {
     .gallery-subtitle {
         font-size: 1.2rem;
@@ -3788,7 +3788,7 @@ footer{
     }
 }
 
-/* 比賽標題樣式 */
+
 .debate-title {
     text-align: center;
     color: #0e6666;
@@ -3799,4 +3799,52 @@ footer{
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+}
+
+
+.schedule-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.schedule-table p {
+    padding: 2px 2px;
+    margin: 0;
+    line-height: 1.5;
+    font-weight: bold;
+    border-bottom: 1px solid #d4c28e;
+}
+
+.schedule-table p:last-child {
+    border-bottom: none;
+}
+
+.highlight-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-table p:nth-child(odd) .highlight-link {
+    background-color: #fafafa;
+}
+
+
+
+.highlight-link:hover {
+    background-color: #e5f0f7;
+    text-decoration: none;
+}
+
+.highlight-link span:first-child {
+    color: #0e6666;
+}
+
+.highlight-link span:last-child {
+    color: #333;
 }
