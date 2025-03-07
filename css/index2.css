@@ -2286,7 +2286,7 @@ a{text-decoration:none}
         font-weight: bold;
         background-color: #eedfb0;
     }
-    .rundown_tb th, td {
+    .rundown_tb th, .rundown_tb td {
         border: 3px solid #000000;
         text-align: left;
         padding: 8px;
@@ -2522,7 +2522,6 @@ a{text-decoration:none}
     margin-bottom: 20px;
     display: inline;
     font-weight: bold;
-    color: #0e6666;
  } 
 
  #gallery-subhead{
@@ -2530,14 +2529,54 @@ a{text-decoration:none}
     border-bottom: 2px solid #2f2f2f;
     border-top: 2px solid #2f2f2f;
     padding: 12px 0 12px 0;
-    font-size: 15px;
-
 }
 #gallery-subhead p{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
     color: #0e6666;
+    margin:0 !important;
 } 
+
+.subhead-mview {
+    display: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    #gallery-subhead{
+        padding: 0;
+    }
+    #gallery-subhead p{
+        font-size: 1.8rem;
+    } 
+    .subhead {
+        display: none;
+    }
+    
+    .subhead-mview {
+        display: block;
+    }
+
+    .gallery-headline {
+        display: none;
+    }
+    
+    .gallery-headline-mview,
+    .gallery-headline-mview-eng {
+        display: block !important;
+    }
+}
+
+.gallery-headline-mview,
+.gallery-headline-mview-eng {
+    display: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
 
 .gallery-previous{
     float: left;
@@ -2621,7 +2660,6 @@ a{text-decoration:none}
         padding: 2px;
         border: 4px solid #000000;
     }
-
 }
 
 @media (max-width:414px){
@@ -2642,6 +2680,7 @@ a{text-decoration:none}
         padding: 2px;
         border: 4px solid #000000;
     }
+
 }
 
 @media (max-width:376px){
@@ -2662,6 +2701,7 @@ a{text-decoration:none}
         padding: 2px;
         border: 4px solid #000000;
     }
+
 }
 
 /* ------------------------------------------------------------------- 
@@ -3585,6 +3625,7 @@ footer{
     line-height: 1.8;
     color: #000000;
     text-align: center;
+    font-weight: bold;
 }
 
 
@@ -3626,7 +3667,7 @@ footer{
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, transparent, #0e6666, transparent);
+    background: linear-gradient(to right, transparent, #000000, transparent);
 }
 
 
@@ -3845,6 +3886,7 @@ footer{
     line-height: 1.5;
     font-weight: bold;
     border-bottom: 1px solid #d4c28e;
+    font-size: 1.5rem;
 }
 
 .schedule-table p:last-child {
@@ -3864,21 +3906,21 @@ footer{
 
 
 .schedule-table p:nth-child(odd) .highlight-link {
-    background-color: #eedfb0;
+    background-color: #f5f5dc;
 }
 
 .schedule-table p:nth-child(even) .highlight-link {
-    background-color: #f5ecd4;
+    background-color: #d1f5d9;
 }
 
 
 .highlight-link:hover {
-    background-color: #0e6666;
+    background-color: #ED732F;
     transform: translateX(10px);
 }
 
 .highlight-link:hover span {
-    color: #ffffff !important;
+    color: #ED732F !important;
 }
 
 .highlight-link::after {
@@ -3893,3 +3935,6 @@ footer{
     right: 20px;
     opacity: 1;
 }
+
+
+
