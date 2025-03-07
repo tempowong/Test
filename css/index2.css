@@ -3910,7 +3910,7 @@ footer{
 }
 
 .schedule-table p:nth-child(even) .highlight-link {
-    background-color: #d1f5d9;
+    background-color: rgba(40, 255, 255, 0.11)
 }
 
 
