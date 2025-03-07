@@ -3528,6 +3528,10 @@ footer{
         font-size: 16px;
         padding: 8px 15px;
     }
+
+    #schedule-table {
+        margin-top: 0 !important; 
+    }
 }
 
 
