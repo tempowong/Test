@@ -3652,7 +3652,9 @@ footer{
     transform: translateX(-50%);
     line-height: 1;
 }
-
+.round-title-sec{
+    color: #7072aa !important
+}
 .highlight-title {
     font-size: 24px;
     font-weight: bold;
