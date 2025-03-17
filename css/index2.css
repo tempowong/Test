@@ -720,6 +720,9 @@ a{text-decoration:none}
             font-size: 2rem;
             text-align: center;
         }
+        #schedule-table{
+            margin-top: 0 !important;
+        }
     }
 
     @media (max-width:414px){
@@ -779,6 +782,12 @@ a{text-decoration:none}
             font-size: 5rem;
             text-align: center;
         }
+        #schedule-table{
+            margin-top: 0 !important;
+        }
+        .custom-hr{
+            width: 80% !important;
+        }
     }
 
     @media (max-width:378px){
@@ -801,6 +810,10 @@ a{text-decoration:none}
             font-size: 5rem;
             text-align: center;
         }
+        #schedule-table{
+            margin-top: 0 !important;
+        }
+
     }
 
 /* ------------------------------------------------------------------- 
@@ -2593,7 +2606,7 @@ a{text-decoration:none}
     width: 120px;
     flex: 1;
     padding: 5px 10px;
-    margin:25px;
+    margin-top:5px;
     border-radius: 999px;
     border: 5px solid #000000;
     font-size: 20px;
@@ -3409,6 +3422,9 @@ footer{
     .match-photos {
         grid-template-columns: 1fr;
     }
+    .custom-hr{
+        width: 80%;
+    }
 }
 
 .race_tb td {
@@ -3543,10 +3559,6 @@ footer{
         font-size: 16px;
         padding: 8px 15px;
     }
-
-    #schedule-table {
-        margin-top: 0 !important; 
-    }
 }
 
 
@@ -3624,11 +3636,11 @@ footer{
 
 
 .schedule-info {
-    margin-bottom: 2rem;
     line-height: 1.8;
     color: #000000;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 
@@ -3644,7 +3656,6 @@ footer{
     font-weight: bold;
     color: #0e6666;
     text-align: center;
-    margin-bottom: 1.5rem;
     padding: 10px 20px;
     position: relative;
     display: inline-block;
@@ -3666,14 +3677,16 @@ footer{
     display: inline-block;
 }
 
-.round-title::after {
+.custom-hr {
     content: '';
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 40%;
     height: 3px;
     background: linear-gradient(to right, transparent, #000000, transparent);
+    margin: auto;
+    opacity: 1 !important;
 }
 
 
@@ -3750,6 +3763,9 @@ footer{
     
     .round-card p {
         font-size: 0.9rem;
+    }
+    .custom-hr{
+        width: 80% ;
     }
 }
 
