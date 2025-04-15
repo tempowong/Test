@@ -1545,12 +1545,22 @@ a{text-decoration:none}
         width: 30%;
         height: 30%;
     }
+    .video-container iframe {
+        width: 100% !important;
+        margin-top: 5% !important;
+        height: auto;
+    }
 }
 
 @media (max-width:414px){
     .schedule-card{
         width: 30%;
         height: 30%;
+    }
+    .video-container iframe {
+        width: 100% !important;
+        margin-top: 5%;
+        height: auto;
     }
 }
 
@@ -3958,5 +3968,9 @@ footer{
     opacity: 1;
 }
 
-
+.video-container iframe {
+    aspect-ratio: 16 / 9;
+    width: 80% ;
+    margin-top: 1%;
+}
 
