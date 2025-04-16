@@ -1546,8 +1546,8 @@ a{text-decoration:none}
         height: 30%;
     }
     .video-container iframe {
-        width: 100% !important;
-        margin-top: 5% !important;
+        width: 85% !important;
+        margin-top: 2% !important;
         height: auto;
     }
 }
@@ -1558,8 +1558,8 @@ a{text-decoration:none}
         height: 30%;
     }
     .video-container iframe {
-        width: 100% !important;
-        margin-top: 5%;
+        width: 85% !important;
+        margin-top: 2%;
         height: auto;
     }
 }
